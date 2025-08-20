@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mcp-github-stars",
+  "name": "github-stars",
   "main": "src/index.js",
   "compatibility_flags": [
     "nodejs_compat"
