@@ -1,6 +1,6 @@
 ---
 project: GithubStarsManager
-stars: 805
+stars: 883
 description: |-
     An app for managing github starred repositories. 
 url: https://github.com/AmintaCCCP/GithubStarsManager

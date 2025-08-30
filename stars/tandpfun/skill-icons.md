@@ -1,6 +1,6 @@
 ---
 project: skill-icons
-stars: 10242
+stars: 10310
 description: |-
     Showcase your skills on your Github readme or resumé with ease ✨
 url: https://github.com/tandpfun/skill-icons
