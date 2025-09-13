@@ -1,6 +1,6 @@
 ---
 project: links-app-workers
-stars: 2
+stars: 3
 description: |-
     基于 Cloudflare Workers 和 KV 存储的友链申请系统，允许用户通过 GitHub 登录提交友链信息，并提供管理员审核功能。
 url: https://github.com/HeLongaa/links-app-workers
