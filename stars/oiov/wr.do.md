@@ -1,6 +1,6 @@
 ---
 project: wr.do
-stars: 1884
+stars: 1913
 description: |-
     一站式域名服务平台，集成短链生成、无限域名邮箱、文件存储和子域名管理，带有管理员面板，支持自部署
 url: https://github.com/oiov/wr.do
@@ -222,7 +222,7 @@ pnpm dev
 - Discord: https://discord.gg/AHPQYuZu3m
 - 微信群：
 
-<img width="300" src="https://wr.do/s/group" />
+<img width="300" src="https://wr.do/group" />
 
 ## 贡献者
 

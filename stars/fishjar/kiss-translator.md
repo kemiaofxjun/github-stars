@@ -1,6 +1,6 @@
 ---
 project: kiss-translator
-stars: 7382
+stars: 7445
 description: |-
     A simple, open source bilingual translation extension & Greasemonkey script (一个简约、开源的 双语对照翻译扩展 & 油猴脚本)
 url: https://github.com/fishjar/kiss-translator
@@ -23,8 +23,7 @@ url: https://github.com/fishjar/kiss-translator
   - [x] Firefox
   - [x] Kiwi (Android)
   - [x] Orion (iOS)
-  - [ ] Safari
-    - [x] Safari (Mac)
+  - [x] Safari
   - [x] Thunderbird
 - [x] 支持多种翻译服务
   - [x] Google/Microsoft
@@ -67,8 +66,9 @@ url: https://github.com/fishjar/kiss-translator
     - [x] Orion (iOS)
   - [x] Edge [安装地址](https://microsoftedge.microsoft.com/addons/detail/%E7%AE%80%E7%BA%A6%E7%BF%BB%E8%AF%91/jemckldkclkinpjighnoilpbldbdmmlh?hl=zh-CN)
   - [x] Firefox [安装地址](https://addons.mozilla.org/zh-CN/firefox/addon/kiss-translator/)
-  - [ ] Safari
-    - [x] Safari (Mac) 第三方编译，未作验证，自行获取： https://www.nodeloc.com/t/topic/54245
+  - [x] Safari
+    - [x] Safari (Mac)
+    - [x] Safari (iOS) 
   - [x] Thunderbird [下载地址](https://github.com/fishjar/kiss-translator/releases)
 - [x] 油猴脚本
   - [x] Chrome/Edge/Firefox ([Tampermonkey](https://www.tampermonkey.net/)/[Violentmonkey](https://violentmonkey.github.io/)) [安装链接](https://fishjar.github.io/kiss-translator/kiss-translator.user.js)

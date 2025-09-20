@@ -1,15 +1,15 @@
 ---
 project: blinko
-stars: 5839
+stars: 5913
 description: |-
     An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript .
 url: https://github.com/blinkospace/blinko
 ---
 
 
-<img align='right' height='40px' src="./public/logo.svg" alt="Blinko" />
+<img style="border-radius:20px;margin-bottom:20px" src="./app/public/home.png" alt="Blinko" />
 
-# Blinko - Open Source, Self-hosted
+<h1 align="center">Blinko</h1>
 
 <div align="center">
 
@@ -29,8 +29,8 @@ url: https://github.com/blinkospace/blinko
 <div align="center">
 
 [Live Demo](https://demo.blinko.space) •
-[中文文档](README.zh-CN.md) •
-[Docs](https://docs.blinko.space/introduction) •
+[中文README](README.zh-CN.md) •
+[Docs](https://docs.blinko.space/) •
 [Telegram Chinese](https://t.me/blinkoChinese) •
 [Telegram English](https://t.me/blinkoEnglish)
 </div>
@@ -38,11 +38,15 @@ url: https://github.com/blinkospace/blinko
 
 > Live Demo: username:blinko password:blinko
 
-[![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=blinko)
+
 
 Blinko is an innovative open-source project designed for individuals who want to quickly capture and organize their fleeting thoughts. Blinko allows users to seamlessly jot down ideas the moment they strike, ensuring that no spark of creativity is lost.
 
-<img style="border-radius:20px" src="./app/public/home.webp" alt="Blinko" />
+<div align="center">
+
+[![Run on PikaPods](./app/public/run-on-pikapods.svg)](https://www.pikapods.com/pods?run=blinko)
+
+</div>
 
 ## 🚀Main Features
 - 🤖**AI-Enhanced Note Retrieval** ：With Blinko's advanced AI-powered RAG (Retrieval-Augmented Generation), you can quickly search and access your notes using natural language queries, making it effortless to find exactly what you need.
@@ -67,9 +71,9 @@ Contributions are the heart of what makes the open-source community so dynamic, 
 [![Contributors](https://contrib.rocks/image?repo=blinko-space/blinko)]([...](https://github.com/blinko-space/blinko/graphs/contributors))
 
 ## Sponsorship
-If you find Blinko valuable, consider supporting us! Your contribution will enable us to continue enhancing and maintaining the project for everyone. Thank you for helping us grow,Or use PikaPods to support blinko
+If you find Blinko valuable, consider supporting us! Your contribution will enable us to continue enhancing and maintaining the project for everyone. Thank you for helping us grow. If you'd like to deploy Blinko, you can also use PikaPods to support Blinko. 20% of the deployment fees generated on PikaPods will be contributed to Blinko.
 
-[![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=blinko)
+[![Run on PikaPods](./app/public/run-on-pikapods.svg)](https://www.pikapods.com/pods?run=blinko)
 
 [https://ko-fi.com/blinkospace](https://ko-fi.com/blinkospace)
 

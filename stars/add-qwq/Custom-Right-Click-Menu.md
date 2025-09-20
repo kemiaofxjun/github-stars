@@ -1,6 +1,6 @@
 ---
 project: Custom-Right-Click-Menu
-stars: 35
+stars: 40
 description: |-
     A new web custom right-click menu solution (lightweight)
 url: https://github.com/add-qwq/Custom-Right-Click-Menu
@@ -34,8 +34,11 @@ Want to use this right-click menu across all websites? Install the [Right Click 
 ![GitHub stars](https://img.shields.io/github/stars/add-qwq/Custom-Right-Click-Menu)
 
 ### Project Overview
-**[Online Demonstration (Click to Access)](https://www.rockaz.top/GitHub-Project-Demo/Custom-Right-Click-Menu/)**  
-*Note: The website server is located in China.*
+- **[Online Demo (Click to Access - China Mirror Site)](https://www.rockaz.top/GitHub-Project-Demo/Custom-Right-Click-Menu/)**  
+*Note: The server of this website is located in China, ensuring faster and more stable access for users within China. The page language is Chinese. However, for security defense purposes(To defend against a large number of automated attack IPs from outside China), all traffic from outside China has been blocked.*
+
+- **[Online Demo (Click to Access - GitHub Page Mirror Site)](https://add-qwq.github.io/Custom-Right-Click-Menu(DemoPage)/)**  
+*Note: This website is hosted on GitHub Pages. Users within China may experience significant access delays, so it is more suitable for users outside China (users around the world).*
 
 Centered around Web Components, this project replaces the browser's native right-click menu with a flexible, highly extensible custom interface. It supports context-aware operations (text copy/paste, link/image handling, page controls) while allowing in-depth customization of styles, structure, and functionality.
 
@@ -180,12 +183,20 @@ menu.unmount();
 #### 5. Dynamically Update the Theme
 Modify the theme after initialization:
 ```javascript
-// Change menu background and text color
-menu.setTheme({
-  '--menu-bg': 'rgba(30, 30, 30, 0.95)',
-  '--text-color': '#ffffff',
-  '--item-hover-bg': 'rgba(60, 60, 60, 0.8)'
-});
+// Dynamically modify the style within the page (without changing the project source code)
+document.addEventListener('DOMContentLoaded', function() {
+            window.globalMenu = createRightClickMenu();
+            window.globalMenu.setTheme({
+                '--menu-bg': 'rgba(255, 255, 255, 0.1)',
+                '--menu-border': '1px solid rgba(255, 255, 255, 0.05)',
+                '--menu-backdrop': 'blur(10px)',
+                '--transition-speed': '0.1s',
+                '--item-hover-bg': 'rgba(255, 255, 255, 0.3)',
+                '--text-color': 'white',
+                '--header-color': 'white',
+                '--divider-color': '#e5e7eb'
+            });
+        });
 ```
 
 ### Implementation Principle
@@ -247,8 +258,11 @@ This project is licensed under the [Apache-2.0 License](LICENSE). You must compl
 ![GitHub stars](https://img.shields.io/github/stars/add-qwq/Custom-Right-Click-Menu)
 
 ### 项目概述
-**[在线演示（点击访问）](https://www.rockaz.top/GitHub-Project-Demo/Custom-Right-Click-Menu/)**  
-*注：网站服务器位于中国。*
+**[在线演示（点击访问--中国镜像站）](https://www.rockaz.top/GitHub-Project-Demo/Custom-Right-Click-Menu/)**  
+*注：该网站服务器位于中国，中国境内用户访问更快速稳定页面语言为中文，但出于安全防御目的（为了防御大量来自中国境外的自动化攻击IP），我们已封锁所有中国以外的流量*
+
+**[在线演示（点击访问--GitHub Page镜像站）](https://add-qwq.github.io/Custom-Right-Click-Menu(DemoPage)/)**  
+*注：该网站由GitHub Page托管，中国境内用户访问可能有较大延迟，适合中国境外用户（全球各地用户）访问*
 
 本项目以Web Components为核心，替代浏览器原生右键菜单，提供灵活且高可扩展的自定义界面。支持上下文感知操作（文本复制/粘贴、链接/图片处理、页面控制），同时允许深度定制样式、结构与功能
 
@@ -393,12 +407,20 @@ menu.unmount();
 #### 5. 动态更新主题
 初始化后仍可修改主题：
 ```javascript
-// 修改菜单背景和文本颜色
-menu.setTheme({
-  '--menu-bg': 'rgba(30, 30, 30, 0.95)',
-  '--text-color': '#ffffff',
-  '--item-hover-bg': 'rgba(60, 60, 60, 0.8)'
-});
+// 进行页面内动态修改样式（不更改项目源码）
+document.addEventListener('DOMContentLoaded', function() {
+            window.globalMenu = createRightClickMenu();
+            window.globalMenu.setTheme({
+                '--menu-bg': 'rgba(255, 255, 255, 0.1)',
+                '--menu-border': '1px solid rgba(255, 255, 255, 0.05)',
+                '--menu-backdrop': 'blur(10px)',
+                '--transition-speed': '0.1s',
+                '--item-hover-bg': 'rgba(255, 255, 255, 0.3)',
+                '--text-color': 'white',
+                '--header-color': 'white',
+                '--divider-color': '#e5e7eb'
+            });
+        });
 ```
 
 ### 实现原理
