@@ -1,6 +1,6 @@
 ---
 project: kiss-translator
-stars: 7445
+stars: 7503
 description: |-
     A simple, open source bilingual translation extension & Greasemonkey script (一个简约、开源的 双语对照翻译扩展 & 油猴脚本)
 url: https://github.com/fishjar/kiss-translator

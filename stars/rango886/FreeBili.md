@@ -1,6 +1,6 @@
 ---
 project: FreeBili
-stars: 171
+stars: 178
 description: |-
     自由哔站是一个高性能、使用方便的影视聚合搜索和播放工具
 url: https://github.com/rango886/FreeBili
@@ -30,7 +30,7 @@ url: https://github.com/rango886/FreeBili
 
 ## Docker 部署 (推荐)
 ```
-docker run -d -p 8000:8000 silvery886/freebili:1.23
+docker run -d -p 8000:8000 silvery886/freebili:1.24
 ```
 
 ## 开发启动

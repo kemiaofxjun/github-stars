@@ -1,6 +1,6 @@
 ---
 project: zane-ops
-stars: 1037
+stars: 1041
 description: |-
     A beautiful and fast self-hosted PaaS for deploying and managing web apps, databases, static websites and more.
 url: https://github.com/zane-ops/zane-ops
@@ -43,14 +43,7 @@ It is a **free** and **open-source** alternative to platforms like **Heroku**, *
 You can install zaneops like this :
 
 ```shell
-# create a folder for installing ZaneOps
-mkdir -p /var/www/zaneops
-cd /var/www/zaneops
-
-# download the ZaneOps "cli"
-curl https://cdn.zaneops.dev/makefile > Makefile
-make setup 
-make deploy
+curl -fsSL https://cdn.zaneops.dev/install.sh | sudo bash
 ```
 
 > [!NOTE]
