@@ -1,6 +1,6 @@
 ---
 project: PicFlow-API
-stars: 17
+stars: 18
 description: |-
     智能高效的随机图片API服务
 url: https://github.com/matsuzaka-yuki/PicFlow-API

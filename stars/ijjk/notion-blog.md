@@ -1,6 +1,6 @@
 ---
 project: notion-blog
-stars: 3840
+stars: 3838
 description: |-
     A Next.js site using new SSG support with a Notion backed blog
 url: https://github.com/ijjk/notion-blog
