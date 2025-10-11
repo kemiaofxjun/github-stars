@@ -1,6 +1,6 @@
 ---
 project: Fumomo-nuxt
-stars: 11
+stars: 12
 description: |-
     null
 url: https://github.com/Hakutyan-bai/Fumomo-nuxt
@@ -20,6 +20,8 @@ url: https://github.com/Hakutyan-bai/Fumomo-nuxt
 - 基于 Nuxt 4，性能优秀
 - TypeScript 支持
 - Tailwind CSS 样式
+- 友链：来自[RhenCloud](https://github.com/RhenCloud)
+- 访问统计：来自[yCENzh](https://github.com/yCENzh)
 
 ## 技术栈
 
@@ -74,9 +76,9 @@ vercel --prod
 
 ## 配置
 
-### RSS 订阅配置
+### RSS 订阅配置、收发邮件配置
 
-在 `server/api/rss.get.ts` 中修改 RSS 相关配置：
+在 `.env` 中修改相关配置
 
 
 
@@ -169,40 +171,3 @@ MIT License
 ---
 
 如果这个项目对你有帮助，请给个 Star 支持一下！
-
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# pnpm
-pnpm dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# pnpm
-pnpm build
-```
-
-Locally preview production build:
-
-```bash
-# pnpm
-pnpm preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
