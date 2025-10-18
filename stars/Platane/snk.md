@@ -1,6 +1,6 @@
 ---
 project: snk
-stars: 5301
+stars: 5317
 description: |-
     🟩⬜ Generates a snake game from a github user contributions graph and output a screen capture as animated svg or gif
 url: https://github.com/Platane/snk
