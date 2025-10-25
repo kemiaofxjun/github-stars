@@ -1,6 +1,6 @@
 ---
 project: leet.me
-stars: 3
+stars: 1
 description: |-
     My personal website
 url: https://github.com/skyline523/leet.me

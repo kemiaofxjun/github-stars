@@ -1,6 +1,6 @@
 ---
 project: Fumomo-nuxt
-stars: 15
+stars: 17
 description: |-
     null
 url: https://github.com/Hakutyan-bai/Fumomo-nuxt
@@ -10,7 +10,7 @@ url: https://github.com/Hakutyan-bai/Fumomo-nuxt
 
 一个基于 Nuxt 4 + Vue 3 + Tailwind CSS 构建的现代化个人主页，支持 RSS 订阅文章功能。
 
-[English](./docs/README.en.md) | [日本語](./docs/README.ja.md)
+[English](./docs/README.en.md) | [日本語](./docs/README.ja.md) 多语言文档更新可能不及时
 
 ## 功能特点
 
@@ -98,6 +98,14 @@ personal: {
   }
 }
 ```
+### 技能专长配置
+前往下面这个网站获取图标Vue文件放入components/icons
+
+https://icones.js.org/collection/logos
+
+### GitHub热力图
+
+只要在配置中正确填写你的Github链接即可自动生成
 
 ## 项目结构
 
@@ -107,6 +115,7 @@ fumomo-nuxt/
 │   ├── assets/
 │   │   └── styles/          # 全局样式
 │   ├── components/          # Vue 组件
+|   |   └── icons/           # 技能专长Icons
 │   ├── config/
 │   │   └── index.ts         # 网站配置
 │   ├── layouts/

@@ -1,6 +1,6 @@
 ---
 project: Netease_analyze
-stars: 46
+stars: 47
 description: |-
     这是一个网易云音乐无损解析站点
 url: https://github.com/sooooooooooooooooootheby/Netease_analyze
@@ -9,12 +9,6 @@ url: https://github.com/sooooooooooooooooootheby/Netease_analyze
 # ！声明 ！
 
 本项目为开源软件，遵循MIT许可证。任何个人或组织均可自由使用、修改和分发本项目的源代码。然而，我们明确声明，本项目及其任何衍生作品不得用于任何商业或付费项目。任何违反此声明的行为都将被视为对本项目许可证的侵犯。我们鼓励大家在遵守开源精神和许可证的前提下，积极贡献和分享代码。
-
----
-
-因为我不用网易云了, 所以没有续费黑胶, 我自己部署的解析站点用不了就关了, 有能力的老哥自己部署一下吧.
-
----
 
 # Netease_analyze
 

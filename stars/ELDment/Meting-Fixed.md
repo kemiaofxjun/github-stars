@@ -1,6 +1,6 @@
 ---
 project: Meting-Fixed
-stars: 254
+stars: 256
 description: |-
     🍰 强大的音乐API框架，支持网易云音乐、QQ音乐、酷狗音乐、酷我音乐 ✨ Powerful music API framework supporting NetEase Cloud Music, QQ Music, Kugou Music, and Kuwo Music
 url: https://github.com/ELDment/Meting-Fixed

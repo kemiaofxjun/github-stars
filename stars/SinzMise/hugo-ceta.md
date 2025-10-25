@@ -1,6 +1,6 @@
 ---
 project: hugo-ceta
-stars: 2
+stars: 1
 description: |-
     null
 url: https://github.com/SinzMise/hugo-ceta
