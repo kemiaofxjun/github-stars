@@ -1,6 +1,6 @@
 ---
 project: wr.do
-stars: 1967
+stars: 2002
 description: |-
     一站式域名服务平台，集成短链生成、无限域名邮箱、文件存储和子域名管理，带有管理员面板，支持自部署
 url: https://github.com/oiov/wr.do
@@ -232,7 +232,7 @@ pnpm dev
   
 [爱发电主页打赏](wr.do/afdhome)
 
-<img width="100" src="https://wr.do/bbpt9z" />
+<img width="100" src="https://wr.do/bbpt9z?ref=https://github.com/oiov/wr.do" />
 
 
 ## Star History

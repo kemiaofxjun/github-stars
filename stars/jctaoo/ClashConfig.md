@@ -1,6 +1,6 @@
 ---
 project: ClashConfig
-stars: 114
+stars: 120
 description: |-
     my clash config
 url: https://github.com/jctaoo/ClashConfig
@@ -35,6 +35,35 @@ https://clash.jctaoo.site/sub?sub=<base64-encoded-url>
 > 更进一步，可以使用基于 token 管理的配置获取 API，支持筛选节点等功能，参考下方 API 指南
 
 ## 🖥️ API 指南
+
+### 📱 User-Agent 说明
+
+ClashConfig 会**根据请求的 User-Agent 自动识别客户端类型**，并返回对应内核的优化配置：
+
+#### 支持的客户端内核
+
+1. **Clash.Meta (Mihomo)**:
+   - 客户端：Clash Verge、ClashX.Meta 等
+   - 返回：完整的 Mihomo 内核配置，包含所有高级特性
+
+2. **Clash Premium (Stash)**
+   - 客户端：Stash
+   - 返回：兼容 Stash 的配置，自动展开 `GEOSITE` 规则为具体域名列表 (nameserver-policy 中)
+   - **特殊处理**：由于 Stash 限制，`strict` DNS 策略会自动降级为 `direct` 策略
+
+#### 裸核心使用方法
+
+如果你直接使用 Clash 核心（如 `mihomo`）而不是带 UI 的客户端，需要**手动指定 User-Agent**, 将 `mihomo -v` 命令的第一行返回值作为 User-Agent 使用即可，例如:
+
+```bash
+> ./mihomo.exe -v
+Mihomo Meta v1.19.14 windows amd64 with go1.24.7 Wed Sep 24 09:12:02UTC 2025
+Use tags: with_gvisor
+```
+
+将 `Mihomo Meta v1.19.14 windows amd64 with go1.24.7 Wed Sep 24 09:12:02UTC 2025` 作为 User-Agent 进行请求即可。
+
+> 💡 **提示**：大多数 Clash 客户端会自动发送正确的 User-Agent，无需手动设置
 
 ### 1. `/sub` - 基础订阅转换
 
@@ -78,7 +107,7 @@ https://clash.jctaoo.site/sk-your-token
 ```
 
 **使用流程**:
-1. 使用 `bun run cli add` 添加订阅并获取 token
+1. 使用 `pnpm run cli add` 添加订阅并获取 token
 2. 将 token 添加到 Clash 订阅地址: `https://clash.jctaoo.site/sk-your-token`
 3. 使用 CLI 工具管理和更新订阅配置
 
@@ -109,7 +138,7 @@ https://clash.jctaoo.site/sk-your-token
 #### 1. 添加订阅（交互式）
 
 ```bash
-bun run cli add
+pnpm run cli add
 ```
 
 该命令会通过交互式提示引导你输入所有必要信息，并自动生成 token。参数说明参见 [参数说明](#params)。
@@ -117,7 +146,7 @@ bun run cli add
 #### 2. 获取订阅信息
 
 ```bash
-bun run cli get sk-your-token
+pnpm run cli get sk-your-token
 ```
 
 该命令会显示指定 token 的订阅详细信息。Token 会保存在订阅信息中，可以随时通过此命令重新获取。
@@ -126,18 +155,18 @@ bun run cli get sk-your-token
 
 ```bash
 # 使用默认 base-url (https://clash.jctaoo.site)
-bun run cli link sk-your-token
+pnpm run cli link sk-your-token
 
 # 获取链接并自动在 Clash 中打开
-bun run cli link sk-your-token --go
+pnpm run cli link sk-your-token --go
 # 或使用简写
-bun run cli link sk-your-token -g
+pnpm run cli link sk-your-token -g
 
 # 自定义 base-url
-bun run cli link sk-your-token --base-url https://your-worker.workers.dev
+pnpm run cli link sk-your-token --base-url https://your-worker.workers.dev
 
 # 自定义 base-url 并打开
-bun run cli link sk-your-token -b https://your-worker.workers.dev -g
+pnpm run cli link sk-your-token -b https://your-worker.workers.dev -g
 ```
 
 该命令会生成完整的订阅链接。使用 `--go`/`-g` 参数可以自动生成 Clash URL scheme 并打开 Clash 客户端导入配置。
@@ -149,7 +178,7 @@ bun run cli link sk-your-token -b https://your-worker.workers.dev -g
 #### 4. 更新订阅（使用编辑器）
 
 ```bash
-bun run cli update sk-your-token
+pnpm run cli update sk-your-token
 ```
 
 该命令会打开你的默认编辑器，显示当前订阅信息的 JSON 格式，你可以直接在编辑器中修改。保存后会自动更新订阅。参见 [参数说明](#params)。
@@ -157,13 +186,13 @@ bun run cli update sk-your-token
 #### 5. 删除订阅
 
 ```bash
-bun run cli delete sk-your-token
+pnpm run cli delete sk-your-token
 ```
 
 #### 6. 列出所有订阅
 
 ```bash
-bun run cli list
+pnpm run cli list
 ```
 
 该命令会列出所有已保存的订阅信息，包括 token、标签、URL 等关键信息。
@@ -178,22 +207,22 @@ bun run cli list
 
 ```bash
 # 1. 添加订阅
-bun run cli add
+pnpm run cli add
 
 # 2. 查看订阅信息
-bun run cli get sk-your-token
+pnpm run cli get sk-your-token
 
 # 3. 获取订阅链接并在 Clash 中打开
-bun run cli link sk-your-token --go
+pnpm run cli link sk-your-token --go
 
 # 4. 更新订阅
-bun run cli update sk-your-token
+pnpm run cli update sk-your-token
 
 # 5. 列出所有订阅
-bun run cli list
+pnpm run cli list
 
 # 6. 删除订阅
-bun run cli delete sk-your-token
+pnpm run cli delete sk-your-token
 ```
 
 ### CLI 注意事项
@@ -226,7 +255,7 @@ bun run cli delete sk-your-token
 
 | rules / nameserver | `direct` | `strict` |
 | ----------- | ------ | ------ |
-| `always-resolve` | ⚠️ `国外未知域名通过 direct dns，泄露` | 🔒 `缺点在于无论国内国外网站都会进行多余 DNS 解析` |
+| `always-resolve` | ⚠️ `国外未知域名通过 direct dns，泄露` | 🔒 `缺点在于国外小众网站会进行多余 DNS 解析，国内小众网站可能无法命中最优结果，但 ecs 有所缓解` |
 | `remote` | 🔒 `缺点在于国内小众网站会走代理` | 🔒 `缺点在于国内小众网站会走代理` |
 
 > 目前 Stash 不支持 `strict` 策略，如果指定 `strict` 策略，会自动切换为 `direct` 策略。另外使用 `direct` 策略的同时最好打开 `quic` 选项来禁用 quic 协议
@@ -237,35 +266,35 @@ bun run cli delete sk-your-token
 
 ### 前置要求
 
-1. 安装 [Bun](https://bun.sh)
+1. 安装 Node.js 和 `pnpm`（请先安装 Node.js，然后参见 [pnpm](https://pnpm.io) 获取 pnpm 安装说明）
 
 ### 开发步骤
 
 1. **安装依赖**
    ```bash
-   bun install
+   pnpm install
    ```
 
 2. **登录 Cloudflare**（重要！）
    ```bash
-   bun wrangler login
+   pnpm exec wrangler login
    ```
    这将打开浏览器进行 Cloudflare 账户授权。登录后才能访问 KV 存储和部署服务。
 
 3. **生成 Geo 相关脚本**
    ```bash
-   bun run pb-gen && bun run pb-gen-dts
+   pnpm run pb-gen && pnpm run pb-gen-dts
    ```
 
 4. **生成 Cloudflare Workers 类型定义**
    ```bash
-   bun run cf-typegen
+   pnpm run cf-typegen
    ```
    这将根据 `wrangler.jsonc` 配置生成 TypeScript 类型定义文件，包括 KV、环境变量等的类型。
 
 5. **启动开发服务器**
    ```bash
-   bun run dev
+   pnpm run dev
    ```
    开发服务器将在本地启动，可以进行调试和测试。
 

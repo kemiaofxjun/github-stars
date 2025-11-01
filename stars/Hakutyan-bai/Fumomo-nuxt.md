@@ -1,6 +1,6 @@
 ---
 project: Fumomo-nuxt
-stars: 17
+stars: 19
 description: |-
     null
 url: https://github.com/Hakutyan-bai/Fumomo-nuxt
