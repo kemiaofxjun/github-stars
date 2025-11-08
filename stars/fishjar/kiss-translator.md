@@ -1,6 +1,6 @@
 ---
 project: kiss-translator
-stars: 7839
+stars: 7914
 description: |-
     A simple, open source bilingual translation extension & Greasemonkey script (一个简约、开源的 双语对照翻译扩展 & 油猴脚本)
 url: https://github.com/fishjar/kiss-translator
@@ -148,6 +148,10 @@ url: https://github.com/fishjar/kiss-translator
 ### 如何直接进入油猴脚本设置页面
 
 设置页面地址： https://fishjar.github.io/kiss-translator/options.html
+
+### 字幕翻译小技巧
+
+KT按钮只要是开启状态（蓝底白字），无需多次点击，只需点击开启Youtube播放器本来的字幕按钮，然后等待双语字幕自动呈现即可。
 
 ## 未来规划 
 

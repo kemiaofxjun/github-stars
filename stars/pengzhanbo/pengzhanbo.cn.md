@@ -1,6 +1,6 @@
 ---
 project: pengzhanbo.cn
-stars: 15
+stars: 16
 description: |-
     个人博客
 url: https://github.com/pengzhanbo/pengzhanbo.cn
