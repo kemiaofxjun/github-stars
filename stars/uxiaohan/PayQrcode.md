@@ -1,6 +1,6 @@
 ---
 project: PayQrcode
-stars: 713
+stars: 721
 description: |-
     最新物理合并微信收款码和支付宝收款码为聚合二维码👍
 url: https://github.com/uxiaohan/PayQrcode

@@ -1,6 +1,6 @@
 ---
 project: contrast
-stars: 453
+stars: 455
 description: |-
     Jekyll Theme
 url: https://github.com/niklasbuschmann/contrast

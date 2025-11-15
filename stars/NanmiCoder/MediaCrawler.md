@@ -1,6 +1,6 @@
 ---
 project: MediaCrawler
-stars: 38789
+stars: 39104
 description: |-
     小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫
 url: https://github.com/NanmiCoder/MediaCrawler
@@ -322,6 +322,7 @@ Nstbrowser 指纹浏览器 — 多账号运营&自动化管理的最佳解决方
 
 ## 📚 参考
 
+- **小红书签名仓库**：[Cloxl 的 xhs 签名仓库](https://github.com/Cloxl/xhshow)
 - **小红书客户端**：[ReaJason 的 xhs 仓库](https://github.com/ReaJason/xhs)
 - **短信转发**：[SmsForwarder 参考仓库](https://github.com/pppscn/SmsForwarder)
 - **内网穿透工具**：[ngrok 官方文档](https://ngrok.com/docs/)
