@@ -1,6 +1,6 @@
 ---
 project: Myxz_Blog_Nuxt
-stars: 2
+stars: 3
 description: |-
     null
 url: https://github.com/661111/Myxz_Blog_Nuxt

@@ -1,6 +1,6 @@
 ---
 project: MediaCrawler
-stars: 39104
+stars: 39390
 description: |-
     小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫
 url: https://github.com/NanmiCoder/MediaCrawler
@@ -171,7 +171,7 @@ uv run main.py --help
 cd MediaCrawler
 
 # 创建虚拟环境
-# 我的 python 版本是：3.9.6，requirements.txt 中的库是基于这个版本的
+# 我的 python 版本是：3.11 requirements.txt 中的库是基于这个版本的
 # 如果是其他 python 版本，可能 requirements.txt 中的库不兼容，需自行解决
 python -m venv venv
 
@@ -285,20 +285,6 @@ uv run main.py --platform xhs --lt qrcode --type search --save_data_option db
 - 🌐 官网：[https://tikhub.io/](https://tikhub.io/?utm_source=github.com/NanmiCoder/MediaCrawler&utm_medium=marketing_social&utm_campaign=retargeting&utm_content=carousel_ad)
 - 💻 GitHub地址：[https://github.com/TikHubIO/](https://github.com/TikHubIO/)
 
----
-<p align="center">
-  <a href="https://app.nstbrowser.io/account/register?utm_source=official&utm_term=mediacrawler">
-    <img style="border-radius:20px"  alt="NstBrowser Banner " src="docs/static/images/nstbrowser.jpg">
-  </a>
-</p>
-
-Nstbrowser 指纹浏览器 — 多账号运营&自动化管理的最佳解决方案
-<br>
-多账号安全管理与会话隔离；指纹定制结合反检测浏览器环境，兼顾真实度与稳定性；覆盖店铺管理、电商监控、社媒营销、广告验证、Web3、投放监控与联盟营销等业务线；提供生产级并发与定制化企业服务；提供可一键部署的云端浏览器方案，配套全球高质量 IP 池，为您构建长期行业竞争力
-<br>
-[点击此处即刻开始免费使用](https://app.nstbrowser.io/account/register?utm_source=official&utm_term=mediacrawler)
-<br>
-使用 NSTBROWSER 可获得 10% 充值赠礼
 
 
 
