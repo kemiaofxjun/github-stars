@@ -1,6 +1,6 @@
 ---
 project: zane-ops
-stars: 1175
+stars: 1179
 description: |-
     A beautiful and fast self-hosted PaaS for deploying and managing web apps, databases, static websites and more.
 url: https://github.com/zane-ops/zane-ops
@@ -114,6 +114,10 @@ curl -fsSL https://cdn.zaneops.dev/install.sh | sudo bash
 
 > [!NOTE]
 > More screenshots [in the documentation](https://zaneops.dev/screenshots/)
+
+## 🛣️ Roadmap 
+
+See https://github.com/zane-ops/zane-ops/milestones
 
 ## ❤️ Contributing
 

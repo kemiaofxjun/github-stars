@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 1374
+stars: 1464
 description: |-
     Ech0 - 面向个人的新一代开源、自托管、专注思想流动的轻量级联邦发布平台
 url: https://github.com/lin-snow/Ech0
@@ -386,7 +386,7 @@ pnpm dev # 启动前端预览
 |        🧑‍💻 [@sseaan](https://github.com/sseaan)        | 2025-7-27  | Ech0是个好东西🥳        |
 | 🧑‍💻 [@QYG2297248353](https://github.com/QYG2297248353) | 2025-10-10 | 无                     |
 |    🧑‍💻 [@continue33](https://github.com/continue33)    | 2025-10-23 | 感谢修复R2             |
-|                     🧑‍💻 匿名小伙伴                     | 2025-10-28 | hoochanlon(PS：看不懂思密达)             |
+|    🧑‍💻 [@hoochanlon](https://github.com/hoochanlon)   | 2025-10-28 | 无        |
 |       🧑‍💻 [@Rvn0xsy](https://github.com/Rvn0xsy)       | 2025-11-12 | 很棒的项目，我会持续关注！|
 |                     🧑‍💻 王贼臣                     | 2025-11-20 | 感谢www.cardopt.cn             |
 

@@ -1,6 +1,6 @@
 ---
 project: fuwari
-stars: 120
+stars: 121
 description: |-
     魔改版Fuwari，自用博客
 url: https://github.com/afoim/fuwari
