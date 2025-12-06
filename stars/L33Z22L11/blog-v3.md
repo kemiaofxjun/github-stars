@@ -1,6 +1,6 @@
 ---
 project: blog-v3
-stars: 172
+stars: 179
 description: |-
     My blog, powered by Nuxt 4 & Nuxt Content v3. 纸鹿摸鱼处，分享技术与生活。
 url: https://github.com/L33Z22L11/blog-v3
@@ -17,6 +17,11 @@ url: https://github.com/L33Z22L11/blog-v3
 
 我的第三代个人博客，于 2024 年 8 月 11 日上线。
 
+> [!CAUTION]
+> - 部署前必须完成项目个性化配置与内容修改，不得将我的信息用于你的网站图标/名称，严禁将项目内我的文章以你的名义重新发布至公开环境。
+> - 部署前必须完成项目个性化配置与内容修改，不得将我的信息用于你的网站图标/名称，严禁将项目内我的文章以你的名义重新发布至公开环境。
+> - 部署前必须完成项目个性化配置与内容修改，不得将我的信息用于你的网站图标/名称，严禁将项目内我的文章以你的名义重新发布至公开环境。
+
 > [!WARNING]
 >
 > 修改本项目需要具备**前端开发**和**项目部署**能力。由于这是个人博客，代码经过深度定制，且可能会进行较大幅度的更新，建议您 Fork 后安心使用自己分支的版本；若需引入上游（本仓库）的新功能，建议重新 Fork 最新代码，以避免同步冲突。
@@ -27,31 +32,34 @@ url: https://github.com/L33Z22L11/blog-v3
 
 > 主题吸收了 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 的设计风格，命名为 **Clarity**，寓意清楚的阅读体验和清晰的观点表达。
 
-| 博客名称                                     | 作者          | 对应上游版本 | 下游特色功能                   |
-| -------------------------------------------- | ------------- | ------------ | ------------------------------ |
-| **[纸鹿摸鱼处](https://blog.zhilu.site/)**   | **L33Z22L11** | **v3.5.1**   | (我是上游)                     |
-| [希乐博客](https://blog.xlenco.top/)         | Xlenco        | v3.4.8       | 最新评论                       |
-| [SteinsNote](https://blog.labmem.chat/)      | Labmem-00     | v3.1-241112  | 专栏                           |
-| [月空人](https://whbbit.cn/)                 | Whbbit1999    | v3.4.9       | 项目/博客/Snippets页           |
-| [Mugzx's Blog](https://blog.mugzx.top/)      | Mugzx         | v3.5.0       | 设计风格统一                   |
-| [喵落阁](https://blog-v3.kemeow.top/)        | Kemeow815     | v3.4.7       | 即刻+友圈+最新评论+游戏/番剧页 |
-| [梦爱吃鱼](https://blog.bsgun.cn/)           | JLinmr        | v3.2-250304  | 即刻+友圈+最新评论             |
-| [Mikuの极光星](https://blog.sotkg.com/)      | PaloMiku      | v3.5.0       | 设计风格统一，设置面板         |
-| [Shenley的存档点](https://blog.shenley.cn/)  | shenlye       | v3.4.4       | 游戏/番剧页，方形卡片+科技风   |
-| [BiuXin-s Blog](https://zhilu.biuxin.com/)   | damizai       | v3.2-250304  | 即刻+友圈+最新评论             |
-| [液泡部落格](https://blog.vacu.top/)         | VacuolePaoo   | v3.4.9       | 一言+标签tags+页脚随机友链     |
-| [歆鸢阁](https://www.myxz.top/)              | 661111        | v3.4.9       | 即刻+友圈+Heo友链轮播/Profile  |
-| [落憾](https://blog.enltlh.me/)              | LuoH-AN       | v3.5.0       | 即刻+一言+卡片Profile          |
-| [落尘up](https://www.luochen.chat/)          | luochenup     | v3.3.4       | 侧栏时间轴                     |
-| [硅基漫游指南](https://blog.helong.online/)  | HeLongaa      | v3.4.0       | 即刻+友圈+Artalk评论           |
-| [ATao-Blog](https://blog.atao.cyou/)         | ataoyan       | v3.4.0       | 即刻+装备页                    |
-| [fishcpy的小破站](https://blog.fis.ink/)     | fishcpy       | v3.4.8       | 友圈+Artalk评论                |
-| [六月墨语](https://blog.june.ink/)           | Akuma-real    | v3.5.0       | 友圈+最新评论                  |
-| [Cталин博客](https://blog.jiclub.site/)      | StalinDev54   | v3.4.8       | 侧栏时间轴+关于页              |
-| [栖童の小站](https://blog.linux-qitong.top/) | Linux-qitong  | v3.5.0       | 即刻+友圈                      |
-| [小源151博客](https://blog.xiaoyuan151.com/) | XiaoYuan151   | v3.4.8       |                                |
-| [墨韵云阁](https://luoyuanxiang.top/)        | luoyuanxiang  | v3.4.8       |                                |
-| [KingKangBlog](https://blog.kingkang.xyz/)   | KingStoning   | v3.4.9       |                                |
+| 博客名称                                     | 作者           | 对应上游版本 | 下游特色功能                   |
+| -------------------------------------------- | -------------- | ------------ | ------------------------------ |
+| **[纸鹿摸鱼处](https://blog.zhilu.site/)**   | **L33Z22L11**  | **v3.5.1**   | (我是上游)                     |
+| [希乐博客](https://blog.xlenco.top/)         | Xlenco         | v3.4.8       | 最新评论                       |
+| [SteinsNote](https://blog.labmem.chat/)      | Labmem-00      | v3.1-241112  | 专栏                           |
+| [月空人](https://whbbit.cn/)                 | Whbbit1999     | v3.4.9       | 项目/博客/Snippets页           |
+| [Mugzx's Blog](https://blog.mugzx.top/)      | Mugzx          | v3.5.1       | 设计风格统一                   |
+| [喵落阁](https://blog-v3.kemeow.top/)        | Kemeow815      | v3.4.7       | 即刻+友圈+最新评论+游戏/番剧页 |
+| [梦爱吃鱼](https://blog.bsgun.cn/)           | JLinmr         | v3.2-250304  | 即刻+友圈+最新评论             |
+| [Mikuの极光星](https://blog.sotkg.com/)      | PaloMiku       | v3.5.1       | 设计风格统一，设置面板         |
+| [Shenley的存档点](https://blog.shenley.cn/)  | shenlye        | v3.4.4       | 游戏/番剧页，方形卡片+科技风   |
+| [BiuXin-s Blog](https://zhilu.biuxin.com/)   | damizai        | v3.2-250304  | 即刻+友圈+最新评论             |
+| [液泡部落格](https://blog.vacu.top/)         | VacuolePaoo    | v3.4.9       | 一言+标签tags+页脚随机友链     |
+| [歆鸢阁](https://www.myxz.top/)              | 661111         | v3.4.9       | 即刻+友圈+Heo友链轮播/Profile  |
+| [落憾](https://blog.enltlh.me/)              | LuoH-AN        | v3.5.0       | 即刻+一言+卡片Profile          |
+| [落尘up](https://www.luochen.chat/)          | luochenup      | v3.3.4       | 侧栏时间轴                     |
+| [硅基漫游指南](https://blog.helong.online/)  | HeLongy        | v3.4.8       | 即刻+友圈+Artalk评论           |
+| [fishcpy的小破站](https://blog.fis.ink/)     | fishcpy        | v3.4.8       | 友圈+Artalk评论                |
+| [六月墨语](https://blog.june.ink/)           | Akuma-real     | v3.5.1       | 友圈+最新评论                  |
+| [Cталин博客](https://blog.jiclub.site/)      | StalinDev54    | v3.4.8       | 侧栏时间轴+关于页              |
+| [栖童の小站](https://blog.linux-qitong.top/) | Linux-qitong   | v3.5.1       | 即刻+友圈                      |
+| [小源151博客](https://blog.xiaoyuan151.com/) | XiaoYuan151    | v3.4.8       |                                |
+| [墨韵云阁](https://luoyuanxiang.top/)        | luoyuanxiang   | v3.4.8       |                                |
+| [鹊楠の小窝](https://blog.quenan.cn/)        | QNquenan       | v3.4.9       |                                |
+| [KingKangBlog](https://blog.kingkang.xyz/)   | KingStoning    | v3.4.9       |                                |
+| [阿黄说](https://ayellowdogsays.cn/)         | ayellowdogsays | v3.5.0       |                                |
+| [Cizai](https://wl.do/)                      | Cizai          | v3.5.1       |                                |
+| [林间拾语](https://www.xhhao.com/)           | acanyo         | Hugo         |                                |
 
 ## 特性
 
@@ -172,10 +180,16 @@ pnpm preview
 
 #### 疑难解答
 
-- Vercel 先前创建的项目需要 [手动指定 pnpm 10](https://vercel.com/docs/builds/configure-a-build#corepack)。
-- Netlify 需要关闭 Build & deploy settings - Post processing - Pretty URLs，否则会导致 404 错误。
+- 当你发现文章页面 404 问题时，请注意文章 URL 不应尾随 `/`。
 - 如果修改了 API 路径，使用 EdgeOne 部署需要同步修改 `edgeone.json`。
-- 运行、部署项目时 Node.js 版本需要高于 `22.15.0`。
+- 运行、部署项目时 Node.js 版本需要高于 `22.15.0`，推荐使用 Node LTS 最新版。
+
+### 检测友链状态
+
+```sh
+pnpm check:feed # 检测某友链 / 任意 URL 的托管商及可访问性
+pnpm check:feed/all # 检测所有友链可访问性并生成报告
+```
 
 ## 贡献
 
@@ -185,6 +199,5 @@ pnpm preview
 
 - 项目本体：[MIT](LICENSE)
 - 博客文章：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)
-- 请完成必要的配置与修改后再部署项目，**不得以我的名义或将我的文章发布到互联网**，否则我将设法与你联系。
 - 希望你在页脚保留此项目链接，助力开源传播。
 

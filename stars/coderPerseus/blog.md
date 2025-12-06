@@ -1,6 +1,6 @@
 ---
 project: blog
-stars: 22
+stars: 23
 description: |-
     从 0 到 1 搭建我的 blog，记录我的学习和生活，喜欢的话点个 star 再走吧！
 url: https://github.com/coderPerseus/blog

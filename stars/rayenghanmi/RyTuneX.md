@@ -1,6 +1,6 @@
 ---
 project: RyTuneX
-stars: 3185
+stars: 3237
 description: |-
     RyTuneX is a cutting-edge optimizer built with the WinUI 3 framework, designed to amplify the performance of Windows devices. Crafted for both Windows 10 and 11.
 url: https://github.com/rayenghanmi/RyTuneX

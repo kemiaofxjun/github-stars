@@ -1,6 +1,6 @@
 ---
 project: FreeBili
-stars: 196
+stars: 199
 description: |-
     自由哔站是一个高性能、使用方便的影视聚合搜索和播放工具
 url: https://github.com/rango886/FreeBili

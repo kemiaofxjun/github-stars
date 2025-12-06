@@ -1,6 +1,6 @@
 ---
 project: blinko
-stars: 7248
+stars: 7452
 description: |-
     An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript .
 url: https://github.com/blinkospace/blinko
@@ -102,4 +102,10 @@ If you find Blinko valuable, consider supporting us! Your contribution will enab
   </picture>
     </a>
 </div>
+
+## FAQ
+Q: Why does the MacOS device installation show as damaged?
+
+A: macOS adds an attribute called com.apple.quarantine to apps that are not notarized when downloading or installing them. This command is used to manually remove that attribute. Run sudo xattr -rd com.apple.quarantine /Applications/blinko.app
+
 

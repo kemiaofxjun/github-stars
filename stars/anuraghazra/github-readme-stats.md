@@ -1,6 +1,6 @@
 ---
 project: github-readme-stats
-stars: 77156
+stars: 77314
 description: |-
     :zap: Dynamically generated stats for your github readmes
 url: https://github.com/anuraghazra/github-readme-stats
@@ -105,9 +105,6 @@ url: https://github.com/anuraghazra/github-readme-stats
 </details>
 
 # Important Notices <!-- omit in toc -->
-
-> [!IMPORTANT]
-> Please note that we are NOT participating in Hacktoberfest this year. As a small team, we cannot handle the increased volume of PRs and issues that the event brings. We appreciate your understanding.
 
 > [!IMPORTANT]
 > Since the GitHub API only [allows 5k requests per hour per user account](https://docs.github.com/en/graphql/overview/resource-limitations), the public Vercel instance hosted on `https://github-readme-stats.vercel.app/api` could possibly hit the rate limiter (see [#1471](https://github.com/anuraghazra/github-readme-stats/issues/1471)). We use caching to prevent this from happening (see https://github.com/anuraghazra/github-readme-stats#common-options). You can turn off these rate limit protections by [deploying your own Vercel instance](#deploy-on-your-own).
@@ -827,7 +824,7 @@ Selecting the right scopes for your token is important in case you want to displ
 ### Fine-grained token
 
 > [!WARNING]\
-> This limits the number of issues to the number of issues on your repositories only and only takes public commits into account.
+> This limits the scope to issues in your repositories and includes only public commits.
 
 * Go to [Account -> Settings -> Developer Settings -> Personal access tokens -> Fine-grained tokens](https://github.com/settings/tokens).
 * Click on `Generate new token -> Generate new token`.

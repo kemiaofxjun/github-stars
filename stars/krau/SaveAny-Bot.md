@@ -1,6 +1,6 @@
 ---
 project: SaveAny-Bot
-stars: 1417
+stars: 1428
 description: |-
     Save Any Telegram File to Anywhere 📂 (Alist, Disk, Webdav, S3...) . Support restrict saving content and beyond telegram.
 url: https://github.com/krau/SaveAny-Bot
@@ -37,7 +37,7 @@ url: https://github.com/krau/SaveAny-Bot
 - 使用 js 编写解析器插件以转存任意网站的文件
 - 存储端支持:
   - Alist
-  - S3 (MinioSDK)
+  - S3
   - WebDAV
   - 本地磁盘
   - Telegram (重传回指定聊天)
