@@ -1,6 +1,6 @@
 ---
 project: github-readme-stats
-stars: 77314
+stars: 77448
 description: |-
     :zap: Dynamically generated stats for your github readmes
 url: https://github.com/anuraghazra/github-readme-stats

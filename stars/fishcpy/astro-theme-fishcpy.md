@@ -1,6 +1,6 @@
 ---
 project: astro-theme-fishcpy
-stars: 5
+stars: 6
 description: |-
     fishcpy blog
 url: https://github.com/fishcpy/astro-theme-fishcpy

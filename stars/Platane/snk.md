@@ -1,6 +1,6 @@
 ---
 project: snk
-stars: 5430
+stars: 5441
 description: |-
     🟩⬜ Generates a snake game from a github user contributions graph and output a screen capture as animated svg or gif
 url: https://github.com/Platane/snk
@@ -95,7 +95,7 @@ For **dark mode** support on github, use this [special syntax](https://docs.gith
 
 ### **local**
 
-```
+```sh
 npm install
 
 npm run dev:demo

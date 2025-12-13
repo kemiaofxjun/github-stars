@@ -1,6 +1,6 @@
 ---
 project: ClashConfig
-stars: 130
+stars: 131
 description: |-
     my clash config
 url: https://github.com/jctaoo/ClashConfig

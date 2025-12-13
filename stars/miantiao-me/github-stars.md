@@ -1,6 +1,6 @@
 ---
 project: github-stars
-stars: 85
+stars: 86
 description: |-
     A Cloudflare-powered MCP (Model Context Protocol) Server that allows you to search and query your GitHub starred repositories using natural language.
 url: https://github.com/miantiao-me/github-stars

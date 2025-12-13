@@ -1,6 +1,6 @@
 ---
 project: HeoWeb
-stars: 346
+stars: 347
 description: |-
     纯静态多业务展示的个人主页主题
 url: https://github.com/zhheo/HeoWeb

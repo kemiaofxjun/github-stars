@@ -1,6 +1,6 @@
 ---
 project: FastFile
-stars: 63
+stars: 64
 description: |-
     免费文件直链(安卓端)
 url: https://github.com/InvertGeek/FastFile

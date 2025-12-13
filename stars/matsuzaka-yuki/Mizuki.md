@@ -1,6 +1,6 @@
 ---
 project: Mizuki
-stars: 751
+stars: 794
 description: |-
     下一代Material Design 3 博客主题(Astro驱动)
 url: https://github.com/matsuzaka-yuki/Mizuki
@@ -233,7 +233,7 @@ All commands are run from the project root:
 | `pnpm build`               | Build production site to `./dist/`       |
 | `pnpm preview`             | Preview build locally before deployment  |
 | `pnpm check`               | Run Astro error checking                 |
-| `pnpm format`              | Format code with Biome                   |
+| `pnpm format`              | Format code with Prettier                   |
 | `pnpm lint`                | Check and fix code issues                |
 | `pnpm new-post <filename>` | Create a new blog post                   |
 | `pnpm astro ...`           | Run Astro CLI commands                   |
@@ -318,3 +318,4 @@ Thanks to all contributors for their contributions to this project. If you have 
 ---
 
 ⭐ If you find this project helpful, please consider giving it a star!
+
