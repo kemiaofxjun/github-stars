@@ -2,7 +2,7 @@
 project: kanso
 stars: 76
 description: |-
-    轻量的静态 Markdown 个人网站系统，可以无缝集成 Notion | Markdown-based personal website system that seamlessly integrates with Notion and Markdown.
+    Your blog in a Kindle e-ink Reader. |  Kindle 风格的个人博客系统，支持 Notion 链接。
 url: https://github.com/ygeeker/kanso
 ---
 
@@ -26,9 +26,8 @@ Kanso 是一个静态写作的个人网站系统，可以无缝集成 Notion 和
 ## 🚀 快速开始
 
 1. Fork 此仓库
-2. 编辑 site.config.js 填写你的信息
-3. 部署到你喜欢的平台（参考下面的部署方法）
-4. （可选）启用 Notion 同步的 Workflow（参考写作部分）
+2. 部署到你喜欢的平台（参考下面的部署方法）
+3. （可选）启用 Notion 同步的 Workflow（参考写作部分）
 
 ## 部署到 Vercel
 

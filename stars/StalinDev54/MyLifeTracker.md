@@ -1,6 +1,6 @@
 ---
 project: MyLifeTracker
-stars: 42
+stars: 46
 description: |-
     个人生活数据可视化与 AI 数字生命辅助工具，专注于「实时活动追踪 + 效率管理 + 健康数据联动」，打造「有温度的全场景个人数据中枢」
 url: https://github.com/StalinDev54/MyLifeTracker

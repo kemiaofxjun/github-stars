@@ -1,6 +1,6 @@
 ---
 project: readest
-stars: 15519
+stars: 15721
 description: |-
     Readest is a modern, feature-rich ebook reader designed for avid readers offering seamless cross-platform access, powerful tools, and an intuitive interface to elevate your reading experience.
 url: https://github.com/readest/readest

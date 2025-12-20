@@ -1,6 +1,6 @@
 ---
 project: image-bed-qiniu
-stars: 26
+stars: 25
 description: |-
     快速搭建简单的个人Web图床应用（纯静态无需后端服务），支持多种上传方式，支持压缩，支持七牛云，又拍云
 url: https://github.com/ATQQ/image-bed-qiniu

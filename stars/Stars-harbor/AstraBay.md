@@ -1,6 +1,6 @@
 ---
 project: AstraBay
-stars: 9
+stars: 11
 description: |-
     基于Solitude主题二次开发的主题，存在一点点独特特性
 url: https://github.com/Stars-harbor/AstraBay
@@ -16,7 +16,7 @@ url: https://github.com/Stars-harbor/AstraBay
 
 Astrabay最新主题版本：1.4.4
 
-已同步的solitude版本：3.0.21
+已同步的solitude版本：3.0.21 dev
 
 ---
 

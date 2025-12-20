@@ -1,8 +1,8 @@
 ---
 project: hexo-circle-of-friends
-stars: 299
+stars: 298
 description: |-
-    Python gets the friend's articles from hexo's friend-links
+    Rust gets the friend's articles from blog-friend-links
 url: https://github.com/Rock-Candy-Tea/hexo-circle-of-friends
 ---
 
