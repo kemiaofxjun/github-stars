@@ -1,6 +1,6 @@
 ---
 project: netease-vue
-stars: 10
+stars: 15
 description: |-
     null
 url: https://github.com/Suxiaoqinx/netease-vue

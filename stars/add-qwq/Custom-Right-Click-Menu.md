@@ -1,6 +1,6 @@
 ---
 project: Custom-Right-Click-Menu
-stars: 55
+stars: 56
 description: |-
     A new web custom right-click menu solution (lightweight)
 url: https://github.com/add-qwq/Custom-Right-Click-Menu

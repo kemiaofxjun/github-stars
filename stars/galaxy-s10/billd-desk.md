@@ -1,6 +1,6 @@
 ---
 project: billd-desk
-stars: 4707
+stars: 4733
 description: |-
     基于Vue3 + WebRTC + Nodejs + Electron + Flutter搭建的远程桌面控制
 url: https://github.com/galaxy-s10/billd-desk

@@ -1,6 +1,6 @@
 ---
 project: kanso
-stars: 76
+stars: 79
 description: |-
     Your blog in a Kindle e-ink Reader. |  Kindle 风格的个人博客系统，支持 Notion 链接。
 url: https://github.com/ygeeker/kanso

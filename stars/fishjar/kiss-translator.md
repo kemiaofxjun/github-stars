@@ -1,6 +1,6 @@
 ---
 project: kiss-translator
-stars: 8361
+stars: 8426
 description: |-
     A simple, open source bilingual translation extension & Greasemonkey script (一个简约、开源的 双语对照翻译扩展 & 油猴脚本)
 url: https://github.com/fishjar/kiss-translator
@@ -181,7 +181,7 @@ pnpm build
 // `toggle_transbox`    打开/关闭翻译弹窗
 // `toggle_hover_node`  翻译鼠标悬停段落
 // `input_translate`    翻译输入框
-window.dispatchEvent(new CustomEvent("kiss_translator", {detail: { action: "trans_toggle" }}));
+window.dispatchEvent(new CustomEvent("kiss_translator", {detail: { action: "toggle_translate" }}));
 ```
 
 ## 交流
