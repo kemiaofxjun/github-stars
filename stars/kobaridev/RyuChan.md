@@ -1,20 +1,20 @@
 ---
 project: RyuChan
-stars: 15
+stars: 17
 description: |-
     ✨A static blog template built with Astro. 
 url: https://github.com/kobaridev/RyuChan
 ---
 
 <pre align="center">
-一个简洁、优雅、快速的静态博客模板！🚀 使用 Astro 开发
+一个简洁、优雅、快速的静态博客模板！🚀 基于 Astro 5.0+ & Tailwind CSS 开发
 </pre>
 
 <div align="center">
 <img alt="Ryuchan Logo" src="https://picbed.xiaozhangya.xin/blog/logo.png" width="280px">
 </div>
 
-[![license](https://badgen.net/github/license/xz131714/RyuChan)](https://github.com/xz131714/RyuChan/blob/main/LICENSE)&nbsp;&nbsp;&nbsp;[![release](https://badgen.net/github/release/xz131714/RyuChan)](https://github.com/xz131714/RyuChan/releases)
+[![license](https://badgen.net/github/license/kobaridev/RyuChan)](https://github.com/kobaridev/RyuChan/blob/main/LICENSE)&nbsp;&nbsp;&nbsp;[![release](https://badgen.net/github/release/kobaridev/RyuChan)](https://github.com/kobaridev/RyuChan/releases)
 
 [**🖥️ Ryuchan Demo**](https://demo.131714.xyz)
 
@@ -28,6 +28,8 @@ url: https://github.com/kobaridev/RyuChan
 - ✅ 极速的访问速度与优秀的 SEO
 - ✅ 视图过渡动画（使用 ClientRouter）
 - ✅ 支持文章全文搜索（Pagefind）
+- ✅ 移动端优先的响应式设计（优化卡片布局、网格导航）
+- ✅ 高度可配置的 Banner（支持随机图、打字机效果、高度自定义）
 - ✅ 使用 [Tailwind CSS](https://tailwindcss.com/) 与 [daisyUI](https://daisyui.com/) 构建自适应页面
 - ✅ RSS 订阅支持
 - 🛠️ 博客易上手
@@ -62,7 +64,7 @@ npm i -g pnpm
 2. 克隆项目
 
 ```sh
-git clone https://github.com/xz131714/RyuChan.git Ryuchan
+git clone https://github.com/kobaridev/RyuChan.git Ryuchan
 ```
 
 3. 进入项目文件夹
@@ -121,6 +123,32 @@ theme:
 date_format: ddd MMM DD YYYY # 日期显示格式
 ```
 
+### Banner 设置 (banner)
+
+```yaml
+banner:
+  enableRandom: true # 是否启用随机图 API
+  randomUrl: "https://t.alcy.cc/lai" # 随机图 API 地址
+  randomCount: 5 # 生成的随机图数量
+  height: "60vh" # Banner 高度配置
+  images: # 如果不启用随机图，则使用此列表中的图片
+    - "https://example.com/image1.jpg"
+```
+
+### 页面标题配置 (pages)
+
+可以为不同页面配置独立的标题、副标题和打字机效果：
+
+```yaml
+pages:
+  home:  
+    title: "RyuChan's Blog"  
+    subtitle: "欲买桂花同载酒，终不似，少年游！"   
+    typewriterTexts: # 打字机文本列表
+      - "🌸 欲买桂花同载酒，终不似，少年游！"  
+      - "🌸花有重开日，人无再少年！"
+```
+
 ### 菜单配置 (menu)
 
 ```yaml
@@ -148,7 +176,7 @@ menu:
 
 ```yaml
 user:
-  name: xz131714 # 用户名称
+  name: kobaridev # 用户名称
   site: "https://example.com" # 用户网站
   avatar: /profile.png # 用户头像
 ```
@@ -160,7 +188,7 @@ user:
 ```yaml
 sidebar:
   social:
-    - href: "https://github.com/xz131714" # 链接地址
+    - href: "https://github.com/kobaridev" # 链接地址
       ariaLabel: Github # 无障碍标签
       title: Github # 鼠标悬停时的提示
       svg: "ri:github-line" # 图标代码

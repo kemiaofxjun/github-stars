@@ -1,6 +1,6 @@
 ---
 project: notion-next-lawn
-stars: 4
+stars: 5
 description: |-
     🟢 Green-themed Notion blog「绿色博客」
 url: https://github.com/RylanBot/notion-next-lawn

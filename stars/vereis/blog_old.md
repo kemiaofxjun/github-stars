@@ -1,12 +1,14 @@
 ---
-project: blog
+project: blog_old
 stars: 32
 description: |-
     Source for my personal blog
-url: https://github.com/vereis/blog
+url: https://github.com/vereis/blog_old
 ---
 
-# vereis' Blog 😇🌟💖
+# vereis' Blog
+
+> Note: This repo has been archived and is superseded by [my new blog](https://github.com/vereis/blog)
 
 This is my personal blog where I write about tech, philosophy, and whatever else I feel like sharing.
 
