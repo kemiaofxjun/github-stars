@@ -1,33 +1,20 @@
 ---
-project: Mizuki
-stars: 959
+project: OverThinker-Blog
+stars: 4
 description: |-
-    下一代Material Design 3 博客主题(Astro驱动)
-url: https://github.com/matsuzaka-yuki/Mizuki
+    基于Astro创建的博客——OverThinkerBLog
+url: https://github.com/OverThinker13/OverThinker-Blog
 ---
 
 # 🌸 Mizuki  
 ![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen) 
 ![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue) 
-![Astro](https://img.shields.io/badge/Astro-5.15.3-orange)
+![Astro](https://img.shields.io/badge/Astro-5.12.8-orange)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![Mizuki Preview](./README.webp)
-
-<table>
-  <tr>
-    <td><img alt="" src="docs/image/1.webp"></td>
-    <td><img alt="" src="docs/image/2.webp"></td>
-    <td><img alt="" src="docs/image/3.webp"></td>
-  <tr>
-  <tr>
-    <td><img alt="" src="docs/image/4.webp"></td>
-    <td><img alt="" src="docs/image/5.webp"></td>
-    <td><img alt="" src="docs/image/6.webp"></td>
-  <tr>
-</table>
-
+![Mizuki Preview](./README2.webp)
 
 A modern, feature-rich static blog template built with [Astro](https://astro.build), featuring advanced functionality and beautiful design.
 
@@ -39,6 +26,25 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 [**中文**](./README.zh.md) /
 [**日本語**](./docs/README.ja.md) /
 [**中文繁体**](./docs/README.tw.md) /
+
+## 🆕 v4.9 Update
+- **Pio Live2D Integration**: Added Pio Live2D character, providing a cute interactive companion to enhance user engagement.
+- **Highly Configurable**: Supports detailed configuration in `src/config.ts`, including model path, position, size, dialogue content, etc., to meet personalized needs.
+- **Seamless Navigation**: The "Back to Home" feature now uses the theme's built-in Swup for smooth, no-refresh page transitions.
+
+## 🆕 v4.3 Update
+- **Anime Page:** Redesigned a cuter and more attractive anime page, including anime list, details, and timeline.
+- **Album Page:** Restructured the album page using pagination + folder data indexing solution.
+
+## 🆕 v3.4 Update
+- **New Pages:** Added project showcase, skills showcase, and timeline pages to display your work, professional skills, and growth journey.
+- **Dropdown Menu Fix:** Resolved the issue of border outlines appearing when clicking dropdown menus, improving interface consistency.
+- **Search Optimization:** Enhanced search functionality performance and accuracy.
+- **Footer HTML Injection:** Introduced a new feature allowing custom HTML content injection at the bottom of pages, providing greater flexibility.
+
+## 🆕 v3.3 Update
+- **Mermaid Syntax Support:** Added support for Mermaid chart syntax, now you can embed flowcharts, sequence diagrams, Gantt charts, etc. directly in Markdown.
+- **Umami Analytics:** Added support for Umami analytics, making it easy to integrate website visit data analysis.
 
 ![Configuration](configuration.svg)
 
@@ -84,7 +90,11 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 - [x] Reading time estimation
 - [x] Article categorization and tagging system
 
-
+### 🌐 Internationalization
+- [x] **Multi-language support** with real-time translation
+- [x] **Automatic language detection** based on user preferences
+- [x] **Client-side translation** powered by Edge Translate
+- [x] Support for 10+ languages (Chinese, English, Japanese, Korean, Spanish, etc.)
 
 ### 📱 Special Pages
 - [x] **Anime Tracking Page** - Track anime watching progress and ratings
@@ -123,7 +133,7 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 3. **Configure your blog:**
    - Edit `src/config.ts` to customize blog settings
    - Update site information, theme colors, banner images, and social links
-   - Configure feature page functionality
+   - Configure translation settings and feature page functionality
 
 4. **Start the development server:**
    ```bash
@@ -147,18 +157,7 @@ Deploy your blog to any static hosting platform:
 - **GitHub Pages:** Use the included GitHub Actions workflow
 - **Cloudflare Pages:** Connect your repository
 
-- **Environment Variable Configuration (Optional):** Configure in `.env` file or deployment platform
-
-```bash
-# Umami API key for accessing Umami analytics data
-# If Umami is enabled in config.ts, it's recommended to configure the API key here
-UMAMI_API_KEY=your_umami_api_key_here
-# bcrypt salt rounds (10-14 recommended, default 12)
-BCRYPT_SALT_ROUNDS=12
-```
-
-Before deployment, update the `siteURL` in `src/config.ts`.
-**Not recommended** to commit the `.env` file to Git. The `.env` file should only be used for local debugging or building. For cloud platform deployment, it's recommended to configure via the platform's `environment variables` settings.
+Before deployment, update the `site` URL in `astro.config.mjs`.
 
 ## 📝 Post Frontmatter Format
 
@@ -233,7 +232,7 @@ All commands are run from the project root:
 | `pnpm build`               | Build production site to `./dist/`       |
 | `pnpm preview`             | Preview build locally before deployment  |
 | `pnpm check`               | Run Astro error checking                 |
-| `pnpm format`              | Format code with Prettier                   |
+| `pnpm format`              | Format code with Biome                   |
 | `pnpm lint`                | Check and fix code issues                |
 | `pnpm new-post <filename>` | Create a new blog post                   |
 | `pnpm astro ...`           | Run Astro CLI commands                   |
@@ -252,6 +251,11 @@ export const siteConfig: SiteConfig = {
   themeColor: {
     hue: 210, // 0-360, theme hue
     fixed: false, // Hide theme color picker
+  },
+  translate: {
+    enable: true, // Enable translation
+    service: "client.edge", // Translation service
+    defaultLanguage: "english",
   },
   banner: {
     enable: true,
@@ -283,39 +287,21 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 
 ## 📄 License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
-### Original Project License
-
-This project is based on [Fuwari](https://github.com/saicaca/fuwari), which is licensed under the MIT License. The original copyright notice and permission notice are included in the LICENSE.MIT file in accordance with the MIT License requirements.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
 - Based on the original [Fuwari](https://github.com/saicaca/fuwari) template
-- Inspired by [Yukina](https://github.com/WhitePaper233/yukina) - a beautiful and elegant blog template
-- Some designs are inspired by [Firefly](https://github.com/CuteLeaf/Firefly) template
-- Uses [Pio](https://github.com/Dreamer-Paul/Pio) to implement the adorable Live2D mascot plugin
 - Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
+- Inspired by [Yukina](https://github.com/WhitePaper233/yukina) - a beautiful and elegant blog template
+- Translation functionality powered by [translate](https://gitee.com/mail_osc/translate) - AI i18n automatic HTML translation solution
 - Icons from [Iconify](https://iconify.design/)
 
-### 🌸 Special Thanks
+### Special Thanks
 
-- **[Fuwari](https://github.com/saicaca/fuwari)** by saicaca - The original template that this project is based on. Thank you for creating such a beautiful and functional template.
 - **[Yukina](https://github.com/WhitePaper233/yukina)** - Thanks for providing design inspiration and creativity that helped shape this project. Yukina is an elegant blog template that demonstrates excellent design principles and user experience.
-- **[Firefly](https://github.com/CuteLeaf/Firefly)** - Thanks for providing excellent layout design ideas. The dual sidebar layout, article dual-column grid layout, and some widget designs and implementations have enriched Mizuki's interface.
+- **[translate](https://gitee.com/mail_osc/translate)** - Thanks for providing an innovative AI-driven i18n solution that enables automatic HTML translation with just two lines of JavaScript code. This open-source tool makes multilingual support extremely simple and efficient.
 
-## 🍀 Contributors
-
-Thanks to all contributors for their contributions to this project. If you have any questions or suggestions, please submit an [Issue](https://github.com/matsuzaka-yuki/Mizuki/issues) or [Pull Request](https://github.com/matsuzaka-yuki/Mizuki/pulls).
-
-<a href="https://github.com/matsuzaka-yuki/Mizuki/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=matsuzaka-yuki/Mizuki" />
-</a>
-
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=matsuzaka-yuki/Mizuki&type=Date)](https://star-history.com/#matsuzaka-yuki/Mizuki&Date)
 ---
 
 ⭐ If you find this project helpful, please consider giving it a star!
-

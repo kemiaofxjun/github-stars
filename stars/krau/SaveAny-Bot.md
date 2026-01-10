@@ -1,8 +1,8 @@
 ---
 project: SaveAny-Bot
-stars: 1727
+stars: 1836
 description: |-
-    Save Any Telegram File to Anywhere 📂 (Alist, Disk, Webdav, S3...) . Support restrict saving content and beyond telegram.
+    Save Any Telegram File to Anywhere 📂 (Alist, Disk, Webdav, S3...) . Support restrict saving content and files beyond telegram.
 url: https://github.com/krau/SaveAny-Bot
 ---
 
@@ -47,10 +47,11 @@ url: https://github.com/krau/SaveAny-Bot
 Create a `config.toml` file with the following content:
 
 ```toml
+lang = "en" # Language setting, "en" for English
 [telegram]
 token = "" # Your bot token, obtained from @BotFather
 [telegram.proxy]
-# Enable proxy for Telegram, currently only SOCKS5 is supported
+# Enable proxy for Telegram
 enable = false
 url = "socks5://127.0.0.1:7890"
 

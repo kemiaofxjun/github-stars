@@ -1,6 +1,6 @@
 ---
 project: Gravatar-Worker
-stars: 6
+stars: 7
 description: |-
     A fast, modern, and cache-friendly Gravatar CDN proxy — built with Cloudflare Workers and Hono.
 url: https://github.com/ZL-Asica/Gravatar-Worker

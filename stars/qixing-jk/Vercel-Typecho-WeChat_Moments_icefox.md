@@ -1,6 +1,6 @@
 ---
 project: Vercel-Typecho-WeChat_Moments_icefox
-stars: 11
+stars: 12
 description: |-
     Free Deploy Typecho Blog in Vercel | Vercel 免费部署 Typecho 博客
 url: https://github.com/qixing-jk/Vercel-Typecho-WeChat_Moments_icefox

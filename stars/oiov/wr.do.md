@@ -1,6 +1,6 @@
 ---
 project: wr.do
-stars: 2120
+stars: 2138
 description: |-
     一站式域名服务平台，集成短链生成、无限域名邮箱、文件存储和子域名管理，带有管理员面板，支持自部署
 url: https://github.com/oiov/wr.do
@@ -26,29 +26,10 @@ url: https://github.com/oiov/wr.do
   <img width="15" src="https://storage.wr.do/2025/11/20/561763627504_.pic.jpg" /> 免费体验 Sora AI 视频生成 👉 <a href="https://sora.hk/i/5KY5N1FL">点击注册</a>
 </div>
 
-### 🔄 版本说明
+## 版本说明
 
-经过一年的开源运营，WR.DO 已积累了稳定的用户基础和成熟的技术条件。**为了持续维护和提供更好的服务**，我们正式推出官方运营版 **LikeDo**。
-
-- **开源版 WR.DO**：将继续维护，Demo 地址变更为 https://likedo.vercel.app
-- **官方运营版 LikeDo**：独立数据库运营，域名为 https://like.do
-
-### ✨ LikeDo 新增功能
-
-- **短链增强**：AI 智能补全短链信息、支持创建专属私有子域名
-- **邮箱升级**：AI 智能回复邮件、自动生成邮件模板、独立设置转发地址
-- **文章模块**：新增在线编辑、分享文本创作，支持富文本编辑、图片插入、AI 辅助写作
-- 更完善的用户交互体验
-
-### 📦 数据迁移指南
-
-如果您在 WR.DO 创建过资源，请按以下步骤迁移：
-
-1. 在 [like.do](https://like.do) 注册账户
-2. 前往 [数据迁移页面](https://like.do/dashboard/migrate-wrdo) 填写历史数据信息
-3. 系统将自动迁移您的短链和邮箱账户（不包括收件箱历史数据）
-4. 请及时迁移您的历史数据，部分域名在停止迁移后将仅支持付费订阅用户使用，在此之前可免费迁移。
-
+- 开源版 Demo：[likedo.vercel.app](https://likedo.vercel.app)
+- 运营版 LikeDo：[like.do](https://like.do) ，集成 [AI Agent](https://like.do/zh/docs/user-guide/ai-chat-assistant) 统一调度管理站内资源，内置[激励共创系统](https://like.do/zh/blog/introducing-co-creation-program)，点击使用[邀请码注册](https://like.do/auth/register?ref=DAR5HDV4) 。
 
 ## 截图预览
 
@@ -273,6 +254,7 @@ pnpm dev
 ## 开源协议
 
 [MIT](/LICENSE.md)
+
 
 
 
