@@ -1,6 +1,6 @@
 ---
 project: pyncm
-stars: 668
+stars: 670
 description: |-
     第三方网易云音乐 Python API + 转储工具
 url: https://github.com/mos9527/pyncm

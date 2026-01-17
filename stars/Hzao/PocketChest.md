@@ -1,6 +1,6 @@
 ---
 project: PocketChest
-stars: 465
+stars: 463
 description: |-
     Secure, serverless file and text sharing built on Cloudflare with large file support.
 url: https://github.com/Hzao/PocketChest

@@ -1,6 +1,6 @@
 ---
 project: Mizuki
-stars: 959
+stars: 992
 description: |-
     下一代Material Design 3 博客主题(Astro驱动)
 url: https://github.com/matsuzaka-yuki/Mizuki
@@ -37,8 +37,8 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 🌏 README Languages
 [**English**](./README.md) /
 [**中文**](./README.zh.md) /
-[**日本語**](./docs/README.ja.md) /
-[**中文繁体**](./docs/README.tw.md) /
+[**日本語**](./README.ja.md) /
+[**中文繁体**](./README.tw.md) /
 
 ![Configuration](configuration.svg)
 
