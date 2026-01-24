@@ -1,6 +1,6 @@
 ---
 project: RyuChan
-stars: 39
+stars: 57
 description: |-
     ✨A static blog template built with Astro. 
 url: https://github.com/kobaridev/RyuChan
@@ -272,6 +272,17 @@ menu:
 - **About 页面**: 个人简介、技术栈展示
 - **Friends 页面**: 友链展示和站点展示
 - **Projects 页面**: 个人项目展示
+
+## 🙏 致谢
+
+本项目基于以下优秀的博客模板开发：
+
+- **Frosti**: 项目的核心基础，由 [EveSunMaple](https://github.com/EveSunMaple/Frosti) 开发
+- **Yukina**: 部分设计巧思参考自 [WhitePaper233](https://github.com/WhitePaper233/yukina) 开发的模板
+- **Mizuki**: 部分功能实现借鉴了 [matsuzaka-yuki](https://github.com/matsuzaka-yuki/Mizuki) 开发的模板
+- **2025-blog-public**: 在线编辑文章，配置站点等功能借鉴了 [yysuni](https://github.com/YYsuni/2025-blog-public) 开发的项目
+
+感谢所有开源社区的贡献者们！
 
 ## 📝 许可证
 

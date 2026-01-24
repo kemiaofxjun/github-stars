@@ -1,6 +1,6 @@
 ---
 project: issues-blog
-stars: 41
+stars: 42
 description: |-
     使用 github 的 issues 作为博客设置单独界面
 url: https://github.com/hanxi/issues-blog

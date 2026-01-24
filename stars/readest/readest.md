@@ -1,6 +1,6 @@
 ---
 project: readest
-stars: 16441
+stars: 16668
 description: |-
     Readest is a modern, feature-rich ebook reader designed for avid readers offering seamless cross-platform access, powerful tools, and an intuitive interface to elevate your reading experience.
 url: https://github.com/readest/readest
@@ -275,8 +275,8 @@ If Readest has been useful to you, consider supporting its development. You can 
 ### Sponsors
 
 <p align="center">
-  <a title="Browser testing via LambdaTest" href="https://www.lambdatest.com/?utm_source=readest&utm_medium=sponsor" target="_blank">
-    <img src="https://www.lambdatest.com/blue-logo.png" style="vertical-align: middle;" width="250" />
+  <a title="Browser testing via TestMu AI" href="https://www.testmu.ai?utm_source=readest&utm_medium=sponsor" target="_blank">
+    <img src="https://raw.githubusercontent.com/readest/readest/refs/heads/main/data/sponsors/testmu-ai-logo.png" style="vertical-align: middle;" width="250" />
   </a>
 </p>
 

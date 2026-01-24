@@ -1,6 +1,6 @@
 ---
 project: wr.do
-stars: 2170
+stars: 2171
 description: |-
     一站式域名服务平台，集成短链生成、无限域名邮箱、文件存储和子域名管理，带有管理员面板，支持自部署
 url: https://github.com/oiov/wr.do

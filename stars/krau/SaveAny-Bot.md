@@ -1,6 +1,6 @@
 ---
 project: SaveAny-Bot
-stars: 1868
+stars: 1890
 description: |-
     Save Any Telegram File to Anywhere 📂 (Alist, Disk, Webdav, S3...) . Support restrict saving content and files beyond telegram.
 url: https://github.com/krau/SaveAny-Bot
@@ -34,6 +34,9 @@ url: https://github.com/krau/SaveAny-Bot
 - Multi-user support
 - Auto organize files based on storage rules
 - Watch specified chats and auto-save messages, with filters
+- Transfer files between different storage backends
+- Integrate with yt-dlp to download and save media from 1000+ websites
+- Aria2 integration to download files from URLs/magnets and save to storages
 - Write JS parser plugins to save files from almost any website
 - Storage backends:
   - Alist
