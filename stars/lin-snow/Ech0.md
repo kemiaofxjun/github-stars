@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 1768
+stars: 1778
 description: |-
     Ech0 - 面向个人的新一代开源、自托管、专注思想流动的轻量级联邦发布平台
 url: https://github.com/lin-snow/Ech0
