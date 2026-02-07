@@ -3,16 +3,16 @@ project: velonor
 stars: 45
 description: |-
     为 VitePress 注入全新的博客体验 | 简洁 · 优雅 · 强大
-url: https://github.com/Velonor/velonor
+url: https://github.com/open17/velonor
 ---
 
 <div align="center">
-  <img src="docs/public/banner.png" alt="VitePress Theme Open17 Banner" style="width: 128px;">
+  <img src="docs/public/banner.png" alt="velonor" style="width: 128px;">
 </div>
 
 <div align="center">
-
-# VitePress Theme Open17
+  
+# Vitepress Velonor
 
 **让你的博客焕然一新 | 简洁 · 优雅 · 强大**
 
@@ -32,13 +32,20 @@ url: https://github.com/Velonor/velonor
 
 ---
 
-## ✨ 为什么选择 Open17？
+## ✨ 为什么选择 Velonor？
 
 > **无缝沿用 VitePress 默认配置，轻松构建你的个性化博客**
 
-Open17 是一款专为 VitePress 设计的现代化博客主题，在保持原有强大功能的基础上，为你带来全新的博客体验。
+Velonor 是一套专为 VitePress 设计的现代化博客系统，在保持原有强大功能的基础上，为你带来全新的博客体验。
 
-## ⚡ 一键开始
+Velonor分为两个部分：
+
+1. 博客主题：原`vitepress-theme-open17`主题, 提供博客的核心功能和美观的样式
+2. 微引擎：从主题中抽离出的博客核心功能模块, 可以很方便的集成到其他 VitePress 项目或自定义vitepress博客主题
+
+
+
+## ⚡ 一键安装主题
 
 自动安装+配置主题,一行即可!
 
@@ -79,7 +86,7 @@ npm create open17-blog my-blog
 - ✅ 自定义配色
 - ✅ 自定义背景
 - ✅ 明暗模式切换
-- ✅ TailwindCSS
+- ✅ UnoCSS
 - ✅ 自定义组件
 
 </td>
@@ -98,64 +105,21 @@ npm create open17-blog my-blog
 
 </div>
 
-## 📸 主题预览
-
-<div align="center">
-  
-**现代化设计 · 优雅的阅读体验**
-
-[🎯 查看在线演示](https://vitepress.open17.vip/page/blog.html)
-
-</div>
-
-## 其他配置方式
-
-> 更推荐使用一键开始命令
-
-### 方式：github模板
-
-使用 GitHub Template 快速创建你的博客：
-
-<div align="center">
-
-[点击一键创建📦](https://github.com/open17/vitepress-theme-open17/generate)
-
-</div>
-
-### 方式：手动安装
-
-```bash
-npm install -D vitepress-theme-open17
-```
-
-然后在 VitePress 主题入口中启用主题:
-```js
-// .vitepress/theme/index.js
-import Theme from 'vitepress-theme-open17'
-export default Theme
-```
-
-使用类型安全的方式编写配置:
-```ts
-// .vitepress/config.ts
-import type { ThemeConfig } from 'vitepress-theme-open17/config'
-import { defineConfigWithTheme } from 'vitepress'
-
-export default defineConfigWithTheme<ThemeConfig>({
-  themeConfig: {
-    // 你的主题配置
-  }
-})
-```
 
 
 
-## 📚 完整指南
+## 📚 更多主题指南
 
 - 📖 [快速开始](https://vitepress.open17.vip/guide/0-intro/0-start.html) - 5分钟上手指南
 - ⚙️ [主题配置](https://vitepress.open17.vip/guide/1-config/) - 详细配置说明
 - 🎨 [样式定制](https://vitepress.open17.vip/guide/1-config/2-style.html) - 打造专属风格
 - 🔧 [进阶使用](https://vitepress.open17.vip/guide/2-more/) - 高级功能探索
+
+## 🔧 微引擎
+
+便于快速开发属于你自己的vitepress博客主题, 更多[详见这里](https://vitepress.open17.vip/posts/engine/1-engine-overview.html)
+
+
 
 ## 💝 社区支持
 
@@ -178,3 +142,4 @@ export default defineConfigWithTheme<ThemeConfig>({
 **Made with ❤️ by [open17](https://github.com/open17)**
 
 </div>
+

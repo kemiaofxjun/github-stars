@@ -1,6 +1,6 @@
 ---
 project: Blog-Index
-stars: 657
+stars: 655
 description: |-
     一个通用的个人网站的引导页、导航页模板
 url: https://github.com/EsunR/Blog-Index

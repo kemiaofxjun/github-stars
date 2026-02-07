@@ -1,6 +1,6 @@
 ---
 project: zane-ops
-stars: 1225
+stars: 1227
 description: |-
     A beautiful and fast self-hosted PaaS for deploying and managing web apps, databases, static websites and more.
 url: https://github.com/zane-ops/zane-ops

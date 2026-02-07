@@ -1,6 +1,6 @@
 ---
 project: Tarot-Web
-stars: 93
+stars: 94
 description: |-
     你的塔罗牌占卜🔮小助手
 url: https://github.com/uxiaohan/Tarot-Web

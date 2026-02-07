@@ -1,12 +1,13 @@
 ---
 project: Mizuki
-stars: 1074
+stars: 1104
 description: |-
     下一代Material Design 3 博客主题(Astro驱动)
 url: https://github.com/matsuzaka-yuki/Mizuki
 ---
 
-# 🌸 Mizuki <img align='right' src='logo.png' width='200px' alt="Mizuki logo">
+# 🌸 Mizuki 
+<img align='right' src='logo.png' width='200px' alt="Mizuki logo">
 
 A modern, feature-rich static blog template built with [Astro](https://astro.build), featuring advanced functionality and beautiful design.
 
@@ -18,7 +19,7 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 
 [**🖥️ Live Demo**](https://mizuki.mysqil.com/) | [**📝 Documentation**](https://docs.mizuki.mysqil.com/)
 
-🌏 README Languages
+🌏 **README Languages:**
 [**English**](./README.md) / [**中文**](./README.zh.md) / [**日本語**](./README.ja.md) / [**中文繁体**](./README.tw.md) /
 
 Get started quickly with our comprehensive documentation. Whether you're customizing your theme, configuring features, or deploying to production, the documentation covers everything you need to launch your blog successfully.
@@ -172,6 +173,7 @@ tags: [tag1, tag2]
 category: Frontend
 draft: false
 pinned: false
+comment: true
 lang: en      # Only set when article language differs from site language in config.ts
 ---
 ```
@@ -186,6 +188,7 @@ lang: en      # Only set when article language differs from site language in con
 - **category**: Article category
 - **draft**: Set to `true` to hide article in production
 - **pinned**: Set to `true` to pin article to top
+- **comment**: Set to `true` to enable article comment area (requires global comment function enabled)
 - **lang**: Article language (only set when different from site default)
 
 ### Pinned Articles Feature
@@ -201,6 +204,19 @@ pinned: false # Regular article (default)
 **Sorting Rules:**
 1. Pinned articles appear first, sorted by publication date (newest first)
 2. Regular articles follow, sorted by publication date (newest first)
+
+### Article-Level Comment Control
+
+The `comment` field allows you to individually control the enabling and disabling of the comment area for each article.
+
+**Usage:**
+```yaml
+comment: true  # Enable comments (default)
+comment: false # Disable comments
+```
+
+**Note:**
+This feature requires the comment system to be enabled in `src/config.ts` first.
 
 ## 🧩 Markdown Extensions
 
