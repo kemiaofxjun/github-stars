@@ -1,0 +1,18 @@
+---
+project: ElectronFish
+stars: 22
+description: |-
+    一个网页版电子木鱼
+url: https://github.com/PyCoreDev/ElectronFish
+---
+
+# ElectronFish
+
+一个网页版电子木鱼
+
+查看效果：https://PyCoreDev.github.io/ElectronFish
+
+# 许可
+
+[GNU General Public License v3.0](https://github.com/PyCoreDev/ElectronFish/blob/5dafbbdc5cb1645e66efbb82ebb3e2e78e34b419/LICENSE)
+

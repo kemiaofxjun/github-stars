@@ -3,7 +3,7 @@ project: kanso
 stars: 80
 description: |-
     Personal website in Amazon Kindle style. Write thoughts, showcase projects, and more.
-url: https://github.com/ygeeker/kanso
+url: https://github.com/rivertwilight/kanso
 ---
 
 # Kanso

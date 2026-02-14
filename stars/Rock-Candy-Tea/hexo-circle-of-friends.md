@@ -1,6 +1,6 @@
 ---
 project: hexo-circle-of-friends
-stars: 301
+stars: 300
 description: |-
     Rust gets the friend's articles from blog-friend-links
 url: https://github.com/Rock-Candy-Tea/hexo-circle-of-friends

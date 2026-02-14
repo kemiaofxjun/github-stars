@@ -1,6 +1,6 @@
 ---
 project: RyTuneX
-stars: 4002
+stars: 4041
 description: |-
     RyTuneX is a cutting-edge optimizer built with the WinUI 3 framework, designed to amplify the performance of Windows devices. Crafted for both Windows 10 and 11.
 url: https://github.com/rayenghanmi/RyTuneX
@@ -29,10 +29,10 @@ url: https://github.com/rayenghanmi/RyTuneX
 
 ## Installation
 
-Install RyTuneX directly from the Microsoft Store:  
+### Option 1: Microsoft Store (Recommended)
+Install RyTuneX directly from the Microsoft Store for the best experience:
 
-<a href="https://apps.microsoft.com/detail/9PDH8M7HF2SQ?referrer=appbadge&mode=full"
-     target="_blank" rel="noopener noreferrer">
+<a href="https://apps.microsoft.com/detail/9PDH8M7HF2SQ?referrer=appbadge&mode=full" target="_blank" rel="noopener noreferrer">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://get.microsoft.com/images/en-us%20light.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://get.microsoft.com/images/en-us%20dark.svg" />
@@ -40,10 +40,17 @@ Install RyTuneX directly from the Microsoft Store:
   </picture>
 </a>
 
-**Benefits**
-- Automatic updates  
-- Verified and secure installation  
-- No manual steps  
+**Benefits:**
+- Automatic updates
+- Verified and secure installation
+- Seamless integration with Windows
+
+### Option 2: Windows Package Manager (WinGet)
+You can also install RyTuneX via the command line using WinGet:
+
+```powershell
+winget install --id 9PDH8M7HF2SQ
+```
 
 > [!IMPORTANT]  
 > Always install RyTuneX from **Microsoft Store** to ensure authenticity and security (RyTuneX no longer provides packages for sideloading).

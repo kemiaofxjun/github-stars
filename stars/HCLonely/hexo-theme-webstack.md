@@ -1,6 +1,6 @@
 ---
 project: hexo-theme-webstack
-stars: 513
+stars: 515
 description: |-
     A hexo theme based on webstack. | 一个基于webstack的hexo主题。
 url: https://github.com/HCLonely/hexo-theme-webstack

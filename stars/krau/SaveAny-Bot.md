@@ -1,6 +1,6 @@
 ---
 project: SaveAny-Bot
-stars: 1935
+stars: 1951
 description: |-
     Save Any Telegram File to Anywhere 📂 (Alist, Disk, Webdav, S3, Rclone...) . Support restrict saving content and files beyond telegram.
 url: https://github.com/krau/SaveAny-Bot

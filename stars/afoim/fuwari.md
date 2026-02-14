@@ -1,12 +1,14 @@
 ---
 project: fuwari
-stars: 199
+stars: 206
 description: |-
     魔改版Fuwari，自用博客
 url: https://github.com/afoim/fuwari
 ---
 
-# Fuwari For AcoFork
+# Fuwari For AcoFork 
+
+# 有问题？尝试 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/afoim/fuwari)
 
 > [!CAUTION]
 > 该仓库由 AcoFork 深度定制，并包含了最新的文章，如果你想以此为模板进行二改，需要一定的动手能力。
