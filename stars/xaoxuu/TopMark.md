@@ -1,6 +1,6 @@
 ---
 project: TopMark
-stars: 6
+stars: 7
 description: |-
     一个好用的状态栏书签工具
 url: https://github.com/xaoxuu/TopMark

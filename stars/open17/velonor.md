@@ -1,6 +1,6 @@
 ---
 project: velonor
-stars: 47
+stars: 48
 description: |-
     为 VitePress 注入全新的博客体验 | 简洁 · 优雅 · 强大
 url: https://github.com/open17/velonor

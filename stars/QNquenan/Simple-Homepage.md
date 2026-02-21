@@ -1,6 +1,6 @@
 ---
 project: Simple-Homepage
-stars: 35
+stars: 36
 description: |-
     null
 url: https://github.com/QNquenan/Simple-Homepage

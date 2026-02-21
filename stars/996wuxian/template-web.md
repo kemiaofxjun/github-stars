@@ -1,6 +1,6 @@
 ---
 project: template-web
-stars: 90
+stars: 91
 description: |-
     个人网站模板，使用Nextjs(React)开发
 url: https://github.com/996wuxian/template-web

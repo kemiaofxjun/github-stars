@@ -1,6 +1,6 @@
 ---
 project: ZYCS-IMG
-stars: 312
+stars: 311
 description: |-
     骤雨重山图床
 url: https://github.com/uxiaohan/ZYCS-IMG
