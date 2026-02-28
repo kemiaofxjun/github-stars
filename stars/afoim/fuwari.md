@@ -1,6 +1,6 @@
 ---
 project: fuwari
-stars: 214
+stars: 220
 description: |-
     魔改版Fuwari，自用博客
 url: https://github.com/afoim/fuwari
@@ -97,6 +97,20 @@ pnpm clean
 
 ```bash
 pnpm del-space
+```
+
+### 修复相邻图片空行
+
+扫描 `src/content/**/*.md`，当两张图片紧挨着（连续两行 `![](...)`）时，在中间插入一个空行，避免渲染与 diff 匹配受相邻图片影响。
+
+```bash
+pnpm imgf
+```
+
+仅检测不写入：
+
+```bash
+pnpm imgf --check
 ```
 
 ### 配置博客
@@ -208,4 +222,8 @@ themeColor: {
 ## 🙏 致谢
 
 感谢所有为这个项目做出贡献的开发者们！尤其感谢[上游仓库](https://github.com/saicaca/fuwari)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=afoim/fuwari&type=date&legend=top-left)](https://www.star-history.com/#afoim/fuwari&type=date&legend=top-left)
 

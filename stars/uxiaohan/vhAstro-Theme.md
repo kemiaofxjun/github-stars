@@ -1,6 +1,6 @@
 ---
 project: vhAstro-Theme
-stars: 350
+stars: 356
 description: |-
     🚀 vhAstro-Theme：一款基于 Astro 构建的优雅的响应式博客主题
 url: https://github.com/uxiaohan/vhAstro-Theme

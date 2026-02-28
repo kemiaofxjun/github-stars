@@ -1,6 +1,6 @@
 ---
 project: zane-ops
-stars: 1256
+stars: 1268
 description: |-
     A beautiful and fast self-hosted PaaS for deploying and managing web apps, databases, static websites and more.
 url: https://github.com/zane-ops/zane-ops
@@ -125,7 +125,6 @@ Interested in contributing? Check out the [contribution guidelines](./CONTRIBUTI
 
 ## 🙏 Credits
 
-- [Plane](https://github.com/makeplane/plane): for giving us content for the contributions templates (contribution
-  guidelines).
-- [Coolify](https://github.com/coollabsio/coolify) and [Dokploy](https://github.com/dokploy/dokploy) which we used inspired ourselves from a lot.
+- [Plane](https://github.com/makeplane/plane): for inspiring our contribution guidelines.
+- [Coolify](https://github.com/coollabsio/coolify) and [Dokploy](https://github.com/dokploy/dokploy): for being a great source of inspiration.
 
