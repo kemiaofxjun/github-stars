@@ -1,6 +1,6 @@
 ---
 project: astro-theme-pure
-stars: 824
+stars: 832
 description: |-
     ⭐ A simple, fast and powerful blog & document theme built by Astro
 url: https://github.com/cworld1/astro-theme-pure
@@ -98,7 +98,7 @@ To spend more time coding and less time fiddling with whitespace, this project u
 - [Astro Resume](https://github.com/srleom/astro-theme-resume)
 - [Starlight](https://github.com/withastro/starlight)
 
-Other third party references are on [Docs#Contributions](https://astro-pure.js.org/docs/advanced/thanks). Appreciate for all open source libraries.
+Other third party references are on [Docs#Contributions](https://astro-pure.js.org/docs/advanced/about). Appreciate for all open source libraries.
 
 ## License
 

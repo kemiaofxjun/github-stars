@@ -1,6 +1,6 @@
 ---
 project: blog
-stars: 2
+stars: 3
 description: |-
     Personal blog
 url: https://github.com/AdingApkgg/blog

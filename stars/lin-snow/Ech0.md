@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 1846
+stars: 1861
 description: |-
     Ech0 - 面向个人的新一代开源、自托管、专注思想流动的轻量级联邦发布平台
 url: https://github.com/lin-snow/Ech0
@@ -62,6 +62,7 @@ Ech0 是一款专为个人用户设计的新一代开源自托管平台，低成
     - [☸️ Kubernetes (Helm)](#️-kubernetes-helm-1)
   - [常见问题](#常见问题)
   - [反馈与社区](#反馈与社区)
+- [开源治理](#开源治理)
   - [项目架构](#项目架构)
   - [开发指南](#开发指南)
     - [后端环境要求](#后端环境要求)
@@ -309,6 +310,15 @@ ssh -p 6278 ssh.vaaat.com
 | --------------------------------------------------------------- | ---------- |
 | <img src="./docs/imgs/qq.png" alt="QQ群" style="height:250px;"> | 暂无       |
 
+
+---
+
+## 开源治理
+
+- [贡献指南](./CONTRIBUTING.md)
+- [行为准则](./CODE_OF_CONDUCT.md)
+- [安全策略](./SECURITY.md)
+- [许可证](./LICENSE)
 
 ---
 

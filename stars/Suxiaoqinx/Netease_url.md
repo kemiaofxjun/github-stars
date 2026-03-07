@@ -1,6 +1,6 @@
 ---
 project: Netease_url
-stars: 2007
+stars: 2028
 description: |-
     网易云无损解析
 url: https://github.com/Suxiaoqinx/Netease_url
