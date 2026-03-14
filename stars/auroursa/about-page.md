@@ -8,7 +8,7 @@ url: https://github.com/auroursa/about-page
 
 # Cynosura
 
-Personal website built with Astro, featuring a blog, friends page, and about page. Previously built with Pelican and pure HTML/CSS, now migrated to Astro for better performance and maintainability.
+Personal website built with Astro, featuring a blog, friends page, about page, and a component-driven home page. Previously built with Pelican and pure HTML/CSS, now migrated to Astro and Tailwind CSS v4 for better performance, maintainability, and more consistent UI spacing.
 
 ## Table of Contents
 - [Cynosura](#cynosura)
@@ -34,19 +34,20 @@ Welcome to my personal website! This site serves as a platform to share my thoug
 
 ## Features
 
-- **Home** (`/`): Personal introduction, contact information, and social links
+- **Home** (`/`): Personal introduction, social/contact links, a horizontal article timeline, dual-column skill and device panels, a four-season recap, and a masonry photo wall
 - **Blog** (`/posts`): Collection of articles covering technology, daily life, and personal reflections
   - Dual-column layout with sidebar (categories, RSS feed)
   - Category filtering via dedicated category pages (`/posts/category/[category]`)
   - Full-width article pages with metadata, copyright info, and Disqus comments
-  - RSS feed support
+  - RSS feed with full post content output
 - **Friends** (`/friends`): Links to friends' websites and a "void portal" section
 - **About** (`/about`): Information about the website's design, technology stack, and color scheme
 
 ## Technologies
 
 - [Astro](https://astro.build/) - Static site generator
-- HTML5 & CSS3
+- [Tailwind CSS v4](https://tailwindcss.com/) - Utility-first styling
+- CSS custom properties for theme tokens and dark mode
 - Vanilla JavaScript
 - Markdown for blog posts
 
@@ -55,10 +56,29 @@ Welcome to my personal website! This site serves as a platform to share my thoug
 ```
 .
 ├── src/
+│   ├── components/
+│   │   ├── ArticleTimeline.astro        # Home page article timeline
+│   │   ├── DecoratedTitle.astro         # Shared section title component
+│   │   ├── HomeGalleryShuffleScript.astro
+│   │   ├── HomeHeroFeature.astro
+│   │   ├── HomeHeroPanel.astro
+│   │   ├── HomeInfoGrid.astro
+│   │   ├── HomeInfoIcon.astro
+│   │   ├── HomeSeasonRecap.astro
+│   │   └── PostSidebar.astro           # Shared blog sidebar component
 │   ├── content/
 │   │   └── blog/           # Markdown blog posts
+│   ├── data/
+│   │   ├── friends.ts     # Friends page link data
+│   │   ├── home-gallery.ts # Home gallery/four-season data
+│   │   ├── home-info.ts    # Home skill/device card data
+│   │   └── home-music.ts   # Home music Apple Music link data
+│   ├── utils/
+│   │   └── date.ts        # Shared date formatting and sorting utilities
 │   ├── layouts/
 │   │   └── BaseLayout.astro    # Base layout component
+│   ├── styles/
+│   │   └── global.css      # Tailwind entrypoint and global theme tokens
 │   └── pages/
 │       ├── index.astro     # Home page
 │       ├── about.astro     # About page
@@ -69,7 +89,6 @@ Welcome to my personal website! This site serves as a platform to share my thoug
 │           └── category/
 │               └── [category].astro    # Category page for filtering posts
 ├── public/
-│   ├── css/               # Static CSS files
 │   ├── img/               # Images and avatars
 │   ├── font/              # Custom fonts
 │   └── js/                # Static JavaScript files
@@ -131,9 +150,23 @@ Your content here...
 
 Categories currently used: 日常 (Daily), 杂谈 (Misc), 技术 (Tech)
 
+### Styling Notes
+
+- Main page and component layout is now implemented directly in Astro templates with Tailwind utility classes
+- Shared theme variables, fonts, and base global styles live in `src/styles/global.css`
+- Repeated layout patterns are consolidated into reusable component classes in `src/styles/components.css`
+- When adjusting UI, prefer updating template markup and utility classes first so related layouts stay visually aligned
+
+### Updating the Home Gallery
+
+- Masonry gallery image data lives in `src/data/home-gallery.ts`
+- The gallery shuffles on each browser refresh via `src/components/HomeGalleryShuffleScript.astro`
+- Add or replace gallery images in `public/img/gallery/` and then update the corresponding width/height metadata in `src/data/home-gallery.ts`
+- The featured `2025 / FOUR SEASONS` block is maintained separately from the masonry wall, but uses the same gallery asset directory
+
 ### Adding Friends
 
-To add a new friend to the friends page, edit `src/pages/friends.astro` and add an entry to the `friends` array:
+To add a new friend to the friends page, edit `src/data/friends.ts` and add an entry to the `friends` array:
 
 ```javascript
 {
@@ -155,6 +188,8 @@ This project is designed to be deployed on static hosting platforms like:
 
 Build command: `pnpm build`
 Output directory: `dist`
+
+For Cloudflare Pages compatibility, the legacy feed path `/posts/feeds/all.atom.xml` is redirected to `/rss.xml` via `public/_redirects`.
 
 ## License
 

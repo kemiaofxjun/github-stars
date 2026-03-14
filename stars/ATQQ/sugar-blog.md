@@ -1,6 +1,6 @@
 ---
 project: sugar-blog
-stars: 562
+stars: 565
 description: |-
     ✍️📚我写博客的地方🤪🤪🤪记录随笔与学习笔记，仓库包含：博客内容，博客主题、博客模板、vitepress离线全文搜索插件、VitePress RSS 支持插件，图片预览插件；a blog theme use vitepress
 url: https://github.com/ATQQ/sugar-blog
@@ -24,6 +24,9 @@ url: https://github.com/ATQQ/sugar-blog
   * [vitepress-plugin-rss](./packages/vitepress-plugin-rss/)：基于 feed 实现的 `VitePress` RSS 支持插件
   * [vitepress-plugin-51la](./packages/vitepress-plugin-51la/)：为 `VitePress` 站点引入 [51.la](https://v6.51.la/) 的网站数据统计能力。
   * [vitepress-plugin-announcement](./packages/vitepress-plugin-announcement/)：为 `VitePress` 创建一个全局公告窗口。
+  * [vitepress-plugin-artalk](./packages/vitepress-plugin-artalk/)：为 `VitePress` 站点引入 [Artalk](https://artalk.js.org/) 的评论系统。
+  * [vitepress-plugin-giscus](./packages/vitepress-plugin-giscus/)：为 `VitePress` 站点引入 [Giscus](https://giscus.app/) 的评论系统。
+  * [vitepress-plugin-back2top](./packages/vitepress-plugin-back2top/)：为 `VitePress` 站点添加返回顶部按钮。
   * [vitepress-plugin-slot-inject-template](./template/vitepress-plugin-slot-inject-template/)：`VitePress` 插件开发模板。
 
 ## 快速创建博客模板

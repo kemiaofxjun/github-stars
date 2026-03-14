@@ -1,6 +1,6 @@
 ---
 project: meting-api
-stars: 364
+stars: 363
 description: |-
     Meting API for APlayer
 url: https://github.com/injahow/meting-api
