@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 1889
+stars: 1904
 description: |-
     Ech0 – An open-source, self-hosted lightweight publishing platform for personal idea sharing.
 url: https://github.com/lin-snow/Ech0
@@ -37,9 +37,22 @@ url: https://github.com/lin-snow/Ech0
 
 </div>
 
-> A next-generation, open-source, self-hosted, lightweight platform for sharing personal ideas.
+> A self-hosted personal microblog where your timeline can be shared, discussed, and fully owned.
 
-Ech0 is a next-generation open-source self-hosted platform built for individuals. It is lightweight and low-cost, making it easy to publish and share your ideas, writing, and links. A clean UI plus practical command-line tools keeps content management simple and flexible. Your data stays fully under your control.
+Tools like Memos are great for capturing quick thoughts. Ech0 is built for what comes next: publishing those ideas to a personal timeline that others can follow and interact with.
+Run it on your own server, keep full control of your content, and keep a personal space that still feels connected through optional comments and sharing.
+It stays lightweight, easy to deploy, and fully open-source.
+
+**Great fit if you want to:**
+- run a personal public or semi-public timeline on your own domain
+- publish short posts, links, and media from one clean interface
+- keep data ownership while still getting RSS and optional comments
+- keep a personal space that supports lightweight social interaction without becoming a full social network
+
+**Probably not for you if you need:**
+- a bi-directional knowledge base workflow (for example Obsidian-style PKM)
+- a team-first collaborative docs workspace (for example Notion-style docs)
+- a private-only memo app with no publishing or timeline focus
 
 ![Interface Preview](./docs/imgs/screenshot.png)
 
@@ -49,7 +62,9 @@ Ech0 is a next-generation open-source self-hosted platform built for individuals
    <summary><strong>Table of Contents</strong></summary>
 
 - [Ech0](#ech0)
-  - [Highlights](#highlights)
+  - [Try in 60 Seconds](#try-in-60-seconds)
+  - [Why Ech0](#why-ech0)
+  - [Full Feature List](#full-feature-list)
   - [Quick Deployment](#quick-deployment)
     - [🐳 Docker Deployment (Recommended)](#-docker-deployment-recommended)
     - [🐋 Docker Compose](#-docker-compose)
@@ -75,14 +90,46 @@ Ech0 is a next-generation open-source self-hosted platform built for individuals
 
 ---
 
-## Highlights
+## Try in 60 Seconds
+
+```shell
+docker run -d \
+  --name ech0 \
+  -p 6277:6277 \
+  -v /opt/ech0/data:/app/data \
+  -e JWT_SECRET="Hello Echos" \
+  sn0wl1n/ech0:latest
+```
+
+Then open `http://ip:6277`:
+
+1. Register your first account.
+2. The first account becomes Owner (admin privileges).
+3. By default, publishing is restricted to privileged accounts.
+
+See [Quick Deployment](#quick-deployment) for Docker Compose and Helm options.
+
+## Why Ech0
+
+- 📝 **Built for personal publishing**: Timeline-first microblog flow for thoughts, links, and short writing.  
+- 🤝 **Lightweight social by design**: Posts can be shared and discussed through optional comments and interactions.  
+- 🧘 **Clean reading experience**: Zen-like timeline browsing with minimal distraction.  
+- ⚡ **Markdown and media in one place**: Markdown editor, rich cards, and embedded video support.  
+- 🔒 **Personal first with full ownership**: Best as a personal instance with optional multi-user roles, while staying self-hosted, RSS-ready, and AGPL-3.0 open-source.  
+
+## Full Feature List
+
+<details>
+  <summary><strong>Expand full capabilities</strong></summary>
+
+### Highlights
 
 - ☁️ **Lightweight, Efficient Architecture**: Low resource usage and compact images, suitable from personal servers to ARM devices.  
 - 🚀 **Fast Deployment Experience**: Out-of-the-box Docker deployment from install to first run with a single command.  
 - 📦 **Self-Contained Distribution**: Complete binaries and container images, with no extra runtime dependencies.  
 - 💻 **Cross-Platform Support**: Supports Linux, Windows, and ARM devices (for example, Raspberry Pi).  
 
-## Storage & Data
+### Storage & Data
 
 - 🗂️ **VireFS Unified Storage Layer**: Uses **VireFS** to unify mounting and management for local storage and S3-compatible object storage.  
 - ☁️ **S3 Object Storage Support**: Native support for S3-compatible object storage for cloud resource expansion.  
@@ -90,7 +137,7 @@ Ech0 is a next-generation open-source self-hosted platform built for individuals
 - 🔄 **Data Migration Workflow**: Supports migration import for historical data and snapshot export for migration and archiving.  
 - 🔐 **Automated Backup System**: Supports export/backup via Web, CLI, and TUI, plus background automatic backups.  
 
-## Writing & Content
+### Writing & Content
 
 - ✍️ **Markdown Writing Experience**: A **markdown-it** based editing/rendering engine with plugin extension and live preview.  
 - 🧘 **Zen Mode Immersive Reading**: A minimal-distraction Timeline browsing mode.  
@@ -98,23 +145,23 @@ Ech0 is a next-generation open-source self-hosted platform built for individuals
 - 🃏 **Rich Media Cards**: Supports card rendering for website links, GitHub projects, and more.  
 - 🎥 **Video Content Parsing**: Supports embedded parsing/display for Bilibili and YouTube videos.  
 
-## Media & Assets
+### Media & Assets
 
 - 📁 **Visual File Manager**: Built-in capabilities for file upload, browsing, and asset management.  
 
-## Social & Interaction
+### Social & Interaction
 
 - 💬 **Built-in Comment System**: Supports comments and moderation configuration.  
 - 🃏 **Content Interaction**: Supports social interactions such as likes and sharing.  
 
-## Auth & Security
+### Auth & Security
 
 - 🔑 **OAuth2 / OIDC Authentication**: Supports OAuth2 and OIDC for third-party login integration.  
 - 🙈 **Passkey Passwordless Login**: Supports biometric or hardware security key sign-in.  
 - 🔑 **Access Token Management**: Supports generating and revoking tokens for API calls and third-party integration.  
 - 👤 **Multi-Account Permission Management**: Supports multi-user collaboration and permission control.  
 
-## System & Developer
+### System & Developer
 
 - 🧱 **Busen Data Bus Architecture**: Uses in-house Busen to provide decoupled module communication and reliable message delivery.  
 - 📊 **Structured Logging System**: System logs are standardized in structured format for readability and analysis.  
@@ -123,16 +170,18 @@ Ech0 is a next-generation open-source self-hosted platform built for individuals
 - 🧰 **CLI Toolchain**: CLI tools for automation and script integration.  
 - 🔗 **Open API & Webhook**: Full API and Webhook support for external integration and automation workflows.  
 
-## Experience
+### Experience
 
 - 🌍 **Cross-Device Adaptation**: Responsive design for desktop, tablet, and mobile browsers.  
 - 🌐 **i18n Multi-Language Support**: Multi-language UI switching for different usage scenarios.  
 - 👾 **PWA Support**: Installable as a web app for a more native-like experience.  
 - 🌗 **Themes & Dark Mode**: Supports dark mode and theme extension.  
 
-## License
+### License
 
 - 🎉 **Fully Open Source**: Released under **AGPL-3.0**, with no tracking, no subscription, and no SaaS dependency.  
+
+</details>
 
 ---
 
@@ -268,7 +317,7 @@ Run the target binary directly. For example, on Windows, double-click `Ech0.exe`
 ## FAQ
 
 1. **What is Ech0?**  
-   Ech0 is a lightweight open-source self-hosted platform designed for quickly publishing and sharing personal thoughts, writing, and links. It provides a clean interface and distraction-free experience, and all data is stored locally for full user control.
+   Ech0 is a lightweight open-source self-hosted platform designed for quickly publishing and sharing personal thoughts, writing, and links. It provides a clean interface and distraction-free experience, with your data remaining under your control.
 
 2. **What is Ech0 not?**  
    Ech0 is not a traditional professional note-taking app (such as Obsidian or Notion). Its core usage is closer to a social feed / microblog stream.
@@ -277,36 +326,33 @@ Run the target binary directly. For example, on Windows, double-click `Ech0.exe`
    Yes. Ech0 is fully free and open source under AGPL-3.0, with no ads, tracking, subscriptions, or service lock-in.
 
 4. **How do I back up and import data?**  
-   Since all content is stored in local SQLite files, regularly back up `/opt/ech0/data` (or your mapped data path). Online data management supports "Snapshot Export" and "Migration Import": export for offline archiving, import through migration.
+   Ech0 supports data recovery/migration through "Snapshot Export" and "Migration Import". At deployment level, regularly back up your mapped data directory (for example `/opt/ech0/data`). By default, core data is stored in the local database; if object storage is enabled, media assets are written to the configured storage backend.
 
 5. **Does Ech0 support RSS?**  
    Yes. Ech0 supports RSS subscriptions so you can follow updates in RSS readers.
 
 6. **Why does publishing fail with "contact administrator"?**  
-   In the current design, only administrators can publish content. After deployment, the first registered user is automatically assigned as system administrator. Other users cannot publish unless granted permission.
+   Publishing is restricted to privileged accounts by default. During initialization, the first account becomes Owner (with management privileges). Regular users cannot publish until explicitly granted permission by a privileged account. If this is your first setup, review [Try in 60 Seconds](#try-in-60-seconds) and confirm which account is Owner.
 
 7. **Why is there no detailed permission matrix?**  
-   Ech0 keeps things simple and lightweight by design. Instead of a complex permission system, it currently distinguishes only admin and non-admin roles to keep usage smooth.
+   Ech0 currently uses a lightweight role model (Owner / Admin / regular user) to keep operation simple and predictable. The permission model will continue to evolve based on community feedback.
 
 8. **Why can't others see their Connect avatar?**  
    Set your current instance URL in `System Settings - Service URL`, for example `https://memo.vaaat.com` (must include `http://` or `https://`).
 
 9. **What is the MetingAPI option in settings?**  
-   It is the API service used to resolve direct music streaming links for shared music cards. If not configured, it defaults to the API provided by Ech0 (deployed on Vercel).
+   It is the API endpoint used by music cards to resolve playable stream metadata. You can provide your own trusted endpoint; when left empty, Ech0 falls back to a default resolver endpoint. For production, a self-controlled endpoint is recommended.
 
 10. **Why does a newly added Connect show only partial results?**  
     The backend tries to fetch instance information for all Connect entries. If an instance is down or unreachable, it is discarded, and only valid/accessible Connect data is returned to the frontend.
 
-11. **What content is not recommended for Ech0?**  
-    Ech0 content is composed of text, images, and extension content (such as music/video cards). Dense posts that combine `text + images + extension content` are not recommended because they conflict with some Ech0 design principles. In general, posting extension-heavy content or long-form articles is also discouraged.
+11. **How do I enable comments?**  
+    Enable comments in the panel comment manager, then configure moderation and captcha toggles as needed. Ech0 now embeds `gocap` for captcha verification, so no standalone captcha service deployment is required.
 
-12. **How do I enable comments?**  
-    In `Comment Settings`, choose a comment service and fill in the required parameters. Currently supports `Twikoo / Waline / Artalk / Giscus`; required fields are shown dynamically in the UI.
+12. **How do I configure S3 storage?**  
+    Fill in provider, endpoint, bucket, access key, secret key, and related fields in storage settings. It is recommended to provide endpoint without `http://` or `https://`. If media is accessed directly by browsers, ensure objects are readable through your chosen policy (for example public-read or equivalent CDN/gateway setup).
 
-13. **How do I configure S3 storage?**  
-    Fill in required values in storage settings. Note: endpoint should not include `http://` or `https://`, and the bucket must allow public access.
-
-14. **How do I enable passkey login?**  
+13. **How do I enable passkey login?**  
     In `SSO - Passkey`, configure `WebAuthn RP ID` and `WebAuthn Origins`. After saving and seeing "Passkey ready", follow browser prompts to bind biometrics or a security key.
 
 ---

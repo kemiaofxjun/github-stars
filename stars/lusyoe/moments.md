@@ -1,6 +1,6 @@
 ---
 project: moments
-stars: 3
+stars: 4
 description: |-
     博客网站个人瞬间功能
 url: https://github.com/lusyoe/moments
