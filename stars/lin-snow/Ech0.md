@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 1904
+stars: 1923
 description: |-
     Ech0 – An open-source, self-hosted lightweight publishing platform for personal idea sharing.
 url: https://github.com/lin-snow/Ech0
@@ -158,7 +158,7 @@ See [Quick Deployment](#quick-deployment) for Docker Compose and Helm options.
 
 - 🔑 **OAuth2 / OIDC Authentication**: Supports OAuth2 and OIDC for third-party login integration.  
 - 🙈 **Passkey Passwordless Login**: Supports biometric or hardware security key sign-in.  
-- 🔑 **Access Token Management**: Supports generating and revoking tokens for API calls and third-party integration.  
+- 🔑 **Access Token Management**: Supports generating and revoking scoped tokens for API calls and third-party integration.
 - 👤 **Multi-Account Permission Management**: Supports multi-user collaboration and permission control.  
 
 ### System & Developer

@@ -1,6 +1,6 @@
 ---
 project: ElectronFish
-stars: 22
+stars: 23
 description: |-
     一个网页版电子木鱼
 url: https://github.com/PyCoreDev/ElectronFish
