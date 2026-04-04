@@ -1,6 +1,6 @@
 ---
 project: big-cake-jpg.github.io
-stars: 16
+stars: 15
 description: |-
     晓雨杂记 站点源文件
 url: https://github.com/Big-Cake-jpg/big-cake-jpg.github.io

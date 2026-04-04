@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 1923
+stars: 1926
 description: |-
     Ech0 – An open-source, self-hosted lightweight publishing platform for personal idea sharing.
 url: https://github.com/lin-snow/Ech0
@@ -119,9 +119,6 @@ See [Quick Deployment](#quick-deployment) for Docker Compose and Helm options.
 
 ## Full Feature List
 
-<details>
-  <summary><strong>Expand full capabilities</strong></summary>
-
 ### Highlights
 
 - ☁️ **Lightweight, Efficient Architecture**: Low resource usage and compact images, suitable from personal servers to ARM devices.  
@@ -169,6 +166,7 @@ See [Quick Deployment](#quick-deployment) for Docker Compose and Helm options.
 - 📟 **TUI Management Interface**: Provides a terminal UI, ideal for server-side administration.  
 - 🧰 **CLI Toolchain**: CLI tools for automation and script integration.  
 - 🔗 **Open API & Webhook**: Full API and Webhook support for external integration and automation workflows.  
+- 🤖 **MCP (Model Context Protocol)**: Built-in [MCP Server](./docs/usage/mcp-usage.md) exposes **near-complete coverage** of core product features to the AI layer (posts, files, stats, and more)—**Streamable HTTP**, **Tools & Resources**, **scoped JWT**.  
 
 ### Experience
 
@@ -181,16 +179,10 @@ See [Quick Deployment](#quick-deployment) for Docker Compose and Helm options.
 
 - 🎉 **Fully Open Source**: Released under **AGPL-3.0**, with no tracking, no subscription, and no SaaS dependency.  
 
-</details>
-
 ---
 
 ## Quick Deployment
 
-<!-- ### 🧙 One-click Script Deployment (Recommended; ensure your network can access GitHub Releases)
-```shell
-curl -fsSL "https://sh.soopy.cn/ech0.sh" -o ech0.sh && bash ech0.sh
-``` -->
 
 ### 🐳 Docker Deployment (Recommended)
 
@@ -217,6 +209,15 @@ Run the following command in that directory:
 ```shell
 docker-compose up -d
 ```
+
+### 🧙 Script Deployment
+
+```shell
+curl -fsSL "https://raw.githubusercontent.com/lin-snow/Ech0/main/scripts/ech0.sh" -o ech0.sh && bash ech0.sh
+```
+
+> The script installs and manages Ech0 through systemd, so please run with root privileges when needed.
+> You can run `bash ech0.sh install /your/path/ech0` to customize the install path.
 
 ### ☸️ Kubernetes (Helm)
 
@@ -302,16 +303,6 @@ docker image prune -f
    helm upgrade my-ech0 ./charts/ech0 --namespace my-namespace
    ```
 
-<!-- ---
-
-## Access Modes
-
-### 🖥️ TUI Mode
-
-![TUI Mode](./docs/imgs/tui.png)
-
-Run the target binary directly. For example, on Windows, double-click `Ech0.exe`. -->
-
 ---
 
 ## FAQ
@@ -355,6 +346,15 @@ Run the target binary directly. For example, on Windows, double-click `Ech0.exe`
 13. **How do I enable passkey login?**  
     In `SSO - Passkey`, configure `WebAuthn RP ID` and `WebAuthn Origins`. After saving and seeing "Passkey ready", follow browser prompts to bind biometrics or a security key.
 
+14. **Official statement on third-party integrations**  
+    Third-party integration platforms or services that are not officially authorized by Ech0 are outside the official support scope. Any security incidents, data loss, account issues, or other risks caused by using such services are the sole responsibility of the user and the third-party provider.
+
+15. **How do I post comments via a third-party integration (AI / automation)?**
+    Ech0 provides a dedicated integration comment endpoint at `POST /api/comments/integration` that bypasses captcha and form-token verification. Create an access token with the `comment:write` scope and `integration` audience from "Access Token" management, then include it in the `Authorization: Bearer <token>` header. For request body fields and responses, use the OpenAPI docs served by your instance at `/swagger/index.html` (for local development, typically `http://localhost:6277/swagger/index.html`). This endpoint has its own rate limits, and comments are tagged with `source=integration` so they are identifiable in the admin panel.
+
+16. **Where can I find detailed documentation on local vs S3 storage rules, object keys, and migration?**  
+    See the in-repo [Storage migration guide](./docs/usage/storage-migration.md). It explains how flat `key` values map to on-disk paths and S3 object keys (including `schema.Resolve` and `PathPrefix`), how stored `File.url` snapshots relate to the UI, the difference between static `/api/files` access and authenticated `stream` routes, and practical guidance for switching S3 providers or moving data between local disk and object storage.
+
 ---
 
 ## Feedback & Community
@@ -375,12 +375,6 @@ Run the target binary directly. For example, on Windows, double-click `Ech0.exe`
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [Security Policy](./SECURITY.md)
 - [License](./LICENSE)
-
----
-
-## Project Architecture
-
-- The backend event bus has switched to [Busen](https://github.com/lin-snow/Busen): it uses a typed-first in-process architecture, and improves stability through explicit backpressure, hooks, and drain shutdown.
 
 ---
 
@@ -475,6 +469,8 @@ Thanks to everyone who has supported this project! Your support keeps Ech0 movin
 |       🧑‍💻 [@he9ab2l](https://github.com/he9ab2l)      |   2025-12-23    | None                            |
 |       🧑‍💻 鸿运当头(windfore)                          |    2026-1-6     | Thank you for creating ech0     |
 |       🧑‍💻 Anonymous User                               |   2026-01-23    | None                            |
+|       🧑‍💻 ABloom                                       | 2026-03-16 | ㊗️Mumuxue achieves fitness success |
+|       🧑‍💻 lmscn                                        | 2026-04-01 | Support from www.lmscn.com, really like this project, hope it keeps getting better. |
 
 ---
 

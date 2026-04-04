@@ -1,6 +1,6 @@
 ---
 project: radiant-nuxt
-stars: 9
+stars: 8
 description: |-
     Radiant (璀光) A minimal personal blog theme, built with @nuxt 4.x and @nuxt/content, fully customizable and editable for beginners.
 url: https://github.com/yuxbao/radiant-nuxt

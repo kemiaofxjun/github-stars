@@ -1,6 +1,6 @@
 ---
 project: fuwari
-stars: 233
+stars: 235
 description: |-
     魔改版Fuwari，自用博客
 url: https://github.com/afoim/fuwari
@@ -183,5 +183,5 @@ pnpm lint && pnpm type-check
 
 ## 🙏 致谢
 
-感谢所有贡献者，特别感谢上游仓库：[saicaca/fuwari](https://github.com/saicaca/fuwari)
+感谢所有贡献者，特别感谢上游仓库对基础设施的贡献：[saicaca/fuwari](https://github.com/saicaca/fuwari)
 
