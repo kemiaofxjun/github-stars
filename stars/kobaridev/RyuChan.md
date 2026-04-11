@@ -1,6 +1,6 @@
 ---
 project: RyuChan
-stars: 94
+stars: 97
 description: |-
     ✨A static blog template built with Astro. 
 url: https://github.com/kobaridev/RyuChan

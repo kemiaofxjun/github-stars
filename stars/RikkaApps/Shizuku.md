@@ -1,6 +1,6 @@
 ---
 project: Shizuku
-stars: 23659
+stars: 23918
 description: |-
     Using system APIs directly with adb/root privileges from normal apps through a Java process started with app_process.
 url: https://github.com/RikkaApps/Shizuku

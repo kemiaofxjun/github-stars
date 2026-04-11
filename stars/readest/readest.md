@@ -1,6 +1,6 @@
 ---
 project: readest
-stars: 19240
+stars: 19448
 description: |-
     Readest is a modern, feature-rich ebook reader designed for avid readers offering seamless cross-platform access, powerful tools, and an intuitive interface to elevate your reading experience.
 url: https://github.com/readest/readest
@@ -186,6 +186,7 @@ For Android:
 # Initialize the Android environment (run once)
 rm apps/readest-app/src-tauri/gen/android
 pnpm tauri android init
+pnpm tauri icon ../../data/icons/readest-book.png
 git checkout apps/readest-app/src-tauri/gen/android
 
 pnpm tauri android dev
@@ -198,6 +199,7 @@ For iOS:
 ```bash
 # Set up the iOS environment (run once)
 pnpm tauri ios init
+pnpm tauri icon ../../data/icons/readest-book.png
 
 pnpm tauri ios dev
 # or if you want to dev on a real device
