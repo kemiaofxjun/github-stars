@@ -1,6 +1,6 @@
 ---
 project: MeowNocode
-stars: 454
+stars: 453
 description: |-
     memos类开源高颜值便签应用
 url: https://github.com/XuYouo/MeowNocode

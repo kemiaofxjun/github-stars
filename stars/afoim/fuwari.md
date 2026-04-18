@@ -1,6 +1,6 @@
 ---
 project: fuwari
-stars: 245
+stars: 246
 description: |-
     魔改版Fuwari，自用博客
 url: https://github.com/afoim/fuwari
@@ -34,7 +34,6 @@ url: https://github.com/afoim/fuwari
 - **样式**：Tailwind CSS + Stylus
 - **内容处理**：Remark / Rehype 扩展链路
 - **代码高亮**：Expressive Code
-- **页面过渡**：Swup
 - **包管理**：pnpm
 - **代码规范**：Biome
 
