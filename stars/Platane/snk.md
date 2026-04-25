@@ -1,6 +1,6 @@
 ---
 project: snk
-stars: 5744
+stars: 5758
 description: |-
     🟩⬜ Generates a snake game from a github user contributions graph and output a screen capture as animated svg or gif
 url: https://github.com/Platane/snk
@@ -93,12 +93,36 @@ For **dark mode** support on github, use this [special syntax](https://docs.gith
 
 [platane.github.io/snk](https://platane.github.io/snk)
 
-### **local**
+### **npm package**
+
+```ts
+import { generateSnakeAnimation } from "generate-snake-animation";
+
+const outputs = [
+  {
+    format: "svg",
+    drawOptions: {
+      // ..
+    },
+  },
+];
+
+const results = await generateSnakeAnimation(
+  {
+    platform: "github", // supports github, gitlab and forgejo (codeberg)
+    username: "platane",
+    githubToken: process.env.GITHUB_TOKEN,
+  },
+  outputs,
+);
+
+fs.writeFileSync("snake.svg", results[0]);
+```
+
+or with npx
 
 ```sh
-npm install
-
-npm run dev:demo
+npx generate-snake-animation@3 --forgejo_user codeberg.org/JasterV --output snake.svg?palette=codeberg
 ```
 
 ## Implementation
