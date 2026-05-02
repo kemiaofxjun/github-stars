@@ -1,6 +1,6 @@
 ---
 project: MiaoYan
-stars: 8167
+stars: 8204
 description: |-
     ⛷ Lightweight Markdown app to help you write great sentences.
 url: https://github.com/tw93/MiaoYan
@@ -31,29 +31,25 @@ url: https://github.com/tw93/MiaoYan
 
 ## Features
 
-- **Fantastic**: Local-first, no data collection, split editor & preview, LaTeX, Mermaid
-- **Beautiful**: Minimalist design, three-column layout, dark mode, distraction-free
+- **Fantastic**: Local-first, no data collection, split editor & preview, wikilink backlinks, LaTeX, Mermaid
+- **Beautiful**: Minimalist design, three-column layout, dark mode, macOS 26 glass, distraction-free
 - **Fast**: Swift 6 native, better performance than Electron-based apps
-- **Simple**: Lightweight, keyboard shortcuts, auto-formatting
+- **Simple**: Lightweight, version history, keyboard shortcuts, auto-formatting
 
-## Installation & Setup
+## Installation
 
-1. Download from the [Mac App Store](https://apps.apple.com/cn/app/miaoyan/id6759252269). Future updates will be continuously published there, warmly welcome! If you'd like to support me, a paid download on the App Store is a great way to do so. The open-source version offers the same experience.
+1. **Mac App Store** (paid, automatic updates):
 
    <a href="https://apps.apple.com/cn/app/miaoyan/id6759252269"><img src="https://cdn.tw93.fun/uPic/C3Renh.png" width="160" alt="Download on the Mac App Store" /></a>
 
-2. Or install by Homebrew:
-```bash
-brew install --cask miaoyan
-```
-3. Or install manually: download the latest DMG package from [GitHub Releases](https://github.com/tw93/MiaoYan/releases/latest) (Requires macOS 11.5+)
-4. Open DMG and drag MiaoYan.app to Applications
-5. **First Launch**: Double-click MiaoYan.app to launch directly — the app is now notarized by Apple ✓
-6. Create a `MiaoYan` folder in iCloud Drive or your preferred location
-7. Open MiaoYan Preferences and set the storage location to this folder
-8. Click the "New Folder" icon in the top-left corner to create document categories and start writing
+2. **Homebrew**:
+   ```bash
+   brew install --cask miaoyan
+   ```
 
-After installation, we recommend exploring Preferences (⌘,) to discover MiaoYan's rich customization options, including edit modes, themes, fonts, and more to create your perfect writing environment.
+3. **GitHub Releases**: download the latest DMG from [GitHub Releases](https://github.com/tw93/MiaoYan/releases/latest) (macOS 11.5+)
+
+All three options share the same codebase and receive the same updates. After installing, create a `MiaoYan` folder in iCloud Drive or your preferred location, open Preferences (⌘,), and set the storage path.
 
 ## CLI
 
@@ -93,8 +89,6 @@ Why not WYSIWYG like Typora? We prioritize pure Markdown editing experience, and
 - Got ideas or bugs? Open an issue or PR, feel free to contribute your best AI model.
 - I have two cats, TangYuan and Coke. If you think MiaoYan delights your life, you can feed them <a href="https://miaoyan.app/cats.html?name=MiaoYan" target="_blank">canned food 🥩</a>.
 
-<a href="https://miaoyan.app/cats.html?name=MiaoYan"><img src="https://cdn.jsdelivr.net/gh/tw93/MiaoYan@main/assets/sponsors.svg" width="1000" loading="lazy" /></a>
-
 ## Acknowledgments
 
 - [glushchenko/fsnotes](https://github.com/glushchenko/fsnotes) - Initial project structure reference
@@ -103,11 +97,6 @@ Why not WYSIWYG like Typora? We prioritize pure Markdown editing experience, and
 - [raspu/Highlightr](https://github.com/raspu/Highlightr) - Syntax highlighting
 - [TsangerType](https://tsanger.cn/product) - TsangerJinKai font (default font)
 - [hakimel/reveal.js](https://github.com/hakimel/reveal.js) - PPT presentation framework
-- [Vercel](https://vercel.com?utm_source=tw93&utm_campaign=oss) - Static hosting for [miaoyan.app](https://miaoyan.app/)  
-  <a href="https://vercel.com?utm_source=tw93&utm_campaign=oss">
-    <img src="https://gw.alipayobjects.com/zos/k/wr/powered-by-vercel.svg" width="136" alt="Powered by Vercel" />
-  </a>
-
 ## License
 
 MIT License - Feel free to use and contribute.

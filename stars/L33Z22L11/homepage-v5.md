@@ -1,6 +1,6 @@
 ---
 project: homepage-v5
-stars: 54
+stars: 55
 description: |-
     使用 Nuxt 构建的个人主页。
 url: https://github.com/L33Z22L11/homepage-v5

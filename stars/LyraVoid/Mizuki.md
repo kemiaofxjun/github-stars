@@ -1,6 +1,6 @@
 ---
 project: Mizuki
-stars: 1452
+stars: 1475
 description: |-
     下一代Material Design 3 博客主题(Astro驱动)
 url: https://github.com/LyraVoid/Mizuki

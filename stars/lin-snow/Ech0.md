@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 1943
+stars: 1949
 description: |-
     Ech0 – An open-source, self-hosted lightweight publishing platform for personal idea sharing.
 url: https://github.com/lin-snow/Ech0
@@ -92,7 +92,7 @@ Then open `http://ip:6277`:
 2. The first account becomes Owner (admin privileges).
 3. By default, publishing is restricted to privileged accounts.
 
-See [Quick Deployment](#quick-deployment) for Docker Compose and Helm options.
+See [Quick Deployment](./DEPLOYMENT.md#quick-deployment) for Docker Compose and Helm options.
 
 ## Full Feature List
 
@@ -117,7 +117,6 @@ See [Quick Deployment](#quick-deployment) for Docker Compose and Helm options.
 ### Writing & Content
 
 - ✍️ **Markdown Writing Experience**: A **markdown-it** based editing/rendering engine with plugin extension and live preview.
-- 🧘 **Zen Mode Immersive Reading**: A minimal-distraction Timeline browsing mode.
 - 🏷️ **Tag Management System**: Supports tag organization, quick filtering, and precise retrieval.
 - 🃏 **Rich Media Cards**: Supports card rendering for website links, GitHub projects, and more.
 - 🎥 **Video Content Parsing**: Supports embedded parsing/display for Bilibili and YouTube videos.

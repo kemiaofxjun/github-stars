@@ -1,6 +1,6 @@
 ---
 project: Netease_analyze
-stars: 60
+stars: 61
 description: |-
     这是一个网易云音乐无损解析站点
 url: https://github.com/meorionel/Netease_analyze

@@ -1,6 +1,6 @@
 ---
 project: sugar-blog
-stars: 573
+stars: 574
 description: |-
     ✍️📚我写博客的地方🤪🤪🤪记录随笔与学习笔记，仓库包含：博客内容，博客主题、博客模板、vitepress离线全文搜索插件、VitePress RSS 支持插件，图片预览插件；a blog theme use vitepress
 url: https://github.com/ATQQ/sugar-blog
@@ -9,8 +9,9 @@ url: https://github.com/ATQQ/sugar-blog
 <h1 align="center"> 粥里有勺糖 </h1>
 <p align="center">你的指尖,拥有改变世界的力量</p>
 <p align="center">博客主题：<a href="https://theme.sugarat.top/" target="_blank">@sugarat/theme</a></p>
-
-[![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
+<p align="center">
+    <a href="https://github.com/ATQQ/vitepress-blog-sugar-template" target="_blank">主题示例仓库</a> | <a href="https://github.com/ATQQ/vitepress-plugins-tests" target="_blank">插件测试仓库</a>
+</p>
 
 ## 仓库介绍
 
@@ -20,6 +21,7 @@ url: https://github.com/ATQQ/sugar-blog
 * [@sugarat/theme-shared](./packages/shared/)：`VitePress` 主题相关的工具方法
 * [@sugarat/create-theme](./packages/create-theme/)：用于快速创建和作者一样风格的博客
 * VitePress 插件相关：
+  * [vitepress-plugin-image-preview](./packages/vitepress-plugin-image-preview/)：为 `VitePress` 站点添加图片预览功能。
   * [vitepress-plugin-pagefind](./packages/vitepress-plugin-pagefind/)：基于 pagefind 实现的 `VitePress` 离线全文搜索支持插件
   * [vitepress-plugin-rss](./packages/vitepress-plugin-rss/)：基于 feed 实现的 `VitePress` RSS 支持插件
   * [vitepress-plugin-51la](./packages/vitepress-plugin-51la/)：为 `VitePress` 站点引入 [51.la](https://v6.51.la/) 的网站数据统计能力。

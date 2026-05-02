@@ -1,20 +1,20 @@
 ---
 project: JKVideo
-stars: 4947
+stars: 4954
 description: |-
-    null
+    高颜值第三方 B 站 React Native 客户端
 url: https://github.com/tiajinsha/JKVideo
 ---
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/JKVideo-视频播放器客户端-00AEEC?style=for-the-badge&logoColor=white" alt="JKVideo"/>
+<img src="https://img.shields.io/badge/JKVideo-仿B站客户端-00AEEC?style=for-the-badge&logo=bilibili&logoColor=white" alt="JKVideo"/>
 
 # JKVideo
 
-**高颜值的网络视频播放器 React Native 客户端**
+**高颜值第三方 B 站 React Native 客户端**
 
-*A feature-rich Video app with DASH playback, real-time danmaku, WBI signing & live streaming*
+*A feature-rich Bilibili-like app with DASH playback, real-time danmaku, WBI signing & live streaming*
 
 ---
 
@@ -27,6 +27,18 @@ url: https://github.com/tiajinsha/JKVideo
 [English](README.en.md) · [快速开始](#快速开始) · [功能亮点](#功能亮点) · [贡献](CONTRIBUTING.md)
 
 </div>
+
+---
+
+> ## ⚠️ 重要公告
+>
+> 本项目已收到**哔哩哔哩（bilibili）律师函**，要求停止对 B 站 API 的调用及相关仿制行为。
+>
+> 为尊重知识产权及相关法律法规，本仓库**即日起停止后续维护与更新**，不再接受新的 Issue 和 Pull Request。
+>
+> 现有代码仅作学习参考保留，请勿将本项目用于任何商业或违法用途。
+>
+> 感谢所有支持过本项目的朋友。
 
 ---
 
@@ -54,7 +66,7 @@ https://github.com/tiajinsha/JKVideo/releases/download/v1.0.0/6490dcd9dba9a243a7
 ## 功能亮点
 
 🎬 **DASH 完整播放**
-DASH 流 → `buildDashMpdUri()` 生成本地 MPD → ExoPlayer 原生解码，支持 1080P + 4K HDR杜比视界
+Bilibili DASH 流 → `buildDashMpdUri()` 生成本地 MPD → ExoPlayer 原生解码，支持 1080P + 4K HDR杜比视界
 
 💬 **完整弹幕系统**
 视频弹幕 XML 时间轴同步 + 5 车道飘屏覆盖；直播弹幕 WebSocket 实时接收 + 舰长标记 + 礼物计数
@@ -150,7 +162,7 @@ app/
 
 components/            # UI 组件（播放器、弹幕、卡片等）
 hooks/                 # 数据 Hooks（视频列表、播放流、弹幕等）
-services/              # 视频平台 API 封装（axios + Cookie 拦截）
+services/              # Bilibili API 封装（axios + Cookie 拦截）
 store/                 # Zustand 状态（登录、下载、播放、设置）
 utils/                 # 工具函数（格式化、图片代理、MPD 构建）
 ```
@@ -178,7 +190,8 @@ utils/                 # 工具函数（格式化、图片代理、MPD 构建）
 ## 免责声明
 
 本项目仅供个人学习研究使用，不得用于商业用途。
-所有视频内容版权归原作者及相关平台所有。
+所有视频内容版权归原作者及哔哩哔哩所有。
+本项目与哔哩哔哩官方无任何关联。
 
 ---
 
