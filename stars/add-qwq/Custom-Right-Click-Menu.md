@@ -1,6 +1,6 @@
 ---
 project: Custom-Right-Click-Menu
-stars: 60
+stars: 61
 description: |-
     A new web custom right-click menu solution (lightweight)
 url: https://github.com/add-qwq/Custom-Right-Click-Menu
@@ -40,22 +40,24 @@ url: https://github.com/add-qwq/Custom-Right-Click-Menu
 <br>
 
 ## English
+
 ### Custom Right-Click Menu (V3)
-We are confident that this project is by far (with the specific time subject to the project's commits time) the **most fully-featured, open-source, and finest native JavaScript custom context menu project** on GitHub—no reliance on any frameworks required.
+
+We are confident that this project is, as of now (with the specific time subject to the project's commit history), the **most feature-rich, open-source, and finest native JavaScript custom context menu project** on GitHub—requiring no dependencies on any frameworks.
 
 Of course, many excellent developers may simply not have ventured into such tools; we have merely turned this idea into a practical, implementable solution.
 
-This is Version 3 of Custom-Right-Click-Menu (CRCM), a complete architectural overhaul. Building on the strengths of V2, it introduces key features including multi-level nested submenus, keyboard navigation support, enhanced context detection, and performance optimization—boasting smoother animations, richer interaction modes, and stronger context awareness.
+This is **Version 3** of Custom-Right-Click-Menu (CRCM), a complete architectural overhaul. Building on the strengths of V2, it introduces key features including multi-level nested submenus, keyboard navigation support, enhanced context detection, and performance optimization—boasting smoother animations, richer interaction modes, and stronger context awareness.
 
 Compared to V1 and V2, V3 achieves zero dependencies, higher configurability, easier integration, fixes most known issues, significantly improves extensibility, and remains a **single JS file deployment** — ready to use with just an import.
 
-In summary, CRCM is a native JavaScript right-click menu project featuring multi-level nested menu support, a powerful yet concise API, intelligent menu and submenu positioning, schema-based registration and configuration, dynamic show/hide of menu items, high customization, theme customization, external stylesheet loading, modern UI with smooth animations, and more. It supports single JS file deployment, achieving zero dependencies, high configurability, and easy integration.
+In summary, CRCM is a native JavaScript right-click menu project featuring multi-level nested menu support, a powerful yet concise API, intelligent menu and submenu positioning, schema-based registration and configuration, dynamic show/hide of menu items, high customization, theme customization, external stylesheet loading, a modern UI with smooth animations, and more. It supports single JS file deployment, achieving zero dependencies, high configurability, and easy integration.
 
 <br>
 
 Want to experience automated management (including automatically adding components to web pages + automatic version updates)?<br>Experience rapid project management through [CRCMenu Manager](https://github.com/add-qwq/CRCMenu-Manager).
 
-Want to use this right-click menu across all websites?<br>Install the [Right Click Menu - Browser Extension](https://github.com/add-qwq/CRCM-Browser-Plugin).
+Want to use this right-click menu across all websites?<br>Install the [Right Click Menu - Browser Extension](https://github.com/add-qwq/CRCM-Browser-Plugin). <br>*Note: This extension project has been discontinued due to high maintenance costs.*
 
 <br>
 
@@ -64,30 +66,32 @@ Want to use this right-click menu across all websites?<br>Install the [Right Cli
 ![GitHub stars](https://img.shields.io/github/stars/add-qwq/Custom-Right-Click-Menu)
 
 ### Project Overview
-- **[Online Demo (Click to Access - China Mirror Site)](https://www.rockaz.cn/GitHub-Project-Demo/Custom-Right-Click-Menu/)**
-*Note: The server of this website is located in China, ensuring faster and more stable access for users within China. The page language is Chinese. However, for security defense purposes (to defend against a large number of automated attack IPs from outside China), all traffic from outside China has been blocked.*
-- **[Online Demo (Click to Access - GitHub Page Mirror Site)](https://add-qwq.github.io/Custom-Right-Click-Menu(DemoPage)/)**
-*Note: This website is hosted on GitHub Pages. Users within China may experience significant access delays, so it is more suitable for users outside China (users around the world).*
 
-Built on Web Components as the core, this project replaces the browser's native right-click menu with a flexible, highly extensible custom interface. It supports context-aware operations (text copy/paste, link/image handling, page controls) and features intelligent menu positioning with automatic adjustment. Meanwhile, it allows deep customization of styles, structure, and functionality.
+- **[Online Demo (Click to Access - China Mirror Site)](https://www.rockaz.top/GitHub-Project-Demo/Custom-Right-Click-Menu/)**
+  *Note: The server of this website is located in China, ensuring faster and more stable access for users within China. The page language is Chinese. However, for security defense purposes (to defend against a large number of automated attack IPs from outside China), all traffic from outside China has been blocked.*
+- **[Online Demo (Click to Access - GitHub Page Mirror Site)](https://add-qwq.github.io/Custom-Right-Click-Menu(DemoPage)/)**
+  *Note: This website is hosted on GitHub Pages. Users within China may experience significant access delays, so it is more suitable for users outside China.*
+
+Built on Web Components as the core, this project replaces the browser's native right-click menu with a flexible, highly extensible custom interface. It supports context-aware operations (text copy/paste, link/image handling, page controls) and features intelligent menu positioning with automatic adjustment. Meanwhile, it allows deep customization of styles, structures, and functionality.
 
 ### Key Features (V3 Updates)
+
 #### 1. Architecture Overhaul
 - Complete rewrite with multi-level nested submenu support (unlimited depth)
 - Submenus use fixed positioning with intelligent overflow handling (automatically flips direction when near viewport edges)
-- Schema-based registration: Register menu configurations via JSON files, greatly simplifying the API configuration process with support for unlimited nested children
+- Schema-based registration: Register menu configurations via JSON files, greatly simplifying the API configuration process with support for unlimited nested `children`
 - Continued use of Web Components (custom elements + Shadow DOM) for style and logic isolation
 - Single JS file deployment — no additional CSS/HTML files required
 - Singleton pattern design to avoid duplicate menu instances
-- Intelligent positioning engine: Optimized boundary collision detection logic, submenus automatically select the best pop-up position based on remaining screen space
-- Modern UI: Introduced more delicate scale and opacity transition animations, fully supporting Glassmorphism style
+- Intelligent positioning engine: Optimized boundary collision detection logic; submenus automatically select the best pop-up position based on remaining screen space
+- Modern UI: Introduced more delicate scale and opacity transition animations, fully supporting the Glassmorphism style
 
 #### 2. Enhanced Customization Capabilities
 - **Highly Customizable Themes**: Modify menu colors, borders, blur effects, transition speeds, etc., via CSS variables
 - **Context-Specific Schemas**: Register different menu configurations for specific selectors
-- **Nested Menu Structure**: Define multi-level menus directly in the schema via children arrays
-- **Dynamic Visibility**: Menu items and groups show/hide based on context functions
-- **External Style Loading**: Support loading third-party styles (e.g., Font Awesome icon library and external style files)
+- **Nested Menu Structure**: Define multi-level menus directly in the schema via `children` arrays
+- **Dynamic Visibility**: Menu items and groups can show/hide based on context functions
+- **External Style Loading**: Support loading third-party styles (e.g., Font Awesome icon library)
 
 #### 3. Retained & Improved Core Features
 - Replaces the default browser right-click menu with a modern, animated interface
@@ -102,35 +106,33 @@ Built on Web Components as the core, this project replaces the browser's native 
 - Fallback solution for Clipboard API (supports older browsers)
 
 ### Project Structure
+
 Adhering to the lightweight philosophy, V3 contains only a single core file but offers **two core variants** to adapt to different submenu application scenarios:
-- **CRCMenu.v3-A.js**: Recommended version, uses absolute positioning for submenus (simpler structure, suitable for lightweight applications)  
+- **CRCMenu.v3-A.js**: Recommended version, uses absolute positioning for submenus (simpler structure, suitable for lightweight applications)
 - **CRCMenu.v3-B.js**: Alternative version, uses fixed positioning for submenus (better performance, suitable for multi-level nesting)
 
-*Note: The repository contains the minified JS files `Custom-Right-Click-Menu-V3-A.js` and `Custom-Right-Click-Menu-V3-B.js`, which are formatted for readability.*
+*Note: The files `Custom-Right-Click-Menu-V3-A.js` and `Custom-Right-Click-Menu-V3-B.js` in the repository are formatted JS files for readability.*
 
-Both files include complete Web Components definitions, logic, and default configurations.
-  Includes:
-  - Custom element (`<custom-right-click-menu>`)
-  - Theme management
-  - Schema registration
-  - Context detection
-  - Event handling (click/scroll/keydown/touch)
+*Note: The "old version (V1/V2)" and "CRCM.V3-A.js (version A)" have been discontinued. V3 focuses on a lightweight, framework-free deployment experience and includes in-depth intelligent tuning.*
 
-If you are unsure which version to choose, refer to the [Version Selection Guide](https://github.com/add-qwq/Custom-Right-Click-Menu/blob/main/Version_Selection_Guide.md).
-
-*Note: The `Custom-Right-Click-Menu-V3-A.js` and `Custom-Right-Click-Menu-V3-B.js` files in the repository are formatted JS files.*
+Both files include complete Web Components definitions, logic, and default configurations. They include:
+- Custom element (`<custom-right-click-menu>`)
+- Theme management
+- Schema registration
+- Context detection
+- Event handling (click/scroll/keydown/touch)
 
 ### Quick Start
+
 #### 1. Get the Source Code
 - Visit the [GitHub repository](https://github.com/add-qwq/Custom-Right-Click-Menu).
-
-- Download the latest version at [Releases](https://github.com/add-qwq/Custom-Right-Click-Menu/releases); or clone via Git:
+- Download the latest version from [Releases](https://github.com/add-qwq/Custom-Right-Click-Menu/releases); or clone via Git:
   ```bash
   git clone https://github.com/add-qwq/Custom-Right-Click-Menu.git
   ```
 
 #### 2. Basic Usage (3 Steps)
-V3 only requires **one JS file import** — no other dependencies.
+V3 only requires **importing one JS file** — no other dependencies.
 
 ##### Step 1: Import the Core File
 Add the following to the `<head>` of your HTML or before the closing `</body>` tag:
@@ -154,11 +156,12 @@ const menu = new CustomRightClickMenu({
     '--header-color': '#9ca3af',
     '--divider-color': '#e5e7eb',
     '--transition-speed': '0.1s'
+    // ...and many more custom theme variables, please refer to the code file for details
   },
   // Load external stylesheets (e.g., Font Awesome icon library and external style files)
   externalStyles: [
     'Example.css',
-    'https://s4.zstatic.net/ajax/libs/font-awesome/6.4.0/css/all.min.css'
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
   ]
 });
 ```
@@ -169,6 +172,7 @@ Note: The Font Awesome icon library is **not mandatory**, but we strongly recomm
 The menu will automatically initialize via the built-in `createRightClickMenu()` function when the DOM is fully loaded. Right-click anywhere on the page to trigger the custom menu.
 
 ### Advanced Customization
+
 V3’s core advantage is its concise yet powerful API. Below are common customization scenarios with code examples.
 
 #### 1. Register Menu Schemas for Different Selectors
@@ -189,27 +193,31 @@ menu.registerSchema({
 ```
 
 #### 2. Define Groups and Nested Items
-Groups are used to organize menu items and support sorting:
+Groups are used to organize menu items and support sorting. You can achieve infinite-level submenus by nesting `children` or `items`.
 
 ```javascript
 menu.registerSchema({
   selector: 'default',
-  groups: [
+  items: [
     {
-      id: 'other',
-      name: 'Other Operations',
-      order: 50,
+      id: 'group1',
+      name: 'General Operations', // Group title
       items: [
+        {
+          id: 'back',
+          label: 'Back',
+          icon: 'fa-arrow-left',
+          callback: () => window.history.back()
+        },
         {
           id: 'more',
           label: 'More Features',
           icon: 'fa-ellipsis-h',
-          children: [
-            { /* Nested item */ },
+          children: [ // Nested submenu
             {
-              id: 'deep',
-              label: 'Deep Nested Item',
-              children: [ /* Third-level item */ ]
+              id: 'sub1',
+              label: 'Submenu Item',
+              callback: () => console.log('Submenu item clicked')
             }
           ]
         }
@@ -219,7 +227,18 @@ menu.registerSchema({
 });
 ```
 
-#### 3. Dynamically Update the Theme
+#### 3. Menu Data Structure Analysis
+
+CRCM-V3 uses concise parsing rules to drive a complex menu structure:
+
+- **Grouping Rule**: An object containing `items` or `children` but **without** a `label` is parsed as a group. An optional `name` property serves as the group header. Dividers are automatically rendered between groups.
+- **Menu Item Rule**: Any object containing a `label` property is parsed as a menu item.
+  - **Action Item**: Contains a `callback` function, triggered on click.
+  - **Nested Item**: Contains an `items` or `children` array, which expands a submenu on hover.
+- **Visibility Control (Context)**: All items support a `context: (ctx) => boolean` function to dynamically control visibility based on the current environment (e.g., whether text is selected, or if an input field is focused).
+- **Common Properties**: Supports `id` (unique identifier), `icon` (SVG or FA class name), and `divider` (forces a separator line above this item).
+
+#### 4. Dynamically Update the Theme
 After menu initialization, you can still dynamically modify the theme via page JS:
 
 ```javascript
@@ -237,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-#### 4. Mount to a Specific Element
+#### 5. Mount to a Specific Element
 By default, the menu is mounted to `window`. You can mount it to a specific element to limit the scope:
 
 ```javascript
@@ -248,12 +267,13 @@ menu.unmount();
 ```
 
 ### Implementation Principle
+
 #### 1. Web Components Foundation
 - **Custom Element**: `<custom-right-click-menu>` registered via `customElements.define()`
 - **Shadow DOM**: Isolates menu styles from the parent page
 - **Singleton Pattern**: Ensures only one menu instance exists
 - **Recursive Rendering Mechanism**: Dynamically generates DOM for menu levels at all depths through the internal `_renderMenuLayer` method, and automatically binds hover and position calculation events
-- **Boundary Adaptation**: Calculates offset width and height, compares with viewport boundaries, and dynamically corrects left and top values to ensure the menu is fully visible within the viewport
+- **Boundary Adaptation**: Calculates offset width and height, compares with viewport boundaries, and dynamically corrects `left` and `top` values to ensure the menu is fully visible within the viewport
 
 #### 2. Context Detection Logic
 Real-time detection on right-click:
@@ -268,6 +288,7 @@ Real-time detection on right-click:
 - **Outside click/scroll/Escape key/touch**: Hide menu to simulate native behavior
 
 ### Compatibility Notes
+
 | Browser | Supported Versions | Notes |
 |-----------------|--------------------|----------------------------------------|
 | Chrome | 67+ | Full support (Web Components + Clipboard API) |
@@ -280,14 +301,13 @@ Real-time detection on right-click:
 
 ### Acknowledgements
 - **Project Author**: add-qwq ([GitHub](https://github.com/add-qwq))
-- **Special Thanks**: Conard-Ferenc ([GitHub](https://github.com/Conard-Ferenc)) for providing design ideas and technical support for Version 2 (V2).
+- **Special Thanks**: Conard-Ferenc ([GitHub](https://github.com/Conard-Ferenc)) for providing design ideas and technical support for the early important version (V2).
 - **Community Contributions**:
-  - [SatinAu-Zelynn](https://github.com/SatinAu-Zelynn)：Provided code logic for optimizing mobile text selection, improving component timer cleanup on unmount (V3.1 update)
+  - [SatinAu-Zelynn](https://github.com/SatinAu-Zelynn)：Provided code logic for optimizing mobile text selection and improving component timer cleanup on unmount (V3.1 update)
+  - [liesauer](https://github.com/liesauer)：Provided data structure optimization ideas and two visual optimizations (V3.6 update)
   - [Other Contributors](https://github.com/add-qwq/Custom-Right-Click-Menu/issues)：Thanks to all contributors for their valuable feedback and suggestions! ❤️
 - **Third Party Thanks**：
-  -This project uses Font Awesome Free SVG icons (copyright belongs to Fonticons, Inc.), following the CC BY 4.0 protocol
-
-
+  - This project uses Font Awesome Free SVG icons (copyright belongs to Fonticons, Inc.), following the CC BY 4.0 protocol
 
 ### Planning
 - Explore more modern and elegant UI designs
@@ -316,7 +336,8 @@ This project is licensed under the [Apache-2.0 License](LICENSE). You must compl
 
 想要体验自动化管理（自动添加组件到网页+自动版本更新）？<br>通过[CRCM菜单管理器](https://github.com/add-qwq/CRCMenu-Manager)来体验项目的快速管理
 
-想在所有网站上体验此右键菜单？<br>请安装[右键菜单 - 浏览器扩展](https://github.com/add-qwq/CRCM-Browser-Plugin)
+想在所有网站上体验此右键菜单？<br>请安装[右键菜单 - 浏览器扩展](https://github.com/add-qwq/CRCM-Browser-Plugin)<br>注意，该项目因维护成本较高，已停更
+
 
 <br>
 
@@ -327,7 +348,7 @@ This project is licensed under the [Apache-2.0 License](LICENSE). You must compl
 
 ### 项目概述
 
-**[在线演示（点击访问--中国镜像站）](https://www.rockaz.cn/GitHub-Project-Demo/Custom-Right-Click-Menu/)**
+**[在线演示（点击访问--中国镜像站）](https://www.rockaz.top/GitHub-Project-Demo/Custom-Right-Click-Menu/)**
 
 *注：该网站服务器位于中国，中国境内用户访问更快速稳定页面语言为中文，但出于安全防御目的（为了防御大量来自中国境外的自动化攻击IP），我们已封锁所有中国以外的流量*
 
@@ -373,24 +394,14 @@ This project is licensed under the [Apache-2.0 License](LICENSE). You must compl
 
 ### 项目结构
 
-V3版本保持轻量理念，仅包含单个核心文件，但提供**两个核心变体**以适应不同子菜单应用场景：
+V3版本保持轻量理念，仅包含单个核心文件
 
 - **CRCMenu.v3-A.js**：推荐版本，采用绝对定位子菜单（结构更简单，适合轻量业务）
 - **CRCMenu.v3-B.js**：备选版本，采用固定定位子菜单（性能更优，适合多层级嵌套）
 
-*注：仓库内的`Custom-Right-Click-Menu-V3-A.js`和`Custom-Right-Click-Menu-V3-B.js`是格式化后的JS文件*
+*注：仓库内的`Custom-Right-Click-Menu-V3.js`是格式化后的JS文件*
 
-两个版本均包含完整的Web Components定义、逻辑与默认配置。
-  内容包括：
-  - 自定义元素（`<custom-right-click-menu>`）
-  - 主题管理
-  - 方案注册
-  - 上下文检测
-  - 事件处理（点击/滚动/按键/触摸）
-
-若你不知道如何选择版本，请参考[版本选择指南](https://github.com/add-qwq/Custom-Right-Click-Menu/blob/main/Version_Selection_Guide.md)
-
-*注：旧版（V1/V2）已停止维护。V3专注于轻量、无框架的部署体验，且V3进行了深度智能调优*
+*注："旧版（V1/V2）" 以及 "CRCM.V3-A.js（A版本）" 已停止维护。V3专注于轻量、无框架的部署体验，且V3进行了深度智能调优*
 
 
 ### 快速使用
@@ -413,7 +424,7 @@ V3版本仅需**导入一个JS文件**——无其他依赖
 在HTML的`<head>`或闭合`</body>`标签前添加：
 ```html
 <!-- 导入CRCM V3核心文件 -->
-<script src="path/to/CRCMenu.v3-A.js"></script>
+<script src="path/to/CRCMenu.v3.js"></script>
 ```
 
 ##### 步骤2：（可选）配置主题/外部样式
@@ -432,6 +443,7 @@ const menu = new CustomRightClickMenu({
     '--header-color': '#9ca3af',
     '--divider-color': '#e5e7eb',
     '--transition-speed': '0.1s'
+    // ...还有很多很多其他自定义主题变量，具体可查看代码文件
   },
   // 加载外部样式表（如FontAwesome图标库和外部样式文件）
   externalStyles: [
@@ -472,27 +484,31 @@ menu.registerSchema({
 
 #### 2. 定义分组与嵌套项
 
-分组用于组织菜单项，支持排序：
+通过 `registerSchema` 注册菜单方案。支持通过嵌套 `children` 或 `items` 实现无限级子菜单：
 
 ```javascript
 menu.registerSchema({
   selector: 'default',
-  groups: [
+  items: [
     {
-      id: 'other',
-      name: '其他操作',
-      order: 50,
+      id: 'group1',
+      name: '常规操作', // 分组标题
       items: [
+        {
+          id: 'back',
+          label: '返回',
+          icon: 'fa-arrow-left',
+          callback: () => window.history.back()
+        },
         {
           id: 'more',
           label: '更多功能',
           icon: 'fa-ellipsis-h',
-          children: [
-            { /* 嵌套项 */ },
+          children: [ // 嵌套子菜单
             {
-              id: 'deep',
-              label: '深层嵌套项',
-              children: [ /* 三级项 */ ]
+              id: 'sub1',
+              label: '二级菜单项',
+              callback: () => console.log('点击了二级菜单')
             }
           ]
         }
@@ -502,7 +518,18 @@ menu.registerSchema({
 });
 ```
 
-#### 3. 动态更新主题
+#### 3. 菜单数据结构解析
+
+CRCM-V3 使用简洁的解析规则来驱动复杂的菜单结构：
+
+- **分组规则 (Grouping)**: 对象包含 `items` 或 `children` 但**没有** `label` 时，解析为分组。可选 `name` 属性作为分组标题，分组间会自动渲染分隔线。
+- **菜单项规则 (Item)**: 只要对象包含 `label` 属性，即解析为菜单项。
+  - **动作项**: 包含 `callback` 函数，点击即触发。
+  - **嵌套项**: 包含 `items` 或 `children` 数组，悬停即展开子菜单。
+- **显示控制 (Context)**: 所有项均支持 `context: (ctx) => boolean` 函数，用于根据当前环境（如是否选中文字、是否为输入框）动态控制显隐。
+- **公共属性**: 支持 `id` (唯一标识)、`icon` (SVG或FA类名)、`divider` (强制在该项上方显示分隔线)。
+
+#### 4. 动态更新主题
 
 菜单初始化后，仍可通过页面JS动态修改主题：
 
@@ -521,7 +548,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-#### 4. 挂载到指定元素
+#### 5. 挂载到指定元素
 
 默认挂载到`window`，可挂载到特定元素以限制作用范围：
 
@@ -573,9 +600,10 @@ menu.unmount();
 ### 致谢
 
 - **项目作者**：add-qwq ([GitHub](https://github.com/add-qwq))
-- **特别感谢**：Conard-Ferenc ([GitHub](https://github.com/Conard-Ferenc)) 为早期版本(V2)提供设计思路与技术支持
+- **特别感谢**：Conard-Ferenc ([GitHub](https://github.com/Conard-Ferenc)) 为早期的重要版本(V2)提供设计思路与技术支持
 - **社区贡献**：
   - [SatinAu-Zelynn](https://github.com/SatinAu-Zelynn)：提供了“优化移动端文字选取、完善组件卸载时的定时器清理”的相关代码逻辑（V3.1更新内容）
+  - [liesauer](https://github.com/liesauer)：提供了数据结构优化思路，以及两个视觉性优化建议（V3.6更新内容）
   - [其他贡献者](https://github.com/add-qwq/Custom-Right-Click-Menu/issues)：非常感谢所有为项目提出issue的人❤️
 - **第三方感谢**：
   - 本项目使用了 Font Awesome Free SVG 图标（图标版权归属 Fonticons, Inc.），遵循 CC BY 4.0 协议

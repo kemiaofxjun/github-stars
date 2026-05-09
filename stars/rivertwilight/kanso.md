@@ -1,6 +1,6 @@
 ---
 project: kanso
-stars: 85
+stars: 88
 description: |-
     Personal website in Amazon Kindle style. Write thoughts, showcase projects, and more.
 url: https://github.com/rivertwilight/kanso

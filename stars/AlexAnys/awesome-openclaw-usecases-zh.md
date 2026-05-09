@@ -1,24 +1,24 @@
 ---
 project: awesome-openclaw-usecases-zh
-stars: 3975
+stars: 4079
 description: |-
-    🇨🇳 OpenClaw中文用例大全 | 49个真实场景 | 国内特色 + 海外案例的国内适配 | 自动化办公·内容创作·运维·AI助理·知识管理 | 新手友好 | Chinese guide for OpenClaw AI agent use cases
+    🇨🇳 OpenClaw中文用例大全 | 50个真实场景 | 国内特色 + 海外案例的国内适配 | 自动化办公·内容创作·运维·AI助理·知识管理 | 新手友好 
 url: https://github.com/AlexAnys/awesome-openclaw-usecases-zh
 ---
 
 <div align="center">
 
-<img width="1500" height="500" alt="OpenClaw AI 智能体最佳用例与案例合集 - 49 个真实场景" src="https://github.com/user-attachments/assets/4ae57dfb-4f18-4677-9136-43bf93017250" />
+<img width="1500" height="500" alt="OpenClaw AI 智能体最佳用例与案例合集 - 50 个真实场景" src="https://github.com/user-attachments/assets/4ae57dfb-4f18-4677-9136-43bf93017250" />
 
 <br/>
 <br/>
 
-<p><strong>49 个经过验证的真实场景，手把手教你用 AI 智能体自动化工作与生活</strong></p>
+<p><strong>50 个经过验证的真实场景，手把手教你用 AI 智能体自动化工作与生活</strong></p>
 
 <br/>
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![用例数量](https://img.shields.io/badge/用例-49-blue?style=flat-square)
+![用例数量](https://img.shields.io/badge/用例-50-blue?style=flat-square)
 ![中文](https://img.shields.io/badge/语言-简体中文-red?style=flat-square)
 ![新手友好](https://img.shields.io/badge/难度-新手友好-green?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
@@ -44,23 +44,23 @@ url: https://github.com/AlexAnys/awesome-openclaw-usecases-zh
 
 </details>
 
-> **2026.4.20 更新**：新增中文互联网研究、微信公众号自动发布、数字人格蒸馏 3 个用例，中国特色用例扩充至 22 个。详见 [中国特色用例](#-中国特色用例)。
+> **2026.5.4 更新**：新增 Multica 多 CLI 协作看板用例——把 OpenClaw / Claude Code / Codex / Hermes 拉进同一个 Web 看板，Apache 2.0 自部署友好。详见 [基础设施与 DevOps](#基础设施与-devops)。
 
 ---
 
 ## 🗂 目录
 
 - [新手入门指南](#-新手入门指南)
-- **[🇨🇳 中国特色用例](#-中国特色用例)** — 22 个国内生态用例
+- **[🇨🇳 中国特色用例](#-中国特色用例)** — 23 个国内生态用例
   - [平台机器人](#平台机器人) (4) — 飞书、钉钉、企业微信等 IM 平台 AI 接入
   - [内容创作与发布](#内容创作与发布) (3) — 小红书、公众号、播客全流程自动化
   - [数据研究与监控](#数据研究与监控) (7) — A 股、财报、竞品、论文、中文互联网研究
   - [办公与客户服务](#办公与客户服务) (4) — 邮件、会议、多渠道客服、电商多 Agent
-  - [个人助理与智能体架构](#个人助理与智能体架构) (4) — 早间简报、人格档案、多 Agent 编排
+  - [个人助理与智能体架构](#个人助理与智能体架构) (5) — 早间简报、人格档案、多 Agent 编排
 - **[🌐 通用场景](#-通用场景)** — 国际用例合集（部分含国内适配）
   - [社交媒体](#社交媒体) (4) — Reddit、YouTube、X 等平台内容聚合
   - [创意与构建](#创意与构建) (3) — 内容创作流水线、从零构建产品
-  - [基础设施与 DevOps](#基础设施与-devops) (4) — 服务器自愈、工作流编排、可观测性
+  - [基础设施与 DevOps](#基础设施与-devops) (5) — 服务器自愈、工作流编排、可观测性、智能体看板
   - [生产力](#生产力) (16) — 邮件、日程、笔记、CRM、个人助理
   - [研究与学习](#研究与学习) (9) — 知识库、市场调研、论文发现、竞品分析
   - [金融与交易](#金融与交易) (1) — 预测市场模拟交易
@@ -131,7 +131,7 @@ url: https://github.com/AlexAnys/awesome-openclaw-usecases-zh
 
 ## 🇨🇳 中国特色用例
 
-> 为中国工具生态设计或适配的用例，使用飞书、钉钉、企业微信、小红书等国内平台。标注"适配"的用例在国际版基础上增加了国内方案。共 22 个，按场景分 5 类。
+> 为中国工具生态设计或适配的用例，使用飞书、钉钉、企业微信、小红书等国内平台。标注"适配"的用例在国际版基础上增加了国内方案。共 23 个，按场景分 5 类。
 
 ### 平台机器人
 
@@ -189,6 +189,7 @@ url: https://github.com/AlexAnys/awesome-openclaw-usecases-zh
 | [数字人格蒸馏（适配）](usecases/digital-persona-distillation.md) | 从 12+ 平台聊天记录提取 4 维人格档案，含飞书/微信采集和 PIPL 提醒 | ⭐⭐⭐ |
 | [多智能体协作操作系统](usecases/cn-multi-agent-operating-system.md) | 把 OpenClaw 变成专业分工、协同、稳定迭代的智能体系统 | ⭐⭐⭐ |
 | [Agent Swarm 一人开发团队（适配）](usecases/agent-swarm-dev-team.md) | OpenClaw 编排 Codex + Claude Code 舰队，全自动化开发流水线 | ⭐⭐⭐ |
+| [Multica 智能体看板（适配）](usecases/multica-managed-agents.md) | 把 OpenClaw / Claude Code / Codex / Hermes 拉进同一个 Web 看板，Issue 即任务、Apache 2.0 自部署 | ⭐⭐ |
 
 ---
 
@@ -227,6 +228,7 @@ url: https://github.com/AlexAnys/awesome-openclaw-usecases-zh
 | [Opik 可观测性追踪](usecases/opik-openclaw-observability.md) | 将 OpenClaw 运行链路接入 Opik，统一查看 LLM/工具/子智能体追踪，并监控 token 与成本 | ⭐⭐ |
 | [自愈家庭服务器](usecases/self-healing-home-server.md) | 运行始终在线的基础设施智能体，自动发现并修复故障 | ⭐⭐⭐ |
 | [Agent Swarm 一人开发团队](usecases/agent-swarm-dev-team.md) | OpenClaw 编排 Codex + Claude Code 舰队实现全自动化开发流水线（国内适配） | ⭐⭐⭐ |
+| [Multica 智能体看板](usecases/multica-managed-agents.md) | 多 CLI 智能体统一 Web 看板，Issue 即任务、Skills 可复用，Apache 2.0 自部署（国内适配） | ⭐⭐ |
 
 ### 生产力
 
