@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 1968
+stars: 1974
 description: |-
     Ech0 – An open-source, self-hosted lightweight publishing platform for personal idea sharing.
 url: https://github.com/lin-snow/Ech0
@@ -67,6 +67,7 @@ It stays lightweight, easy to deploy, and fully open-source.
 - [Deployment & Upgrading](#deployment--upgrading)
 - [FAQ](#faq)
 - [Feedback & Community](#feedback--community)
+- [License Compliance](#license-compliance)
 - [Open Source & Development](#open-source--development)
 - [Sponsors & Acknowledgements](#sponsors--acknowledgements)
 - [Star History](#star-history)
@@ -156,7 +157,7 @@ See [Quick Deployment](./DEPLOYMENT.md#quick-deployment) for Docker Compose and 
 
 ### License
 
-- 🎉 **Fully Open Source**: Released under **AGPL-3.0**, with no tracking, no subscription, and no SaaS dependency.
+- 🎉 **Fully Open Source**: Released under **AGPL-3.0-or-later**, with no tracking, no subscription, and no SaaS dependency.
 
 </details>
 
@@ -243,6 +244,22 @@ For the simplest path, the [Try in 60 Seconds](#try-in-60-seconds) snippet above
 
 ---
 
+## License Compliance
+
+Ech0 is licensed under **AGPL-3.0-or-later**.
+
+If you modify Ech0 and make it available to users over a network, including as a hosted service, you must provide the complete corresponding source code of your modified version under AGPL-3.0-or-later.
+
+You must preserve copyright notices, license notices, and source-code access information in source and binary distributions, container images, hosted services, and modified deployments.
+
+- Compliance guide: [docs/legal/agpl-compliance.md](./docs/legal/agpl-compliance.md)
+- Project notice: [NOTICE](./NOTICE)
+- Commercial licensing: [COMMERCIAL.md](./COMMERCIAL.md)
+
+If you want to use Ech0 in a proprietary product, closed-source hosted service, white-label deployment, or any use case where you do not want to release your modifications, request a commercial license.
+
+---
+
 ## Open Source & Development
 
 **Governance**
@@ -251,6 +268,9 @@ For the simplest path, the [Try in 60 Seconds](#try-in-60-seconds) snippet above
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [Security Policy](./SECURITY.md)
 - [License](./LICENSE)
+- [Notice](./NOTICE)
+- [AGPL Compliance Guide](./docs/legal/agpl-compliance.md)
+- [Commercial Licensing](./COMMERCIAL.md)
 
 **Development**
 
