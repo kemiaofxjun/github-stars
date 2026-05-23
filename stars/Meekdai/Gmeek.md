@@ -1,6 +1,6 @@
 ---
 project: Gmeek
-stars: 2332
+stars: 2334
 description: |-
     Gmeek is a Blog All in Github
 url: https://github.com/Meekdai/Gmeek
