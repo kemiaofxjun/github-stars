@@ -1,6 +1,6 @@
 ---
 project: billd-desk
-stars: 6803
+stars: 6845
 description: |-
     基于Vue3 + WebRTC + Nodejs + Flutter搭建的远程桌面控制、游戏串流
 url: https://github.com/galaxy-s10/billd-desk
@@ -29,6 +29,9 @@ BilldDesk Pro | [BilldDesk 开源版](./README_OpenSource.md)
 
 - [x] 支持2K + 60 Fps
   - [x] 被控端：系统：Windows 10，显卡：NVIDIA GeForce RTX 3060 Laptop
+  - [x] 主控端：Chrome浏览器/BilldDesk客户端
+- [x] 支持2K + 120 Fps
+  - [x] 被控端：系统：Windows 11，显卡：NVIDIA GeForce RTX 5070
   - [x] 主控端：Chrome浏览器/BilldDesk客户端
 - [x] 支持1080P + 60 Fps
   - [x] 被控端：系统：Windows 10，显卡：NVIDIA GeForce RTX 2070 Laptop
@@ -68,12 +71,16 @@ BilldDesk Pro | [BilldDesk 开源版](./README_OpenSource.md)
 - [x] 开机自启（无人值守）
 - [x] 进程保活（windows）
 - [x] 在线更新/主控端远程更新被控端（windows）
+- [x] 鼠标模式
+  - [x] 使用主控端鼠标
+  - [x] 使用被控端鼠标（fps游戏）
+  - [x] 智能鼠标
 - [x] 主流编解码协议
   - [x] H264/H265
   - [x] AV1
   - [x] VP8/VP9
 - [x] 硬件加速
-  - [x] NVIDIA显卡
+  - [x] NVIDIA显卡（H264/H265/AV1）
   - [ ] AMD显卡
 - [x] 屏幕墙
   - [x] 支持Windows/macOS/Android
