@@ -1,6 +1,6 @@
 ---
 project: Friend-Circle-Lite
-stars: 216
+stars: 219
 description: |-
     🐱一个精简版，无后端，且仅利用github action运行的精简版友链朋友圈程序，兼容fc的json格式信息，同时支持推送友圈更新，支持他人订阅个人站点并在更新时发送邮箱推送。
 url: https://github.com/willow-god/Friend-Circle-Lite
@@ -18,6 +18,28 @@ url: https://github.com/willow-god/Friend-Circle-Lite
 友链朋友圈简单版，实现了[友链朋友圈](https://github.com/Rock-Candy-Tea/hexo-circle-of-friends)的基本功能，能够定时爬取rss文章并输出有序内容，为了较好的兼容性，输入格式与友链朋友圈的json格式一致，为了轻量化，暂不支持从友链页面自动爬取，下面会附带`hexo-theme-butterfly`主题的解决方案，其他主题可以类比。
 
 ## 开发进度
+
+### 🎉 2026-05-31 - v2.0.0 重大更新
+
+> **⚠️ 重要更新**：本次更新包含**数据结构变更**和**配置文件调整**，请查看 **[完整更新日志 (CHANGELOG.md)](./CHANGELOG.md)** 了解详情。
+> 
+> **✅ 兼容性更新**：保持向后兼容，旧版引用者无需修改代码，`all.json` 结构保持兼容，`main/fclite.js` 和 `main/fclite.css` 不变。
+
+* **✨ 新增友链可达性检测功能**：合并 [check-flink](https://github.com/willow-god/check-flink) 项目，支持直连、代理、API 三种检测方式，并支持反链检测。
+* **📊 数据结构重构**：友链可达性数据独立输出到 `link.json`，`all.json` 仅保留友圈文章数据，实现数据分离。
+* **⚙️ 配置优化**：`merge_settings` 独立配置，友圈文章和友链可达性数据分别控制合并。
+* **🎨 前端页面重写**：新首页继承 check-flink 风格，同时展示友链状态和友圈文章。
+* **🔄 智能数据合并**：支持国内外数据源智能合并，可达性优先级、延迟、反链、失败次数均智能选择最优结果。
+
+**详细说明**：[查看完整更新日志 →](./CHANGELOG.md)
+
+### 2026-05-25
+
+* 合并友链可达性检测能力，检测结果会写入独立的 `link.json` 供前端按需获取，不可达或仅 API 可达的友链会跳过 RSS 抓取。
+
+### 2026-05-24
+
+* 移除原先基于 FastAPI 的简陋后端部署方式，后续自部署统一采用生成静态文件后作为纯静态网站托管的纯净态方式。
 
 ### 2025-07-23
 
@@ -111,14 +133,15 @@ url: https://github.com/willow-god/Friend-Circle-Lite
 
 ## 项目介绍
 
-- **爬取文章**: 爬取所有友链的文章，结果放置在根目录的all.json文件中，方便读取并部署到前端。
+- **爬取文章**: 爬取所有可达友链的文章，结果放置在根目录的all.json文件中，方便读取并部署到前端。
+- **友链可达性检测**: 抓取前会检测友链是否可达，支持直连、代理和 API 三种检测方式；仅 API 可达的友链只展示状态，不参与 RSS 抓取，结果单独输出到 `link.json`。
 - **邮箱推送更新(对作者推送所有友链更新)**: 作者可以通过邮箱订阅所有rss的更新（未来开发）。
 - **issue邮箱订阅(对访客实时推送最新文章邮件)**: 基于`GitHub issue`的博客更新邮件订阅功能，游客可以通过简单的提交`issue`进行邮箱订阅站点更新，删除对应`issue`即可取消订阅。
-- **文件分离**: 将前后端分离，前端文件放在page分支，后端文件放在主分支
+- **文件分离**: 将生成任务和静态展示分离，前端文件与生成后的 `all.json` 可直接作为静态网站托管。
 
 ## 特点介绍
 
-* **轻量化**：对比原版友链朋友圈的功能，该友圈功能简洁，去掉了设置和fastAPI的臃肿，仅保留关键内容。
+* **轻量化**：对比原版友链朋友圈的功能，该友圈功能简洁，去掉了设置和 FastAPI 的臃肿，仅保留关键内容。
 * **无数据库**：因为内容较少，我采用`json`直接存储文章信息，减少数据库操作，提升`action`运行效率。
 * **部署简单**：原版友链朋友圈由于功能多，导致部署较为麻烦，本方案仅需简单的部署action即可使用，vercel仅用于部署前端静态页面和实时获取最新内容。
 * **文件占用**：对比原版`4MB`的`bundle.js`文件大小，本项目仅需要`5.50KB`的`fclite.min.js`文件即可轻量的展示到前端。
@@ -126,6 +149,8 @@ url: https://github.com/willow-god/Friend-Circle-Lite
 ## 功能概览
 
 * 文章爬取
+* 友链可达性检测
+* 友链状态前端展示
 * 暗色适配
 * 显示作者所有文章
 * 获取丢失友链数据
@@ -192,6 +217,31 @@ url: https://github.com/willow-god/Friend-Circle-Lite
      
      - `marge_json_path`：请填写网络地址的json文件，用于合并，不带空格！！！
      
+   - **友链可达性检测配置**
+     在抓取 RSS 前检测友链站点是否可访问，检测结果会写入独立的 `link.json` 并在 `status.html` 展示。友链数据兼容四字段格式：`["站点名称", "站点地址", "友链页地址", "头像地址"]`，如果第三个字段暂时没有可留空。
+
+     ```yaml
+     link_check:
+       enable: true
+       max_age_hours: 24
+       timeout: 15
+       max_workers: 10
+       proxy_url: ""
+       status_api_url: "https://v2.xxapi.cn/api/status?url={url}"
+       enable_backlink_check: false
+       author_url: ""
+     ```
+
+     `enable`：是否启用友链可达性检测；
+
+     `max_age_hours`：检测结果缓存时间，默认 24 小时，同一友链一天内不会重复检测；
+
+     `proxy_url`：可选代理前缀，适合使用 Cloudflare Worker 等方式转发检测；⚠️ 代理服务可能违反某些服务条款，请谨慎使用，建议仅用于调试。支持环境变量 `LINK_CHECK_PROXY_URL` 覆盖此配置（优先级更高）。
+
+     `status_api_url`：兜底状态码 API。注意 API 只能确认状态码，无法提供页面内容，所以仅 API 可达的友链会展示为可达，但不会参与 RSS 抓取；
+
+     `enable_backlink_check` 和 `author_url`：用于检测对方友链页是否包含你的站点链接，需要友链数据中包含 `linkpage` 字段。
+
    - **邮箱推送功能配置**
      暂未实现，预留用于将每天的友链文章更新推送给指定邮箱。
      
@@ -374,15 +424,13 @@ url: https://github.com/willow-god/Friend-Circle-Lite
 
 ## 自部署使用方法
 
+自部署后续统一采用纯静态方式：本项目只负责定时生成 `all.json`、`link.json`、`errors.json` 等数据文件，生成完成后把 `static`、`main` 和数据文件作为静态网站托管即可，不再启动 FastAPI 后端服务。友链检测缓存会保存在 `temp/cache.sqlite3` 中，用于判断同一友链是否需要在 24 小时后重新检测；静态网站只需要发布生成后的 JSON 和静态资源。
+
 如果你有一台境内服务器，你也可以通过以下操作将其部署到你的服务器上，操作如下：
 
 ### 前置工作
 
-确保你的服务器有定时任务 `crontab` 功能包，一般是linux自带，如果你没有宝塔等可以管理定时任务的面板工具，可能需要你自行了解定时工具并导入，本教程提供了简单的介绍。
-
-### 宿主机环境
-
-> 适用于宝塔面板等宿主机直接有Python环境的场景下
+确保你的服务器有 Python 运行环境，以及定时任务 `crontab`、宝塔、1Panel 等任意一种可定时执行命令的工具。
 
 首先克隆仓库并进入对应路径：
 
@@ -391,40 +439,40 @@ git clone https://github.com/willow-god/Friend-Circle-Lite.git
 cd Friend-Circle-Lite
 ```
 
-由于不存在issue，所以不支持邮箱推送(主要是懒得分类写了，要不然还得从secret中获取密码的功能剥离QAQ)，请将除第一部分抓取以外的功能均设置为false
+由于不存在 issue，所以不支持邮箱推送(主要是懒得分类写了，要不然还得从secret中获取密码的功能剥离QAQ)，请将除第一部分抓取以外的功能均设置为false。
 
-下载服务相关包，其中 `requirements-server.txt` 是部署API服务所用包， `requirements.txt` 是抓取服务所用包，请均下载一遍。
+安装抓取服务所需依赖：
 
 ```bash
 pip install -r ./requirements.txt
-pip install -r ./server/requirements-server.txt
 ```
 
-#### 部署API服务
+### 生成静态文件
 
-如果环境配置完毕，你可以进入目录路径后直接运行`deploy.sh`脚本启动API服务：
+执行一次抓取命令：
+
+```bash
+python run.py
+```
+
+执行完成后，根目录会生成或更新 `all.json`、`errors.json` 等数据文件。将以下内容放到你的静态网站目录即可：
+
+- `static/` 目录中的静态页面和资源
+- `main/` 目录中的前端样式与脚本
+- `all.json`、`errors.json` 数据文件
+
+如果希望在宿主机上直接整理出可发布目录，也可以运行：
 
 ```bash
 chmod +x ./deploy.sh
 ./deploy.sh
 ```
 
-其中的注释应该是较为详细的，如果部署成功你可以使用以下命令进行测试，如果获取到了首页html内容则成功：
+脚本会执行 `python3 run.py`，并将 `main`、`static`、`all.json`、`errors.json` 复制到 `pages/` 目录。将 `pages/` 目录作为静态网站根目录部署即可。部署完成后，检查 `/all.json` 是否有数据，如果有，则部署成功。
 
-```bash
-curl 127.0.0.1:1223
-```
+### 1Panel / Docker 环境
 
-这个端口号可以修改，在server.py最后一行修改数字即可，如果你想删除该API服务，可以使用ps找到对应进程并使用Kill命令杀死进程：
-
-```bash
-ps aux | grep python
-kill -9 [这里填写上面查询结果中对应的进程号]
-```
-
-### Docker环境
-
-> 目前Docker部署方式和1Panel强相关，如果有其他需要docker环境部署的，可以参考，但是可能需要自行摸索
+> 目前 Docker 部署方式和 1Panel 强相关；这里的思路是先在面板里跑一次生成命令，把生成后的静态文件放到网站目录，再按静态网站托管。
 
 由于主包也用上了1Panel，所以捣鼓了一下，得益于1Panel可以方便的创建运行环境，所以可以基本做到无占用的API，因为除了执行action的时候，其他时间完全是纯静态的。
 
@@ -467,7 +515,7 @@ merge_result:
 
 > 宿主机环境只需要直接执行python ./run.py即可执行抓取
 
-由于原生的crontab可能较为复杂，如果有兴趣可以查看./deploy.sh文件中，屏蔽掉的部分，这里我不会细讲，这里我主要讲解宝塔面板添加定时任务，这样可以最大程度减少内存占用，其他面板服务类似：
+由于原生的 crontab 可能较为复杂，这里主要讲解宝塔面板添加定时任务，这样可以最大程度减少内存占用，其他面板服务类似：
 
 ![](./static/baota.png)
 

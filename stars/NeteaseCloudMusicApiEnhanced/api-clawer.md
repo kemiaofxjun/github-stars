@@ -1,6 +1,6 @@
 ---
 project: api-clawer
-stars: 17
+stars: 18
 description: |-
     简易网易云音乐客户端抓包工具, 适用于贡献 NeteaseCloudMusicApi 项目
 url: https://github.com/NeteaseCloudMusicApiEnhanced/api-clawer
@@ -41,19 +41,6 @@ copy .env.example .env
 PORT=3000
 HOOK_PORT=9000
 ```
-
-## 证书生成
-
-HTTPS 代理需要自签名证书。首次运行前需要生成证书：
-
-```bash
-cd src/server
-node generate-cert.js
-```
-
-这将生成 `server.crt` 和 `server.key` 文件。
-
-> **注意**：这是自签名证书，仅用于开发环境。使用时需要在客户端信任此证书。
 
 ## 运行
 

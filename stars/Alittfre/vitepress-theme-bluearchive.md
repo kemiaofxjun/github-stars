@@ -1,6 +1,6 @@
 ---
 project: vitepress-theme-bluearchive
-stars: 260
+stars: 261
 description: |-
     Blue Archive主题博客，基于VitePress，绝赞画饼中
 url: https://github.com/Alittfre/vitepress-theme-bluearchive

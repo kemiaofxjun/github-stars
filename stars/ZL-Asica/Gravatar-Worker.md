@@ -18,7 +18,7 @@ url: https://github.com/ZL-Asica/Gravatar-Worker
 
 Supports:
 
-- MD5 / SHA-256 hash or raw email lookups
+- MD5 / SHA-256 hash lookups, with optional raw email lookup
 - Smart caching (Edge + Browser)
 - Auto image format conversion to **AVIF** or **WebP** based on `Accept` header
 - Customizable via environment variables
@@ -26,29 +26,34 @@ Supports:
 
 ## 🧩 Customization
 
-See [`CUSTOMIZATION.md`](./CUSTOMIZATION.md) for a 5-minute after-fork checklist and detailed guidance.
+See [`docs/CUSTOMIZATION.md`](./docs/CUSTOMIZATION.md) for a 5-minute after-fork checklist and detailed guidance.
 
 ### Environment Variables
 
-| Name                | Purpose                                          | Default                    |
-| ------------------- | ------------------------------------------------ | -------------------------- |
-| `SITE_NAME`         | Site/brand name shown in titles and UI           | `ZLA Gravatar CDN`         |
-| `SITE_TAGLINE`      | Optional tagline appended to the title           | (see defaults)             |
-| `SITE_DESCRIPTION`  | Meta description and OG description              | (see defaults)             |
-| `SITE_URL`          | Canonical origin (used for OG/canonical/sitemap) | `https://gravatar.zla.app` |
-| `OG_IMAGE_URL`      | OG image path or URL                             | `/og.png`                  |
-| `FAVICON_PATH`      | Favicon path                                     | `/favicon.ico`             |
-| `ROBOTS_ALLOW`      | `true/false/1/0` or custom meta value            | `true`                     |
-| `FOOTER_TEXT`       | Footer label (linked if `CONTACT_URL` is set)    | `ZL Asica`                 |
-| `CONTACT_URL`       | Footer contact link                              | `https://zla.pub/`         |
-| `ME_EMAIL`          | Email for `/avatar/me` (hashed server-side)      | unset                      |
-| `ME_HASH`           | Precomputed MD5/SHA-256 for `/avatar/me`         | unset                      |
-| `ALLOW_RAW_EMAIL`   | Allow `/avatar?email=` endpoint                  | `true`                     |
-| `DEFAULT_SIZE`      | Default avatar size                              | `200`                      |
-| `MAX_SIZE`          | Maximum avatar size                              | `2048`                     |
-| `CACHE_TTL_BROWSER` | Browser cache TTL for 200 responses (seconds)    | `259200`                   |
-| `CACHE_TTL_EDGE`    | Edge cache TTL for 200 responses (seconds)       | `604800`                   |
-| `HASH`              | Legacy hash env for `/avatar/me`                 | unset                      |
+| Name                | Purpose                                           | Default            |
+| ------------------- | ------------------------------------------------- | ------------------ |
+| `SITE_NAME`         | Site/brand name shown in titles and UI            | `ZLA Gravatar CDN` |
+| `SITE_TAGLINE`      | Optional tagline appended to the title            | (see defaults)     |
+| `SITE_DESCRIPTION`  | Meta description and OG description               | (see defaults)     |
+| `SITE_URL`          | Canonical origin (uses request origin when empty) | empty              |
+| `OG_IMAGE_URL`      | OG image path or URL                              | `/og.png`          |
+| `FAVICON_PATH`      | Favicon path                                      | `/favicon.ico`     |
+| `ROBOTS_ALLOW`      | `true/false/1/0` or custom meta value             | `true`             |
+| `FOOTER_TEXT`       | Footer label (linked if `CONTACT_URL` is set)     | `ZL Asica`         |
+| `CONTACT_URL`       | Footer contact link                               | `https://zla.pub/` |
+| `REPOSITORY_URL`    | Source link used in footer and structured data    | project repository |
+| `LICENSE_URL`       | License URL used in structured data               | project license    |
+| `SOURCE_TEXT`       | Source link label in footer                       | `Gravatar Worker`  |
+| `CREDIT_TEXT`       | Footer credit label                               | `ZL Asica`         |
+| `CREDIT_URL`        | Footer credit link                                | `https://zla.pub`  |
+| `ME_EMAIL`          | Email for `/avatar/me` (hashed server-side)       | unset              |
+| `ME_HASH`           | Precomputed MD5/SHA-256 for `/avatar/me`          | unset              |
+| `ALLOW_RAW_EMAIL`   | Allow `/avatar?email=` endpoint                   | `false`            |
+| `DEFAULT_SIZE`      | Default avatar size                               | `200`              |
+| `MAX_SIZE`          | Maximum avatar size                               | `2048`             |
+| `CACHE_TTL_BROWSER` | Browser cache TTL for 200 responses (seconds)     | `259200`           |
+| `CACHE_TTL_EDGE`    | Edge cache TTL for 200 responses (seconds)        | `604800`           |
+| `HASH`              | Legacy hash env for `/avatar/me`                  | unset              |
 
 ## 🌐 Endpoints
 
@@ -74,7 +79,7 @@ GET /avatar/205e460b479e2e5b48aec07710c08d50?s=128
 
 ### 🔹 `GET /avatar?email=<email>`
 
-Fetches the avatar by raw email (safely hashed server-side). If the email is invalid, it falls back to `email@example.com`.
+Fetches the avatar by raw email (safely normalized and hashed server-side). This endpoint is disabled by default; set `ALLOW_RAW_EMAIL=true` only if you accept that email addresses can appear in URLs, logs, browser history, and intermediary proxies. If the email is missing or invalid, it falls back to `email@example.com`.
 
 **Example:**
 
@@ -97,11 +102,13 @@ Automatically returns the most optimized format:
 - `image/webp` (fallback)
 - Original JPEG (fallback fallback 🙃)
 
-Based on the browser’s `Accept` header:
+Based on the browser’s `Accept` header, including quality values like `q=0.9`:
 
 ```http
 Accept: image/avif,image/webp,image/*,*/*
 ```
+
+Large or unsupported source images may be streamed back in their original format to protect Worker memory and CPU limits.
 
 ## 📦 Caching Strategy
 

@@ -1,6 +1,6 @@
 ---
 project: wr.do
-stars: 2246
+stars: 2249
 description: |-
     一站式域名服务平台，集成短链生成、无限域名邮箱、文件存储和子域名管理，带有管理员面板，支持自部署
 url: https://github.com/oiov/wr.do
@@ -25,6 +25,8 @@ url: https://github.com/oiov/wr.do
 	<img src="https://img.shields.io/github/license/oiov/wr.do?style=flat-square" alt="MIT"/><br><br>
   <!-- <img width="15" src="https://storage.wr.do/2025/11/20/561763627504_.pic.jpg" /> 免费体验 Sora AI 视频生成 👉 <a href="https://sora.hk/i/5KY5N1FL">点击注册</a> -->
 </div>
+
+<img align="center" width="50%" alt="og-banner" src="https://github.com/user-attachments/assets/b338bfca-71ed-447a-bde5-18e5677cb8dc" />
 
 > 🌟 推荐 **Claude Code** 稳定 API 渠道：[nbility.dev](https://nbility.dev/register?aff=Dptp) ，支持 claude-opus-4-6 等主流 AI Coding 大模型🥳
 

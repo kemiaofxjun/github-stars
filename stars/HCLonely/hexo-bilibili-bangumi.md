@@ -26,7 +26,11 @@ url: https://github.com/HCLonely/hexo-bilibili-bangumi
 - 🖼️ 支持图片镜像缓存
 - 📄 支持手动添加数据
 
-[效果预览](https://demo.hclonely.com/bangumis/)
+[效果预览](https://hexo-bilibili-bangumi.vercel.app/bangumis/)
+
+| 亮色模式 | 暗色模式 |
+| ------- | ------ |
+| ![亮色模式](./example1.png?raw=true) | ![暗色模式](./example2.png?raw=true) |
 
 ## 📦 安装
 
@@ -48,6 +52,7 @@ bangumi: # 追番设置
   vmid:                 # 用户ID
   title: '追番列表'      # 页面标题
   quote: '生命不息，追番不止！' # 页面引言
+  theme: auto          # 页面主题: light=亮色, dark=暗色, auto=跟随系统
   show: 1              # 初始显示页面: 0=想看, 1=在看, 2=看过
   lazyload: true       # 是否启用图片懒加载
   metaColor:           # meta 信息字体颜色
@@ -78,6 +83,7 @@ bangumi: # 追番设置
   vmid:
   title: '追番列表'
   quote: '生命不息，追番不止！'
+  theme: auto
   show: 1
   lazyload: true
   srcValue: '__image__'
@@ -105,6 +111,7 @@ cinema: # 追剧设置
   vmid:
   title: '追剧列表'
   quote: '生命不息，追剧不止！'
+  theme: auto
   show: 1
   lazyload: true
   srcValue: '__image__'
@@ -126,6 +133,7 @@ game: # 游戏设置，仅支持source: bgmv0
   vmid:
   title: '游戏列表'
   quote: '生命不息，游戏不止！'
+  theme: auto
   show: 1
   lazyload: true
   srcValue: '__image__'
@@ -149,18 +157,19 @@ game: # 游戏设置，仅支持source: bgmv0
 #### 基础参数
 
 | 参数名 | 类型 | 默认值 | 说明 |
-|-------|------|--------|------|
+| ------- | ------ | -------- | ------ |
 | enable | boolean | false | 是否启用该功能 |
 | source | string | 'bili' | 数据源选择。`bili`: [哔哩哔哩源](https://www.bilibili.com/), `bgmv0`: [Bgm Api源(api.bgm.tv)](https://bgm.tv/), `bangumi`: [Bangumi源(bangumi.tv)](https://bangumi.tv/), `bgm`: [Bangumi源(bgm.tv)](https://bgm.tv/), `anilist`: [AniList源](https://anilist.co/), `simkl`: [Simkl源](https://simkl.com/) |
 | path | string | 'bangumis/index.html' | 生成页面的路径 |
 | vmid | string/number | - | 用户Id。[如何获取](#-获取用户-id) |
 | title | string | '追番列表' | 页面标题 |
 | quote | string | '生命不息，追番不止！' | 页面顶部的引言，支持HTML |
+| theme | string | 'auto' | 页面颜色主题：`light`: 亮色，`dark`: 暗色，`auto`: 跟最主题（仅支持通过`[data-theme="dark"]`实现暗色模式的主题） |
 
 #### 显示控制
 
 | 参数名 | 类型 | 默认值 | 说明 |
-|-------|------|--------|------|
+| ------- | ------ | -------- | ------ |
 | show | number | 1 | 初始显示的内容类型：0=想看，1=在看，2=看过 |
 | lazyload | boolean | true | 是否启用图片懒加载，可避免首次加载时间过长 |
 | srcValue | string | '\_\_image\_\_' | 设置封面图的默认src值，`__image__`为封面链接，`__loading__`为loading图片链接 |
@@ -171,37 +180,38 @@ game: # 游戏设置，仅支持source: bgmv0
 #### 图片处理
 
 | 参数名 | 类型 | 默认值 | 说明 |
-|-------|------|--------|------|
+| ------- | ------ | -------- | ------ |
 | webp | boolean | true | 是否使用webp格式图片（仅支持哔哩哔哩源，可大幅减小图片体积） |
 | coverMirror | string | - | 封面图片镜像服务地址，用于解决防盗链、跨域等问题([图片镜像服务](#图片镜像服务)) |
 
 #### 进度显示
 
 | 参数名 | 类型 | 默认值 | 说明 |
-|-------|------|--------|------|
+| ------- | ------ | -------- | ------ |
 | progress | boolean | true | 是否显示数据获取进度条 |
 | progressBar | boolean | true | 是否在追番页面显示观看进度条（仅支持bili和bgmv0源） |
 
 #### 数据处理
 
 | 参数名 | 类型 | 默认值 | 说明 |
-|-------|------|--------|------|
+| ------- | ------ | -------- | ------ |
 | pagination | boolean | false | 是否启用分页优化，建议番剧数量较多时启用 |
-| order | string | - | 排序方式：score=评分升序，-score=评分降序 ，其他=默认顺序|
+| order | string | - | 排序方式：score=评分升序，-score=评分降序 ，其他=默认顺序 |
 | extraOrder | number | - | 手动添加数据的显示顺序：1=优先显示，其他=默认顺序 |
 | showMyComment | boolean | false | 是否显示个人评论（仅支持bgm、anilist源） |
+| skipNsfw | boolean | false | 是否显示nsfw内容（仅支持bangumi源） |
 
 #### 代理设置
 
 | 参数名 | 类型 | 默认值 | 说明 |
-|-------|------|--------|------|
+| ------- | ------ | -------- | ------ |
 | proxy.host | string | - | 代理服务器地址 |
 | proxy.port | number | - | 代理服务器端口 |
 
 #### 扩展选项
 
 | 参数名 | 类型 | 默认值 | 说明 |
-|-------|------|--------|------|
+| ------- | ------ | -------- | ------ |
 | extra_options | object | - | 扩展配置，会被注入到Hexo的page变量中 |
 | bgmInfoApi | string | 'bgmApi' | Bangumi信息源：`bgmApi`: [Bangumi Api](https://github.com/bangumi/api/), `bgmSub`: [Bangumi-Subject](https://github.com/czy0729/Bangumi-Subject) |
 

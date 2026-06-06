@@ -1,8 +1,8 @@
 ---
 project: NotionNext
-stars: 11498
+stars: 11523
 description: |-
-    使用 NextJS + Notion API 实现的，支持多种部署方案的静态博客，无需服务器、零门槛搭建网站，为Notion和所有创作者设计。 (A static blog built with NextJS and Notion API, supporting multiple deployment options. No server required, zero threshold to set up a website. Designed for Notion and all creators.)
+    Turn your Notion workspace into a fast, customizable website. Built with Next.js + Notion API, with multi-platform deployment and no self-hosted server required.
 url: https://github.com/notionnext-org/NotionNext
 ---
 

@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 1981
+stars: 1990
 description: |-
     Ech0 – An open-source, self-hosted lightweight publishing platform for personal idea sharing.
 url: https://github.com/lin-snow/Ech0
@@ -147,6 +147,7 @@ See [Quick Deployment](./DEPLOYMENT.md#quick-deployment) for Docker Compose and 
 - 🧰 **CLI Toolchain**: CLI tools for automation and script integration.
 - 🔗 **Open API & Webhook**: Full API and Webhook support for external integration and automation workflows.
 - 🤖 **MCP (Model Context Protocol)**: Built-in [MCP Server](./docs/usage/mcp-usage.md) exposes **near-complete coverage** of core product features to the AI layer (posts, files, stats, and more)—**Streamable HTTP**, **Tools & Resources**, **scoped JWT**.
+- 🧠 **Ech0 Copilot**: An AI companion that lives inside your timeline—**Recap** distills your recent posts into a crisp digest in one click, and **Chat** lets you talk to your own content and ask anything. Powered by **vector RAG** retrieval with **streaming (SSE)** replies, every answer grounded in *your* data.
 
 ### Experience
 
@@ -289,6 +290,8 @@ Local setup, environment requirements, and front-/back-end integration are docum
 | [**Afdian**](https://afdian.com/a/l1nsn0w) | <img src="./docs/imgs/pay.jpeg" alt="Pay" width="200"> |
 
 A huge thanks to all sponsors, contributors, and users — see [SPONSOR.md](./SPONSOR.md) for the full sponsor wall.
+
+Special thanks to the [LinuxDO](https://linux.do/) community for their recognition and support.
 
 [![Contributors](https://contrib.rocks/image?repo=lin-snow/Ech0)](https://contrib.rocks/image?repo=lin-snow/Ech0)
 
