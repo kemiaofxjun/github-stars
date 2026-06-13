@@ -1,6 +1,6 @@
 ---
 project: vitepress-blog-zaun
-stars: 276
+stars: 277
 description: |-
     a nice blog theme use vitepress to build
 url: https://github.com/clark-cui/vitepress-blog-zaun

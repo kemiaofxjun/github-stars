@@ -1,6 +1,6 @@
 ---
 project: NotionNext
-stars: 11523
+stars: 11535
 description: |-
     Turn your Notion workspace into a fast, customizable website. Built with Next.js + Notion API, with multi-platform deployment and no self-hosted server required.
 url: https://github.com/notionnext-org/NotionNext
