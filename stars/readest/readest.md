@@ -1,6 +1,6 @@
 ---
 project: readest
-stars: 21424
+stars: 21645
 description: |-
     Readest is a modern, feature-rich ebook reader designed for avid readers offering seamless cross-platform access, powerful tools, and an intuitive interface to elevate your reading experience.
 url: https://github.com/readest/readest
@@ -310,15 +310,7 @@ Readest is open-source, and contributions are welcome! Feel free to open issues,
 
 ## Support
 
-If Readest has been useful to you, consider supporting its development. You can [become a sponsor on GitHub](https://github.com/sponsors/readest), [donate via Stripe](https://donate.stripe.com/4gMcN5aZdcE52kW3TFgjC01), or [donate with crypto](https://donate.readest.com). Your contribution helps us squash bugs faster, improve performance, and keep building great features.
-
-### Sponsors
-
-<p align="center">
-  <a title="Browser testing via TestMu AI" href="https://www.testmuai.com/?utm_medium=sponsor&utm_source=readest" target="_blank">
-    <img src="https://raw.githubusercontent.com/readest/readest/refs/heads/main/data/sponsors/testmu-ai-logo.png" style="vertical-align: middle;" width="250" />
-  </a>
-</p>
+If Readest has been useful to you, consider supporting its development at [donate.readest.com](https://donate.readest.com), where you'll find all available donation methods, including GitHub Sponsors, card payments, and crypto. Your contribution helps us fix bugs faster, improve performance, and keep building great features.
 
 ## License
 
@@ -349,8 +341,8 @@ We would also like to thank the [Web Chinese Fonts Plan](https://chinese-font.ne
 
 [badge-website]: https://img.shields.io/badge/website-readest.com-orange
 [badge-web-app]: https://img.shields.io/badge/read%20online-web.readest.com-orange
-[badge-license]: https://img.shields.io/github/license/readest/readest?color=teal
-[badge-release]: https://img.shields.io/github/release/readest/readest?color=green
+[badge-license]: https://img.shields.io/badge/license-AGPL--3.0-teal
+[badge-release]: https://img.shields.io/github/v/release/readest/readest?color=green
 [badge-platforms]: https://img.shields.io/badge/platforms-macOS%2C%20Windows%2C%20Linux%2C%20Android%2C%20iOS%2C%20Web%2C%20PWA-green
 [badge-last-commit]: https://img.shields.io/github/last-commit/readest/readest?color=blue
 [badge-commit-activity]: https://img.shields.io/github/commit-activity/m/readest/readest?color=blue

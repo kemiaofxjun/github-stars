@@ -1,6 +1,6 @@
 ---
 project: varharrie.github.io
-stars: 3676
+stars: 3675
 description: |-
     :blue_book: Personal blog site based on github issues.
 url: https://github.com/varHarrie/varharrie.github.io

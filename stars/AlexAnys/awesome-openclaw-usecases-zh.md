@@ -1,6 +1,6 @@
 ---
 project: awesome-openclaw-usecases-zh
-stars: 4312
+stars: 4325
 description: |-
     🇨🇳 OpenClaw中文用例大全 | 50个真实场景 | 国内特色 + 海外案例的国内适配 | 自动化办公·内容创作·运维·AI助理·知识管理 | 新手友好 
 url: https://github.com/AlexAnys/awesome-openclaw-usecases-zh

@@ -1,6 +1,6 @@
 ---
 project: MiaoYan
-stars: 8342
+stars: 8374
 description: |-
     ⛷ Lightweight Markdown app to help you write great sentences.
 url: https://github.com/tw93/MiaoYan
@@ -60,7 +60,7 @@ MiaoYan provides a command-line interface for quick note operations.
 curl -fsSL https://raw.githubusercontent.com/tw93/MiaoYan/main/scripts/install.sh | bash
 
 # Usage
-miao open <title|path>    # Open note
+miao open <title|path>    # Open note or folder
 miao new <title> [text]   # Create new note
 miao search <query>       # Search notes in terminal
 miao list [folder]        # List top-level folders, or markdown in folder
