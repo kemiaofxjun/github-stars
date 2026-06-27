@@ -1,6 +1,6 @@
 ---
 project: NotionNext
-stars: 11576
+stars: 11594
 description: |-
     Turn your Notion workspace into a fast, customizable website. Built with Next.js + Notion API, with multi-platform deployment and no self-hosted server required.
 url: https://github.com/notionnext-org/NotionNext
@@ -148,6 +148,7 @@ NotionNext 主仓库由 GitHub 组织 [notionnext-org](https://github.com/notion
 | 内容 | 链接 |
 | --- | --- |
 | 参与社区 | [community-participate.md](./docs/user-guide/community-participate.md) |
+| 5.0 愿景与路线图 | [VISION_ROADMAP.md](./docs/developer/VISION_ROADMAP.md) |
 | 贡献指南 | [CONTRIBUTING.zh-CN.md](./CONTRIBUTING.zh-CN.md) |
 | 项目治理 | [GOVERNANCE.zh-CN.md](./GOVERNANCE.zh-CN.md) |
 | 维护者 | [MAINTAINERS.md](./MAINTAINERS.md) |

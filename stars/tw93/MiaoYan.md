@@ -1,6 +1,6 @@
 ---
 project: MiaoYan
-stars: 8374
+stars: 8400
 description: |-
     ⛷ Lightweight Markdown app to help you write great sentences.
 url: https://github.com/tw93/MiaoYan
@@ -14,7 +14,7 @@ url: https://github.com/tw93/MiaoYan
   <div align="center">
     <a href="https://twitter.com/HiTw93" target="_blank">
       <img alt="Twitter Follow" src="https://img.shields.io/badge/follow-Tw93-red?style=flat-square&logo=Twitter"></a>
-    <a href="https://t.me/+GclQS9ZnxyI2ODQ1" target="_blank">
+    <a href="https://t.me/+9f9gf4ZrFSQ2OWVl" target="_blank">
       <img alt="Telegram" src="https://img.shields.io/badge/chat-Telegram-blueviolet?style=flat-square&logo=Telegram"></a>
     <a href="https://github.com/tw93/MiaoYan/releases" target="_blank">
       <img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/tw93/MiaoYan/total.svg?style=flat-square"></a>
@@ -49,7 +49,15 @@ url: https://github.com/tw93/MiaoYan
 
 3. **GitHub Releases**: download the latest DMG from [GitHub Releases](https://github.com/tw93/MiaoYan/releases/latest) (macOS 11.5+)
 
-All three options share the same codebase and receive the same updates. After installing, create a `MiaoYan` folder in iCloud Drive or your preferred location, open Preferences (⌘,), and set the storage path.
+All three options share the same codebase and receive the same updates. After installing, create a `MiaoYan` folder in iCloud Drive, a desktop cloud-drive folder, or your preferred location, open Preferences (⌘,), and set the storage path.
+
+## Sync with Nutstore or Other Cloud Drives
+
+MiaoYan is local-first and does not sign in to WebDAV or cloud-drive accounts. It reads and writes the Markdown folder you choose. iCloud Drive, Nutstore, Dropbox, or another cloud-drive client handles cross-device sync.
+
+- **Mac**: Create a `MiaoYan` folder inside the local folder synced by the Nutstore desktop client, then point MiaoYan's storage location to it in Preferences.
+- **iPhone**: Pick the same cloud-drive folder from the system Files app. If a provider does not expose a writable folder in Files, use iCloud Drive or make the folder available offline in that provider app before choosing it.
+- **Folder check**: MiaoYan verifies read and write access before switching folders. If the folder is unavailable, the current storage path stays unchanged.
 
 ## CLI
 
@@ -86,8 +94,7 @@ Why not WYSIWYG like Typora? We prioritize pure Markdown editing experience, and
 ## Support
 
 - The most direct way to support me is getting [Mole for Mac](https://mole.fit), my paid Mac cleanup app.
-- If MiaoYan helped you, [share it](https://twitter.com/intent/tweet?url=https://github.com/tw93/MiaoYan&text=MiaoYan%20-%20A%20fast%2C%20elegant%20Markdown%20editor%20for%20Mac.) with friends or give it a star.
-- Got ideas or bugs? Open an issue or PR, feel free to contribute your best AI model.
+- If MiaoYan helped you, give it a star, [share it](https://twitter.com/intent/tweet?url=https://github.com/tw93/MiaoYan&text=MiaoYan%20-%20A%20fast%2C%20elegant%20Markdown%20editor%20for%20Mac.), or open an issue or PR.
 - I have two cats, TangYuan and Coke. If you think MiaoYan delights your life, you can feed them <a href="https://cats.tw93.fun?name=MiaoYan" target="_blank">canned food 🥩</a>.
 
 <details>

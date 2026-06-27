@@ -1,6 +1,6 @@
 ---
 project: Friend-Circle-Lite
-stars: 219
+stars: 220
 description: |-
     🐱一个精简版，无后端，且仅利用github action运行的精简版友链朋友圈程序，兼容fc的json格式信息，同时支持推送友圈更新，支持他人订阅个人站点并在更新时发送邮箱推送。
 url: https://github.com/willow-god/Friend-Circle-Lite
@@ -18,6 +18,20 @@ url: https://github.com/willow-god/Friend-Circle-Lite
 友链朋友圈简单版，实现了[友链朋友圈](https://github.com/Rock-Candy-Tea/hexo-circle-of-friends)的基本功能，能够定时爬取rss文章并输出有序内容，为了较好的兼容性，输入格式与友链朋友圈的json格式一致，为了轻量化，暂不支持从友链页面自动爬取，下面会附带`hexo-theme-butterfly`主题的解决方案，其他主题可以类比。
 
 ## 开发进度
+
+### 2026-06-27 - 检测缓存与重试节奏整理
+
+本次主要整理了友链检测缓存和重试节奏，目标是减少长期异常站点带来的重复请求，尤其是 RSS 探测请求。
+
+- **不可达时长改为按时间计算**：不再把失败次数当作“不可达天数”。SQLite 记录 `unreachable_since`，`link.json` 输出 `unreachable_days`，按持续时间向上取整，首次不可达显示为 1 天。
+- **RSS 不可用状态单独入库**：新增 `rss_unavailable_since`，用于记录“站点可达，但 RSS 探测或解析失败”的持续起点。该字段只用于内部缓存和重试判断，不输出到 `link.json`。
+- **动态降低重试频率**：长期异常站点会逐步降低检测频率：未满 10 天按默认缓存周期，10 天后 5 天检测一次，30 天后 10 天检测一次，60 天后最多 15 天检测一次。
+- **减少 RSS 探测请求**：缓存复用发生在 RSS 探测之前。只要站点已有“RSS 不可用”缓存，并且未到动态重试窗口，就不会再次扫描 `/feed`、`/rss.xml`、`/atom.xml` 等候选地址。
+- **输出保持克制**：`link.json` 继续面向前端展示，只保留可达性、可抓取性、不可达天数、最近文章时间等字段；RSS 不可用起点不暴露给前端。
+- **SQLite 兼容升级**：旧缓存库会自动补齐新增字段；旧的 `fail_count` 列仅作为兼容遗留列保留，不再参与业务逻辑和 public JSON 输出。
+
+<details>
+<summary>查看更多</summary>
 
 ### 2026-06-08 - v2.1.0 优化更新
 
@@ -81,9 +95,6 @@ url: https://github.com/willow-god/Friend-Circle-Lite
 * 添加随机文章刷新按钮
 * 完善邮件通知模板自定义程度
 
-<details>
-<summary>查看更多</summary>
-
 <h3>2024-10-07</h3>
 
 * 更新自部署的api地址，统一为all.json，提高js兼容性
@@ -144,11 +155,13 @@ url: https://github.com/willow-god/Friend-Circle-Lite
 
 ## 展示页面
 
-* [清羽飞扬の友链朋友圈](https://blog.liushen.fun/fcircle/)
+* [清羽飞扬](https://blog.liushen.fun/fcircle/)
 
-* [❖星港◎Star☆ 的友链朋友圈](https://blog.starsharbor.com/fcircle/)
+* [星港](https://blog.starsharbor.com/fcircle/)
 
-* [梦爱吃鱼的友链朋友圈](https://blog.bsgun.cn/fcircle/)
+* [梦爱吃鱼](https://blog.bsgun.cn/fcircle)
+
+* [Aroes](https://homulilly.com/friends/)
 
 * 欢迎在issue中[提交](https://github.com/willow-god/Friend-Circle-Lite/issues/20)以展示你独特的设计！
 

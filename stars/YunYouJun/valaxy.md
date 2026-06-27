@@ -1,6 +1,6 @@
 ---
 project: valaxy
-stars: 1111
+stars: 1114
 description: |-
     🌌 Next Generation Static Blog Framework (Beta) 下一代静态博客框架（支持页面/配置热重载）
 url: https://github.com/YunYouJun/valaxy
@@ -27,6 +27,7 @@ url: https://github.com/YunYouJun/valaxy
 
 - **English** | [简体中文](./README.zh-CN.md)
 - [English Docs](https://valaxy.site/) | [中文文档](https://valaxy.site/zh/) | [Docs for Beta](https://beta.valaxy.site)
+- [Theme Press Docs](https://valaxy.site/themes/press) | [Theme Press Preview](https://press.valaxy.site)
 - [Demo](https://yun.valaxy.site): <small>with [valaxy-theme-yun](./packages/valaxy-theme-yun/)</small>
 
 ## Usage

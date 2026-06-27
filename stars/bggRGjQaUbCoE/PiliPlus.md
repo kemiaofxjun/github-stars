@@ -1,6 +1,6 @@
 ---
 project: PiliPlus
-stars: 15255
+stars: 15498
 description: |-
     PiliPlus
 url: https://github.com/bggRGjQaUbCoE/PiliPlus
