@@ -1,6 +1,6 @@
 ---
 project: NotionNext
-stars: 11620
+stars: 11645
 description: |-
     Turn your Notion workspace into a fast, customizable website. Built with Next.js + Notion API, with multi-platform deployment and no self-hosted server required.
 url: https://github.com/notionnext-org/NotionNext
@@ -102,10 +102,10 @@ NotionNext 是一个基于 **Next.js + Notion API** 的开源站点系统。你�
 
 ## 本地开发
 
-推荐使用 Node 20 和 Yarn 1。
+推荐使用 Node 22 和 Yarn 1。Node 20 已无法安装当前依赖（`@ai-sdk/google` 要求 Node >=22），部署平台也需要同步设置为 Node 22。
 
 ```bash
-# 1. 使用 Node 20
+# 1. 使用 Node 22
 nvm use || nvm install
 
 # 2. 安装 Yarn
@@ -194,7 +194,10 @@ git remote -v
 
 The MIT License.
 
-## Star History
+## Project Stars
 
-[![Star History Chart](https://api.star-history.com/svg?repos=notionnext-org/NotionNext&type=Date)](https://star-history.com/#notionnext-org/NotionNext&Date)
+[![GitHub stars](https://img.shields.io/github/stars/notionnext-org/NotionNext?style=social)](https://github.com/notionnext-org/NotionNext/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/notionnext-org/NotionNext?style=social)](https://github.com/notionnext-org/NotionNext/forks)
+
+Live star-history charts are temporarily unavailable because GitHub now restricts historical stargazer data to repository owners and collaborators.
 

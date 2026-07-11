@@ -1,6 +1,6 @@
 ---
 project: GithubStarsManager
-stars: 3164
+stars: 3192
 description: |-
     An app for managing github starred repositories. 
 url: https://github.com/AmintaCCCP/GithubStarsManager
@@ -18,7 +18,7 @@ url: https://github.com/AmintaCCCP/GithubStarsManager
 
 An app for managing github starred repositories.
 
-<a href="https://www.producthunt.com/products/githubstarsmanager?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-githubstarsmanager" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001489&theme=light&t=1754373322417" alt="GithubStarsManager - AI&#0032;organizes&#0032;GitHub&#0032;stars&#0032;for&#0032;easy&#0032;find | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/products/githubstarsmanager?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-githubstarsmanager" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001489&theme=light&t=1754373322417" alt="GithubStarsManager - AI&#0032;organizes&#0032;GitHub&#0032;stars&#0032;for&#0032;easy&#0032;find | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a> <a href="https://trendshift.io/repositories/28489?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-28489" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/28489/daily?language=TypeScript" alt="AmintaCCCP%2FGithubStarsManager | Trendshift" width="250" height="55"/></a>
 
 </div>
 
@@ -220,10 +220,11 @@ https://github.com/AmintaCCCP/GithubStarsManager/releases
 
 ### 🐳 Run With Docker
 
-Pre-built backend image is available on GHCR — no local build required:
+Pre-built backend **and frontend** images are available on GHCR — no local build required:
 
 ```bash
 docker pull ghcr.io/amintacccp/github-stars-manager-server:latest
+docker pull ghcr.io/amintacccp/github-stars-manager-frontend:latest
 docker-compose up -d
 ```
 
@@ -248,7 +249,8 @@ To customize, create a `.env` file:
 ```bash
 API_SECRET=your-secret
 ENCRYPTION_KEY=your-key
-BACKEND_IMAGE_TAG=v0.6.2   # pin a specific version (default: latest)
+BACKEND_IMAGE_TAG=0.6.2   # pin backend image version (default: latest)
+FRONTEND_IMAGE_TAG=0.6.2  # pin frontend image version (default: latest)
 ```
 
 #### Backend only (docker run)
@@ -417,6 +419,11 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=AmintaCCCP/GithubStarsManager&type=Date)](https://www.star-history.com/#AmintaCCCP/GithubStarsManager&Date)
-
+<a href="https://www.star-history.com/?type=date&repos=AmintaCCCP%2FGithubStarsManager">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=AmintaCCCP/GithubStarsManager&type=date&theme=dark&legend=top-left&sealed_token=46W7TFJ9FB1XLxW3s1C_cCrjYJUnm_7182jR7SStg1gxmkU35yXXh0-aIkUyu1QNemgFVXRedHbBj3jdmi1xHLfq1MAn0UNCc_4xCTriY7CxWA9fo8zbQsGym6oHvRqDXGkNfII64VHVbR7vXVYorXXVXYk577vK_0MF8o9L96i6CtrW_vSrPbBq_4RP" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=AmintaCCCP/GithubStarsManager&type=date&legend=top-left&sealed_token=46W7TFJ9FB1XLxW3s1C_cCrjYJUnm_7182jR7SStg1gxmkU35yXXh0-aIkUyu1QNemgFVXRedHbBj3jdmi1xHLfq1MAn0UNCc_4xCTriY7CxWA9fo8zbQsGym6oHvRqDXGkNfII64VHVbR7vXVYorXXVXYk577vK_0MF8o9L96i6CtrW_vSrPbBq_4RP" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=AmintaCCCP/GithubStarsManager&type=date&legend=top-left&sealed_token=46W7TFJ9FB1XLxW3s1C_cCrjYJUnm_7182jR7SStg1gxmkU35yXXh0-aIkUyu1QNemgFVXRedHbBj3jdmi1xHLfq1MAn0UNCc_4xCTriY7CxWA9fo8zbQsGym6oHvRqDXGkNfII64VHVbR7vXVYorXXVXYk577vK_0MF8o9L96i6CtrW_vSrPbBq_4RP" />
+ </picture>
+</a>
 

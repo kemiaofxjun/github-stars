@@ -1,6 +1,6 @@
 ---
 project: JKVideo
-stars: 4999
+stars: 4996
 description: |-
     高颜值第三方 B 站 React Native 客户端
 url: https://github.com/tiajinsha/JKVideo

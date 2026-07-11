@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 2014
+stars: 2019
 description: |-
     Ech0 – An open-source, self-hosted lightweight publishing platform for personal idea sharing.
 url: https://github.com/lin-snow/Ech0
@@ -302,11 +302,11 @@ Special thanks to the [LinuxDO](https://linux.do/) community for their recogniti
 
 ## Star History
 
-<a href="https://www.star-history.com/#lin-snow/Ech0&Timeline">
+<a href="https://www.star-history.com/?repos=lin-snow%2FEch0&type=timeline&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=lin-snow/Ech0&type=Timeline&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=lin-snow/Ech0&type=Timeline" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=lin-snow/Ech0&type=Timeline" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=lin-snow/Ech0&type=timeline&legend=top-left&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=lin-snow/Ech0&type=timeline&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=lin-snow/Ech0&type=timeline&legend=top-left" />
  </picture>
 </a>
 
