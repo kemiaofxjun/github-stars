@@ -1,8 +1,8 @@
 ---
 project: GithubStarsManager
-stars: 3192
+stars: 3218
 description: |-
-    An app for managing github starred repositories. 
+    AI-powered GitHub stars manager with semantic search, auto-categorization, and release tracking
 url: https://github.com/AmintaCCCP/GithubStarsManager
 ---
 

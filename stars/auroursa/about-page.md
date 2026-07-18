@@ -1,6 +1,6 @@
 ---
 project: about-page
-stars: 17
+stars: 18
 description: |-
     Just a personal page
 url: https://github.com/auroursa/about-page

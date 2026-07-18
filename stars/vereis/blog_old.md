@@ -1,6 +1,6 @@
 ---
 project: blog_old
-stars: 32
+stars: 31
 description: |-
     Source for my personal blog
 url: https://github.com/vereis/blog_old

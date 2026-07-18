@@ -1,6 +1,6 @@
 ---
 project: hexo-theme-solitude
-stars: 1168
+stars: 1165
 description: |-
     一款设计师风格的 Hexo 主题，支持懒加载、PWA、Latex以及多种评论系统。
 url: https://github.com/everfu/hexo-theme-solitude
@@ -59,6 +59,16 @@ url: https://github.com/everfu/hexo-theme-solitude
 
 前往 [文档](https://solitude.js.org/) 获取更多信息。
 
+## 浏览器扩展 API
+
+主题浏览器脚本使用原生 ES 模块，并通过 `window.Solitude` 提供稳定扩展入口：
+
+- `navigate(url)`、`refresh()`、`copy(text)`、`toggleTheme()`
+- `loadScript(url, options)`、`loadStyle(url, options)`
+- `on(event, handler)`，支持 `ready`、`beforeNavigate`、`afterNavigate`、`themeChange`
+
+`on` 返回取消订阅函数。旧版的 `sco`、`utils`、`pjax`、`GLOBAL_CONFIG` 和 `PAGE_CONFIG` 不再作为公开 API；自定义脚本应迁移到 `window.Solitude`。
+
 ## 社区
 
 [![Discord](https://img.shields.io/discord/1266610921942548553?logo=discord&label=discord&logoColor=white)](https://discord.gg/HZXAnK4Sut)
@@ -79,3 +89,4 @@ url: https://github.com/everfu/hexo-theme-solitude
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvalor-x%2Fhexo-theme-solitude.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvalor-x%2Fhexo-theme-solitude?ref=badge_large)
 
 [Apache-2.0](./LICENSE) License &copy; 2025-至今 [伍十七](https://github.com/everfu)
+

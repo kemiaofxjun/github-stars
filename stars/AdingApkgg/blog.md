@@ -10,7 +10,7 @@ url: https://github.com/AdingApkgg/blog
 
 ```sh
 git clone https://github.com/AdingApkgg/blog.git
-cd blog && pnpm install && pnpm dev
+cd blog && bun install && bun dev
 
 ```
 

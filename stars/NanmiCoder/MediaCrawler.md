@@ -1,6 +1,6 @@
 ---
 project: MediaCrawler
-stars: 56072
+stars: 56853
 description: |-
     小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫
 url: https://github.com/NanmiCoder/MediaCrawler
@@ -330,10 +330,10 @@ MediaCrawler 支持多种数据存储方式，包括 CSV、JSON、JSONL、Excel�
     </tr>
     <tr>
       <td align="center" valign="middle">
-        <a href="https://bloome.im/login?ref=NanmiCoder"><img src="docs/static/images/bloome_logo.png" width="180" alt="Bloome"></a>
+        <a href="https://bloome.im/app?ref=NanmiCoder&utm_medium=github&utm_source=NanmiCoder-MediaCrawler-ivor-202607"><img src="docs/static/images/bloome_logo.png" width="180" alt="Bloome"></a>
       </td>
       <td valign="middle">
-        <a href="https://bloome.im/login?ref=NanmiCoder">Bloome</a> 是一个 AI Agent IM 平台——让多个 AI agent（Claude、ChatGPT、DeepSeek 等）和你在同一个对话里像团队成员一样协作，自动分工、互相校对，直接生成表格、文档与可视化看板。零配置、云端运行，网页和手机都能用，还能把配好的 agent 一键分享给团队。👉 <a href="https://bloome.im/login?ref=NanmiCoder">试试 Bloome</a>
+        <a href="https://bloome.im/app?ref=NanmiCoder&utm_medium=github&utm_source=NanmiCoder-MediaCrawler-ivor-202607">Bloome</a> 是一个 AI Agent IM 平台——让多个 AI agent（Claude、ChatGPT、DeepSeek 等）和你在同一个对话里像团队成员一样协作，自动分工、互相校对，直接生成表格、文档与可视化看板。零配置、云端运行，网页和手机都能用，还能把配好的 agent 一键分享给团队。👉 <a href="https://bloome.im/app?ref=NanmiCoder&utm_medium=github&utm_source=NanmiCoder-MediaCrawler-ivor-202607">试试 Bloome</a>
       </td>
     </tr>
     <tr>
