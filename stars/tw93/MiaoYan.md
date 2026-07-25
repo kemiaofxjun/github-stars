@@ -1,6 +1,6 @@
 ---
 project: MiaoYan
-stars: 8446
+stars: 8483
 description: |-
     ⛷ Lightweight Markdown app to help you write great sentences.
 url: https://github.com/tw93/MiaoYan
@@ -90,6 +90,9 @@ Why not WYSIWYG like Typora? We prioritize pure Markdown editing experience, and
 
 - [Markdown Syntax Guide](Resources/Initial/MiaoYan%20Markdown%20Syntax%20Guide.md) - Complete syntax reference with advanced features
 - [PPT Presentation Mode](Resources/Initial/MiaoYan%20PPT.md) - Guide to creating presentations with `---` slide separators
+- [MiaoYan Agent Skill](skills/miaoyan) - Teach your agent MiaoYan syntax, attachments, PPT patterns, and CLI workflows
+
+Install the official skill with `npx skills add tw93/MiaoYan/skills/miaoyan -g`.
 
 ## Support
 

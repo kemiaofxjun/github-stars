@@ -1,13 +1,13 @@
 ---
 project: RyTuneX
-stars: 5190
+stars: 5282
 description: |-
     RyTuneX is a cutting-edge optimizer built with the WinUI 3 framework, designed to amplify the performance of Windows devices. Crafted for both Windows 10 and 11.
 url: https://github.com/rayenghanmi/RyTuneX
 ---
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/fa8a084e-5926-4735-ad83-d0395ec3b272" alt="RyTuneX Logo" width="128" height="128">
+  <img src="https://github.com/user-attachments/assets/c88b9d96-9a7c-4072-8dc7-8c2dffe3bccd" alt="RyTuneX Logo" />
 </div>
 <br/>
 <p align="center" style="font-size: 1.1rem; color: #555;">
@@ -121,9 +121,9 @@ RyTuneX is built on a modern Windows development stack, leveraging a layered arc
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/8547e680-5b16-46d3-a6e5-64a006fd476b" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/0f8fe3ba-7477-4ca7-ad00-be08cc559a21" />
-    <img alt="RyTuneX Interface" src="https://github.com/user-attachments/assets/8547e680-5b16-46d3-a6e5-64a006fd476b" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/eb20b786-fc3c-4cc4-85d5-76080274eed4" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/9d428917-90e2-4de1-948d-ec87dde7f098" />
+    <img alt="RyTuneX Interface" src="https://github.com/user-attachments/assets/eb20b786-fc3c-4cc4-85d5-76080274eed4" />
   </picture>
   <p><em>RyTuneX - Clean, Modern, and Intuitive Interface</em></p>
 </div>
