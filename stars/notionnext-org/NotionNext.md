@@ -1,6 +1,6 @@
 ---
 project: NotionNext
-stars: 11681
+stars: 11693
 description: |-
     Turn your Notion workspace into a fast, customizable website. Built with Next.js + Notion API, with multi-platform deployment and no self-hosted server required.
 url: https://github.com/notionnext-org/NotionNext
@@ -22,6 +22,8 @@ url: https://github.com/notionnext-org/NotionNext
   <a href="https://notionnext.tangly1024.com/user-guide/start-here">开始搭建</a>
   ·
   <a href="https://notionnext.tangly1024.com/user-guide/themes/THEMES_CATALOG">主题全览</a>
+  ·
+  <a href="https://notionnext.tangly1024.com/user-guide/showcase">用户作品</a>
   ·
   <a href="https://notionnext.tangly1024.com/">文档站</a>
   ·
@@ -136,8 +138,10 @@ yarn dev
 | --- | --- |
 | 在线文档站 | [notionnext.tangly1024.com](https://notionnext.tangly1024.com) |
 | 新手入口 | [从这里开始](https://notionnext.tangly1024.com/user-guide/start-here) |
+| 场景模板 | [按目标选择模板](https://notionnext.tangly1024.com/user-guide/templates) |
 | 配置索引 | [全站功能与配置索引](https://notionnext.tangly1024.com/user-guide/reference/features) |
 | 主题说明 | [26 个主题说明](https://notionnext.tangly1024.com/user-guide/themes/THEMES_CATALOG) |
+| 用户作品 | [Showcase](https://notionnext.tangly1024.com/user-guide/showcase)：已上线站点欢迎提交作品 |
 | 文档源码 | [docs/](./docs/) |
 | 旧版手册 | [docs.tangly1024.com](https://docs.tangly1024.com/) |
 

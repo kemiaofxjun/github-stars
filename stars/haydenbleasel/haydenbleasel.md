@@ -1,6 +1,6 @@
 ---
 project: haydenbleasel
-stars: 189
+stars: 190
 description: |-
     A monorepo  for all my personal projects.
 url: https://github.com/haydenbleasel/haydenbleasel
