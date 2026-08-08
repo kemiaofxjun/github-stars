@@ -1,8 +1,8 @@
 ---
 project: Mizuki
-stars: 1785
+stars: 1812
 description: |-
-    下一代Material Design 3 博客主题(Astro驱动)
+    Next-Gen Material Design 3 Blog Theme (Astro Powered)
 url: https://github.com/LyraVoid/Mizuki
 ---
 
@@ -96,7 +96,7 @@ Get started quickly with our comprehensive documentation. Whether you're customi
 - [x] Advanced search functionality based on [Pagefind](https://pagefind.app/)
 - [x] [Enhanced Markdown features](#-markdown-extensions) with syntax highlighting
 - [x] Interactive table of contents with auto-scrolling
-- [x] RSS feed generation
+- [x] Full-content RSS and Atom feeds using the same Markdown/MDX pipeline as article pages
 - [x] Reading time estimation
 - [x] Article categorization and tagging system
 
@@ -273,13 +273,14 @@ All commands are run from the project root:
 
 ### 🔧 Basic Configuration
 
-Edit `src/config.ts` to customize your blog:
+Edit `src/config/siteConfig.ts` to customize your blog:
 
 ```typescript
 export const siteConfig: SiteConfig = {
   title: "Your Blog Name",
   subtitle: "Your Blog Description",
   lang: "en", // or "zh-CN", "ja", etc.
+  timeZone: "Asia/Shanghai", // IANA time zone, e.g. Asia/Tokyo or Europe/Berlin
   themeColor: {
     hue: 210, // 0-360, theme hue
     fixed: false, // Hide theme color picker
@@ -359,6 +360,10 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 ### Original Project License
 
 This project is based on [Fuwari](https://github.com/saicaca/fuwari), which is licensed under the MIT License. The original copyright notice and permission notice are included in the LICENSE.MIT file in accordance with the MIT License requirements.
+
+### Third-Party Notices
+
+Portions of the Markdown enhancements are adapted from [Firefly](https://github.com/CuteLeaf/Firefly) under the MIT License. The original copyright and complete license text are retained in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## 🙏 Acknowledgements
 
