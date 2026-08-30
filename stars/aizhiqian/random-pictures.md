@@ -1,6 +1,6 @@
 ---
 project: random-pictures
-stars: 6
+stars: 7
 description: |-
     可以在 Vercel 一键免费部署的随机图 API
 url: https://github.com/aizhiqian/random-pictures

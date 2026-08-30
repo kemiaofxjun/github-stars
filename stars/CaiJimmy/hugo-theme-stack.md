@@ -1,6 +1,6 @@
 ---
 project: hugo-theme-stack
-stars: 6460
+stars: 6467
 description: |-
     Card-style Hugo theme designed for bloggers
 url: https://github.com/CaiJimmy/hugo-theme-stack
