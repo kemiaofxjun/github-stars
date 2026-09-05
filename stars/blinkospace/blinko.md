@@ -1,6 +1,6 @@
 ---
 project: blinko
-stars: 10960
+stars: 10986
 description: |-
     An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript .
 url: https://github.com/blinkospace/blinko

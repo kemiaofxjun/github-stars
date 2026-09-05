@@ -1,6 +1,6 @@
 ---
 project: hexo-theme-solitude
-stars: 1186
+stars: 1188
 description: |-
     A beautiful, powerful, and efficient Hexo theme developed by everfu.
 url: https://github.com/everfu/hexo-theme-solitude

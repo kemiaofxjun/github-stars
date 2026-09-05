@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 2051
+stars: 2053
 description: |-
     Ech0 – An open-source, self-hosted lightweight publishing platform for personal idea sharing.
 url: https://github.com/lin-snow/Ech0

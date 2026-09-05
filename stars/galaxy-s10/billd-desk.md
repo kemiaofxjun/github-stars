@@ -1,6 +1,6 @@
 ---
 project: billd-desk
-stars: 7639
+stars: 7742
 description: |-
     基于Vue3 + WebRTC + Nodejs + Flutter搭建的远程桌面控制、游戏串流
 url: https://github.com/galaxy-s10/billd-desk
@@ -51,6 +51,25 @@ BilldDesk Pro | [BilldDesk 开源版](./README_OpenSource.md)
 - [x] `安卓端` 控制 `电脑端`
 - [x] `安卓端` 控制 `安卓端`
 - [x] `安卓端` 控制 `web网页`（仅观看）
+- [x] 硬件加速
+  - [x] 开启/关闭编码硬件加速
+  - [x] 开启/关闭解码硬件加速
+  - [x] 开启/关闭零拷贝
+  - [x] NVIDIA显卡（H264/H265/AV1），显卡驱动需要570.0+版本
+  - [x] AMD显卡（H264/H265）
+- [x] 主流编解码协议
+  - [x] H264/H265
+  - [x] AV1
+  - [x] VP8/VP9
+- [x] 驱动级键鼠（避免游戏风控）
+- [x] 鼠标模式
+  - [x] 使用主控端鼠标
+  - [x] 使用被控端鼠标（fps游戏）
+  - [x] 智能鼠标
+- [x] 屏幕墙
+  - [x] 支持Windows/macOS/Android
+  - [x] 支持单控
+  - [x] 支持群控
 - [x] 多台设备同时远程一台设备
 - [x] 一台设备同时远程多台设备
 - [x] 多屏操作
@@ -73,29 +92,11 @@ BilldDesk Pro | [BilldDesk 开源版](./README_OpenSource.md)
 - [x] 开机自启（无人值守）
 - [x] 进程保活（windows）
 - [x] 在线更新/主控端远程更新被控端（windows）
-- [x] 鼠标模式
-  - [x] 使用主控端鼠标
-  - [x] 使用被控端鼠标（fps游戏）
-  - [x] 智能鼠标
 - [x] 帧率模式
   - [x] 根据画面变化，智能降帧率，优化带宽占用
 - [x] 网络模式
   - [x] 默认
   - [x] 低延迟
-- [x] 主流编解码协议
-  - [x] H264/H265
-  - [x] AV1
-  - [x] VP8/VP9
-- [x] 硬件加速
-  - [x] 开启/关闭编码硬件加速
-  - [x] 开启/关闭解码硬件加速
-  - [x] 开启/关闭零拷贝
-  - [x] NVIDIA显卡（H264/H265/AV1），显卡驱动需要570.0+版本
-  - [ ] AMD显卡
-- [x] 屏幕墙
-  - [x] 支持Windows/macOS/Android
-  - [x] 支持单控
-  - [x] 支持群控
 - [x] 快捷键/常用操作
   - [x] Ctrl+Alt+Del
   - [x] 显示桌面
