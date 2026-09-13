@@ -39,7 +39,12 @@ url: https://github.com/Big-Cake-jpg/friend-links
 
 - 链接：https://www.notbigcake.net
 - 头像（128x，WebP）：https://objects.notbigcake.net/bigcake-blog-images/brand/avatar-128x.webp
-  - Gravatar E-Mail Hash：`636d113ce37111d08f08faee780ce9b8`
+
+> 想用 Gravatar？
+>
+> - SHA256（推荐）：`49cafbd7c5c056d3d77e31a1f6dadcf3e43aa59cd68e3ca3359cf9ee7f9072a3`
+> - MD5：`eb089691c9adffc183cf545444ff29ca`
+
 - 站点名称：晓雨杂记
 - 昵称：Big_Cake / 晓雨
 - 主题色：#F2BC57

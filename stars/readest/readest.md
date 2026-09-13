@@ -1,6 +1,6 @@
 ---
 project: readest
-stars: 24097
+stars: 24284
 description: |-
     Readest is a modern, feature-rich ebook reader designed for avid readers offering seamless cross-platform access, powerful tools, and an intuitive interface to elevate your reading experience.
 url: https://github.com/readest/readest
@@ -67,6 +67,7 @@ url: https://github.com/readest/readest
 | **File Association and Open With**         | Quickly open files in Readest in your file browser with one-click.                                                     | ✅         |
 | **Library Management**                     | Organize, sort, and manage your entire ebook library.                                                                  | ✅         |
 | **OPDS/Calibre Integration**               | Integrate OPDS/Calibre to access online libraries and catalogs.                                                        | ✅         |
+| **Web Page Clipping**                      | Open websites, sign in, and clip pages with **From Web Browser**. **From Web Novel** can reuse your browser session to import selected chapters and their images. | ✅         |
 | **Translate with DeepL and Yandex**        | From a single sentence to the entire book—translate instantly.                                                         | ✅         |
 | **Audiobook Support**                      | Extend functionality to play and manage audiobooks.                                                        | ✅           |
 | **Text-to-Speech (TTS) Support**           | Enjoy smooth, multilingual narration—even within a single book.                                                        | ✅         |
