@@ -1,6 +1,6 @@
 ---
 project: sugar-blog
-stars: 588
+stars: 589
 description: |-
     ✍️📚我写博客的地方🤪🤪🤪记录随笔与学习笔记，仓库包含：博客内容，博客主题、博客模板、vitepress离线全文搜索插件、VitePress RSS 支持插件，图片预览插件；a blog theme use vitepress
 url: https://github.com/ATQQ/sugar-blog
@@ -29,6 +29,7 @@ url: https://github.com/ATQQ/sugar-blog
   * [vitepress-plugin-artalk](./packages/vitepress-plugin-artalk/)：为 `VitePress` 站点引入 [Artalk](https://artalk.js.org/) 的评论系统。
   * [vitepress-plugin-giscus](./packages/vitepress-plugin-giscus/)：为 `VitePress` 站点引入 [Giscus](https://giscus.app/) 的评论系统。
   * [vitepress-plugin-back2top](./packages/vitepress-plugin-back2top/)：为 `VitePress` 站点添加返回顶部按钮。
+  * [vitepress-plugin-product-card](./packages/vitepress-plugin-product-card/)：为 `VitePress` 站点添加产品/项目/作品卡片组件。
   * [vitepress-plugin-slot-inject-template](./template/vitepress-plugin-slot-inject-template/)：`VitePress` 插件开发模板。
 
 ## 快速创建博客模板
@@ -104,7 +105,7 @@ pnpm dev:theme
 
 ## Star History
 
-[![Star History Chart](https://star-history.dera.page/svg?repos=atqq/sugar-blog&type=Date)](https://star-history.dera.page/#atqq/sugar-blog&Date)
+[![Star History Chart](https://api.star-history.com/chart?repos=atqq/sugar-blog&type=date&legend=top-left)](https://www.star-history.com/?repos=atqq%2Fsugar-blog&type=date&legend=top-left)
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/ATQQ/sugar-blog.svg?variant=adaptive)](https://starchart.cc/ATQQ/sugar-blog)
