@@ -1,6 +1,6 @@
 ---
 project: GithubStarsManager
-stars: 3588
+stars: 3606
 description: |-
     AI-powered GitHub stars manager with semantic search, auto-categorization, and release tracking
 url: https://github.com/AmintaCCCP/GithubStarsManager
@@ -286,6 +286,16 @@ Ask concise questions about a single repository directly from its card. Each con
 - **Connection Testing** — Test API connection after configuration
 - **AI Model Selection** — Choose the specific model to use
 
+## 🌍 Interface Languages
+
+The UI ships in **10 languages**: 简体中文 · English · 日本語 · Español · Português (Brasil) · Русский · 繁體中文 · Français · Deutsch · 한국어.
+
+- Switch anytime in **Settings → General → Language**, or via the language picker on the login screen; the choice is persisted per browser and the desktop client follows it too.
+- First launch picks up your browser/OS language automatically.
+- AI-generated content follows the UI language: repository summaries & tags, Gist summaries, Release changelog digests, and Repository Q&A answers are written in the selected language (built-in prompts; a custom prompt keeps full user control).
+- Built-in categories follow the UI language as well — display names, AI tag matching, and GitHub Lists syncing all rename automatically when you switch languages.
+- Missing translations gracefully fall back to English. Translation drafts are machine-assisted and get refined over time — **PRs for translation improvements are very welcome** ([`src/locales`](src/locales)).
+
 ## 🛠 Tech Stack
 
 - **Frontend**: React 18 + TypeScript + Tailwind CSS
@@ -355,8 +365,8 @@ To customize, create a `.env` file:
 ```bash
 API_SECRET=your-secret
 ENCRYPTION_KEY=your-key
-BACKEND_IMAGE_TAG=0.8.1   # pin backend image version (default: latest)
-FRONTEND_IMAGE_TAG=0.8.1  # pin frontend image version (default: latest)
+BACKEND_IMAGE_TAG=0.8.3   # pin backend image version (default: latest)
+FRONTEND_IMAGE_TAG=0.8.3  # pin frontend image version (default: latest)
 ```
 
 #### Backend only (docker run)
@@ -389,6 +399,7 @@ npm run dev
 | `API_SECRET` | No | Bearer token for API authentication. If unset, auth is disabled. |
 | `ENCRYPTION_KEY` | No | AES-256 key for encrypting stored secrets. Auto-generated if unset. |
 | `PORT` | No | Server port (default: 3000) |
+| `CSP_CONNECT_SRC` | No | Comma-separated extra origins appended to the `connect-src` CSP directive, for custom AI provider / vector-search worker endpoints called directly from the browser (e.g. `https://ai.example.com,https://worker.example.org`). |
 
 #### Connecting Frontend to Backend
 1. Open Settings panel in the app

@@ -1,6 +1,6 @@
 ---
 project: astro-theme-pure
-stars: 1079
+stars: 1088
 description: |-
     ⭐ A simple, fast and powerful blog & document theme built by Astro
 url: https://github.com/cworld1/astro-theme-pure
@@ -72,12 +72,12 @@ You can choose one of the following methods for project development:
 - [Bun](https://bun.com/get)
 - [Node.js](https://nodejs.org/)
 
-
 For deployment methods using container like [Docker](https://docs.docker.com/get-started/get-docker) & [Docker Compose](https://docs.docker.com/compose/install), please refer the documention [Using Docker Compose](https://astro-pure.js.org/docs/setup/using-docker-compose).
 
 ### Getting started
 
 1. Clone the repository and enter the directory:
+
    ```shell
    git clone https://github.com/cworld1/astro-theme-pure.git
    cd astro-theme-pure
@@ -86,11 +86,13 @@ For deployment methods using container like [Docker](https://docs.docker.com/get
    Edit `src/site.config.ts` to customize the site.
 
 2. Install dependencies:
+
    ```shell
    bun install
    ```
-   
+
 3. Start the development server:
+
    ```shell
    bun dev
    # or
@@ -100,8 +102,8 @@ For deployment methods using container like [Docker](https://docs.docker.com/get
    # or
    npm run dev
    ```
-   
-   The development server runs at http://localhost:4321 by default.
+
+   The development server runs at <http://localhost:4321> by default.
 
 ### Creating a new blog article
 
@@ -120,9 +122,9 @@ Build the production site into the `./dist` directory:
 ```shell
 bun run build
 ```
-   
+
 Once the build is complete, the generated static files will be located in the `./dist` directory. You can deploy this directory to any platform that supports static site hosting.
-   
+
 Preview the production build locally:
 
 ```shell
@@ -136,8 +138,8 @@ You can deploy your blog to any static site hosting platform.
 - Refer to the official [Astro Deployment Guide](https://docs.astro.build/en/guides/deploy/) for specific deployment methods.
 - Depending on the deployment platform you choose, you may need to modify the `astro.config.ts` configuration file in the project.
 
-| Vercel | Netlify |
-| :---: | :---: |
+|                                                                        Vercel                                                                         |                                                                              Netlify                                                                               |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcworld1%2Fastro-theme-pure) | [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cworld1/astro-theme-pure) |
 
 ## Contributions

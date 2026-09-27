@@ -1,6 +1,6 @@
 ---
 project: OverThinker-Blog
-stars: 8
+stars: 7
 description: |-
     基于Astro创建的博客——OverThinkerBLog
 url: https://github.com/OverThinker13/OverThinker-Blog
