@@ -1,6 +1,6 @@
 ---
 project: kiss-translator
-stars: 12641
+stars: 12738
 description: |-
     A simple, open source bilingual translation extension & Greasemonkey script (一个简约、开源的 双语对照翻译扩展 & 油猴脚本)
 url: https://github.com/fishjar/kiss-translator
@@ -49,7 +49,7 @@ url: https://github.com/fishjar/kiss-translator
 - [x] 支持多种翻译服务
   - [x] Google/Microsoft
   - [x] Tencent/Volcengine
-  - [x] OpenAI/Gemini/Claude/Ollama/DeepSeek/OpenRouter/OrcaRouter
+  - [x] OpenAI/Gemini/Claude/Ollama/DeepSeek/OpenRouter/OrcaRouter/Requesty
   - [x] DeepL/DeepLX
   - [x] AzureAI/CloudflareAI
   - [x] Chrome浏览器内置AI翻译(BuiltinAI)

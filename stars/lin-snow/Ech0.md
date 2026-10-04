@@ -1,6 +1,6 @@
 ---
 project: Ech0
-stars: 2064
+stars: 2074
 description: |-
     Ech0 – An open-source, self-hosted lightweight publishing platform for personal idea sharing.
 url: https://github.com/lin-snow/Ech0
@@ -277,7 +277,7 @@ If you want to use Ech0 in a proprietary product, closed-source hosted service, 
 
 **Development**
 
-Local setup, environment requirements, and front-/back-end integration are documented in **[docs/dev/development.md](./docs/dev/development.md)**. For higher-level architecture and conventions, see [`CLAUDE.md`](./CLAUDE.md) and [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+Local setup, environment requirements, and front-/back-end integration are documented in **[docs/dev/development.md](./docs/dev/development.md)**. For higher-level architecture and conventions, see [`CLAUDE.md`](./CLAUDE.md) and [`CONTRIBUTING.md`](./CONTRIBUTING.md). An interactive architecture diagram is available at **[ech0.app/arch](https://www.ech0.app/arch)**.
 
 ---
 

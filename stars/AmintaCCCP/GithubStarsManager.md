@@ -1,6 +1,6 @@
 ---
 project: GithubStarsManager
-stars: 3606
+stars: 3631
 description: |-
     AI-powered GitHub stars manager with semantic search, auto-categorization, and release tracking
 url: https://github.com/AmintaCCCP/GithubStarsManager
@@ -365,8 +365,8 @@ To customize, create a `.env` file:
 ```bash
 API_SECRET=your-secret
 ENCRYPTION_KEY=your-key
-BACKEND_IMAGE_TAG=0.8.3   # pin backend image version (default: latest)
-FRONTEND_IMAGE_TAG=0.8.3  # pin frontend image version (default: latest)
+BACKEND_IMAGE_TAG=0.8.4   # pin backend image version (default: latest)
+FRONTEND_IMAGE_TAG=0.8.4  # pin frontend image version (default: latest)
 ```
 
 #### Backend only (docker run)
