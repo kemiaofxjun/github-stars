@@ -1,6 +1,6 @@
 ---
 project: wr.do
-stars: 2283
+stars: 2287
 description: |-
     一站式域名服务平台，集成短链生成、无限域名邮箱、文件存储和子域名管理，带有管理员面板，支持自部署
 url: https://github.com/oiov/wr.do
@@ -145,17 +145,21 @@ url: https://github.com/oiov/wr.do
 
 ## 自部署教程
 
-> 注意，任何部署方式都需要先配置环境变量，若部署后修改了环境变量，需要**重新部署**才会生效。
+> 部署前请先配置环境变量。修改容器运行时环境变量后，需要重建容器才会生效。
 
 ### 使用 Vercel 部署
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oiov/wr.do.git&project-name=wrdo)
 
-记得填写必要的环境变量。
+部署前设置 `DATABASE_URL`、`AUTH_URL` 和随机的 `AUTH_SECRET`（使用 `openssl rand -base64 32` 生成）。如果没有可用管理员，还须设置 `BOOTSTRAP_ADMIN_EMAIL` 和 `BOOTSTRAP_ADMIN_PASSWORD`；构建时会自动初始化管理员。密码至少 16 位，含至少 8 种不同字符。
 
 ### 使用 Docker Compose 部署
 
-在服务器中创建一个文件夹，进入该文件夹并新建 [docker-compose.yml](https://github.com/oiov/wr.do/blob/main/docker-compose.yml)、[.env](https://github.com/oiov/wr.do/blob/main/.env.example) 文件：
+官方镜像发布在 [GitHub Container Registry](https://github.com/oiov/wr.do/pkgs/container/wr.do%2Fwrdo)：`ghcr.io/oiov/wr.do/wrdo:main`（也可使用 `latest`）。无需在服务器上构建镜像。
+
+Docker 镜像在构建时从 npm 自动获取 GeoLite2 City 数据库，用于补齐短链访客地理信息；无需 MaxMind 账号或手动挂载。Vercel 不需要该数据库。更新方法和代理配置见[部署文档](https://likedo.vercel.app/docs/developer/deploy-zh)。
+
+在服务器中创建一个文件夹，下载仓库中的 [docker-compose.yml](https://github.com/oiov/wr.do/blob/main/docker-compose.yml) 和 [.env.example](https://github.com/oiov/wr.do/blob/main/.env.example)，将后者重命名为 `.env`：
 
 ```yml
 - wrdo
@@ -163,19 +167,18 @@ url: https://github.com/oiov/wr.do
   | - .env
 ```
 
-在 `.env` 中填写必要的环境变量，然后执行: 
+准备好 PostgreSQL 数据库，在 `.env` 中填写 `DATABASE_URL`、`AUTH_URL` 和其他所需配置。使用 `openssl rand -base64 32` 生成 `AUTH_SECRET`。首次部署还须设置 `BOOTSTRAP_ADMIN_EMAIL`（个人邮箱）和至少 16 位的 `BOOTSTRAP_ADMIN_PASSWORD`；已有可用管理员的实例不需要填写这两项。然后拉取并启动镜像：
 
 ```bash
+docker compose pull
 docker compose up -d
 ```
 
-> 或只创建 docker-compose.yml 文件，环境变量直接填写在yml中，比如将`DATABASE_URL: ${DATABASE_URL}`替换成`DATABASE_URL: your-database-uri`
+修改 `.env` 中的服务端变量后，执行 `docker compose up -d --force-recreate`。镜像构建时不会注入任何部署者的 GitHub Secrets；`DATABASE_URL`、`AUTH_SECRET` 等实例专属配置由容器启动时提供。
 
-### 使用 EdgeOne 部署
+首次管理员创建成功后，从 `.env` 移除 `BOOTSTRAP_ADMIN_PASSWORD` 并重新创建容器。升级时，仍使用出厂密码的 `admin@admin.com` 会被停用；已修改密码的账号不受影响。如果没有其他可用管理员，升级前先配置上述两项初始化凭据。不要随意更换已有实例的 `AUTH_SECRET`，否则现有登录会话会失效。
 
-> 此方法部署目前无法build成功，不建议使用
-
-[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Foiov%2Fwr.do)
+> 注意：Next.js 会将客户端使用的 `NEXT_PUBLIC_*` 变量在构建时写入浏览器代码。预构建的公共镜像无法通过容器启动时的 `.env` 更改这些客户端值；如果部署需要自定义站点 URL、名称或其他客户端配置，需要从源码构建并在执行 `pnpm run build` 前提供这些变量。目前不能保证仅靠公共镜像完成这些客户端配置。
 
 ## 本地开发
 
@@ -192,6 +195,7 @@ pnpm install
 ```bash
 pnpm postinstall
 pnpm db:push
+pnpm bootstrap-admin
 ```
 
 ```bash
@@ -199,16 +203,7 @@ pnpm db:push
 pnpm dev
 ```
 
-- 默认账号(管理员)：`admin@admin.com`
-- 默认密码：`123456`
-
-> 登录后请及时修改密码
-
-#### 管理员初始化
-
-> 此初始化引导在 v1.0.2 版本后, 不再是必要步骤
-
-访问 https://localhost:3000/setup
+管理员使用 `.env` 中的 `BOOTSTRAP_ADMIN_EMAIL` 和 `BOOTSTRAP_ADMIN_PASSWORD` 初始化。`AUTH_SECRET` 必须是至少 32 字节的随机值。
 
 ## 环境变量
 
@@ -237,13 +232,6 @@ pnpm dev
 <a href="https://github.com/oiov/wr.do/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=oiov/wr.do" />
 </a>
-
-## 请作者喝咖啡
-  
-[爱发电主页打赏](wr.do/afdhome)
-
-<img width="100" src="https://wr.do/bbpt9z?ref=https://github.com/oiov/wr.do" />
-
 
 ## Star History
 

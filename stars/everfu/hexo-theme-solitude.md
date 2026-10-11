@@ -1,6 +1,6 @@
 ---
 project: hexo-theme-solitude
-stars: 1188
+stars: 1184
 description: |-
     A beautiful, powerful, and efficient Hexo theme developed by everfu.
 url: https://github.com/everfu/hexo-theme-solitude
@@ -10,7 +10,9 @@ url: https://github.com/everfu/hexo-theme-solitude
 
 <div align="center">
 
-<img width="50%" style="margin-bottom: 2vh" src=".github/logo.avif" />
+<img src="source/img/logo.png" width="120" height="120" alt="Solitude paper airplane logo" />
+
+# Hexo Solitude
 
 一款优雅的 Hexo 主题，支持懒加载、PWA、Latex 以及多种评论系统。
 
@@ -30,6 +32,10 @@ url: https://github.com/everfu/hexo-theme-solitude
 ![npm publish](https://img.shields.io/github/actions/workflow/status/everfu/hexo-theme-solitude/npm-publish.yml)
 
 </div>
+
+<p align="center">
+  <img src="source/img/brand/solitude-banner.webp" width="960" height="540" alt="Solitude paper airplane over a layered paper landscape" />
+</p>
 
 ## 特性
 
@@ -75,10 +81,6 @@ url: https://github.com/everfu/hexo-theme-solitude
 [![QQ 群](https://img.shields.io/badge/QQ%20群-948375336-FFD700?logo=Tencent-QQ&logoColor=white)](https://qm.qq.com/q/mxfomMvJPG)
 
 ## 赞助商
-
-<a href="https://edgeone.ai/zh?from=github">
-   <img src="./.github/edgeone.avif" width="250">
-</a>
 
 [本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助](https://edgeone.ai/zh?from=github)
 

@@ -1,46 +1,38 @@
 ---
 project: MiaoYan
-stars: 8662
+stars: 8669
 description: |-
-    ⛷ Lightweight Markdown app to help you write great sentences.
+    ⛷ A quiet, distraction-free writing app to help you write great sentences.
 url: https://github.com/tw93/MiaoYan
 ---
 
-<h4 align="right">English | <strong><a href="https://github.com/tw93/MiaoYan/blob/main/README_CN.md">简体中文</a></strong></h4>
-
-<p align="center">
-  <a href="https://miaoyan.app/" target="_blank"><img src="https://gw.alipayobjects.com/zos/k/t0/43.png" width="138" /></a>
-  <h1 align="center">MiaoYan</h1>
-  <div align="center">
-    <a href="https://twitter.com/HiTw93" target="_blank">
-      <img alt="Twitter Follow" src="https://img.shields.io/badge/follow-Tw93-red?style=flat-square&logo=Twitter"></a>
-    <a href="https://t.me/+9f9gf4ZrFSQ2OWVl" target="_blank">
-      <img alt="Telegram" src="https://img.shields.io/badge/chat-Telegram-blueviolet?style=flat-square&logo=Telegram"></a>
-    <a href="https://github.com/tw93/MiaoYan/releases" target="_blank">
-      <img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/tw93/MiaoYan/total.svg?style=flat-square"></a>
-    <a href="https://github.com/tw93/MiaoYan/commits" target="_blank">
-      <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/m/tw93/MiaoYan?style=flat-square"></a>
-    <a href="https://github.com/tw93/MiaoYan/issues?q=is%3Aissue+is%3Aclosed" target="_blank">
-      <img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed/tw93/MiaoYan.svg?style=flat-square"></a>
-    <img alt="macOS 12.0+" src="https://img.shields.io/badge/macOS-12.0%2B-orange?style=flat-square">
-  </div>
-  <div align="center">Lightweight Markdown note-taking app for macOS</div>
-</p>
+<div align="center">
+  <a href="https://miaoyan.app/" target="_blank"><img src="https://raw.githubusercontent.com/tw93/MiaoYan/main/Resources/app.icon/Assets/43.png" width="138" /></a>
+  <h1>MiaoYan</h1>
+  <p><b>A native Mac app for local Markdown notes</b></p>
+  <p>English · <a href="README_CN.md">中文</a> · <a href="README_TW.md">繁體</a> · <a href="README_JA.md">日本語</a> · <a href="README_KR.md">한국어</a> · <a href="README_DE.md">Deutsch</a> · <a href="README_FR.md">Français</a></p>
+  <a href="https://twitter.com/HiTw93" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/badge/follow-Tw93-red?style=flat-square&logo=Twitter"></a>
+  <a href="https://t.me/+9f9gf4ZrFSQ2OWVl" target="_blank"><img alt="Telegram" src="https://img.shields.io/badge/chat-Telegram-blueviolet?style=flat-square&logo=Telegram"></a>
+  <a href="https://github.com/tw93/MiaoYan/releases" target="_blank"><img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/tw93/MiaoYan/total.svg?style=flat-square"></a>
+  <a href="https://github.com/tw93/MiaoYan/commits" target="_blank"><img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/m/tw93/MiaoYan?style=flat-square"></a>
+  <a href="https://github.com/tw93/MiaoYan/issues?q=is%3Aissue+is%3Aclosed" target="_blank"><img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed/tw93/MiaoYan.svg?style=flat-square"></a>
+  <img alt="macOS 12.0+" src="https://img.shields.io/badge/macOS-12.0%2B-orange?style=flat-square">
+</div>
 
 <img src="https://raw.githubusercontent.com/tw93/static/main/miaoyan/miaoyan.gif" width="900px" />
 
 ## Features
 
-- **Fantastic**: Local-first, no data collection, split editor & preview, wikilink backlinks, LaTeX, Mermaid
-- **Beautiful**: Minimalist design, three-column layout, dark mode, macOS 26 glass, distraction-free
-- **Fast**: Swift 6 native, better performance than Electron-based apps
-- **Simple**: Lightweight, version history, keyboard shortcuts, auto-formatting
+- **Local-first**: Notes are Markdown files in a folder you choose, with no data collection, and iCloud Drive or Nutstore can sync them across devices
+- **Focused**: Folders, notes, and editor in three columns, with dark mode and no plugin system to maintain
+- **Native**: Built with Swift 6, lighter than web wrappers, with 60fps scroll sync in split preview
+- **Capable**: Wikilinks, LaTeX, Mermaid, version history, auto-formatting, and PPT presentations built in
 
 ## Installation
 
 1. **Mac App Store** (paid, automatic updates, includes the iPhone and iPad app):
 
-   <a href="https://apps.apple.com/cn/app/miaoyan/id6759252269"><img src="https://cdn.tw93.fun/uPic/C3Renh.png" width="160" alt="Download on the Mac App Store" /></a>
+   <a href="https://apps.apple.com/app/miaoyan/id6759252269"><img src="https://cdn.tw93.fun/uPic/C3Renh.png" width="160" alt="Download on the Mac App Store" /></a>
 
 2. **Homebrew**:
    ```bash
@@ -49,19 +41,16 @@ url: https://github.com/tw93/MiaoYan
 
 3. **GitHub Releases**: download the latest DMG from [GitHub Releases](https://github.com/tw93/MiaoYan/releases/latest) (macOS 12.0+)
 
-Homebrew and GitHub Releases install this open-source app, which now receives fixes only. The App Store edition is developed separately, includes the iPhone and iPad app, and is where new features land. After installing, create a `MiaoYan` folder in iCloud Drive, a desktop cloud-drive folder, or your preferred location, open Preferences (⌘,), and set the storage path.
+Homebrew and GitHub Releases install this open-source app, which now receives fixes only. The App Store edition is developed separately and is where new features land.
 
 ## Sync with Nutstore or Other Cloud Drives
 
-MiaoYan is local-first and does not sign in to WebDAV or cloud-drive accounts. It reads and writes the Markdown folder you choose. iCloud Drive, Nutstore, Dropbox, or another cloud-drive client handles cross-device sync.
+MiaoYan does not sign in to WebDAV or cloud-drive accounts and only reads and writes the Markdown folder you choose. After installing, create a `MiaoYan` folder in iCloud Drive, the local folder synced by the Nutstore desktop client, or any other location, then open Preferences (⌘,) and set it as the storage path. iCloud Drive, Nutstore, Dropbox, or another cloud-drive client handles cross-device sync.
 
-- **Mac**: Create a `MiaoYan` folder inside the local folder synced by the Nutstore desktop client, then point MiaoYan's storage location to it in Preferences.
-- **iPhone**: Pick the same cloud-drive folder from the system Files app. If a provider does not expose a writable folder in Files, use iCloud Drive or make the folder available offline in that provider app before choosing it.
-- **Folder check**: MiaoYan verifies read and write access before switching folders. If the folder is unavailable, the current storage path stays unchanged.
+- **iPhone**: Pick the same cloud-drive folder in the system Files app, and if a provider does not offer a writable folder there, use iCloud Drive or make the folder available offline in that provider app first
+- **Folder check**: MiaoYan verifies read and write access before switching folders and keeps the current storage path if the folder is unavailable, without reporting the problem as a MiaoYan sync failure
 
 ## CLI
-
-MiaoYan provides a command-line interface for quick note operations.
 
 ```bash
 # Install
@@ -71,24 +60,21 @@ curl -fsSL https://raw.githubusercontent.com/tw93/MiaoYan/main/scripts/install.s
 miao open <title|path>    # Open note or folder
 miao new <title> [text]   # Create new note
 miao search <query>       # Search notes in terminal
-miao list [folder]        # List top-level folders, or markdown in folder
+miao list [folder]        # List top-level folders, or the Markdown files in a folder
 miao cat <title|path>     # Print note content
 miao update               # Update CLI
 ```
 
 ## Split Editor & Preview Mode
 
-Edit and preview side by side with real-time preview and 60fps bidirectional scroll sync.
+Edit and preview sit side by side. Press `⌘\` to toggle split mode, or open Preferences, go to General, and set Editor Mode to Split Mode. Why not WYSIWYG like Typora? Pure Markdown editing is the whole point. Native WYSIWYG in Swift is heavy and fragile; split mode keeps writing focused while giving you instant, synchronized visual feedback.
 
-**Quick Toggle**: Press `⌘\` to instantly toggle split view mode, or enable it in Preferences → Interface → Edit Mode → Split Mode.
-
-Why not WYSIWYG like Typora? We prioritize pure Markdown editing experience, and implementing WYSIWYG in native Swift is overly complex with reliability concerns. Split mode maintains clean editing while providing instant visual feedback.
-
-<img src="https://gw.alipayobjects.com/zos/k/eg/jV8Gra.png" width="100%" alt="Split Editor & Preview Mode" />
+<img src="https://raw.githubusercontent.com/tw93/MiaoYan/main/assets/split-preview.png" width="100%" alt="Split Editor & Preview Mode" />
 
 ## Documentation
 
-- [Markdown Syntax Guide](Resources/Initial/MiaoYan%20Markdown%20Syntax%20Guide.md) - Complete syntax reference with advanced features
+- [Introduction to MiaoYan](Resources/Initial/Introduction%20to%20MiaoYan.md) - Usage guide and keyboard shortcuts
+- [Markdown Syntax Guide](Resources/Initial/MiaoYan%20Markdown%20Syntax%20Guide.md) - Syntax reference with math and diagrams
 - [PPT Presentation Mode](Resources/Initial/MiaoYan%20PPT.md) - Guide to creating presentations with `---` slide separators
 - [MiaoYan Agent Skill](skills/miaoyan) - Teach your agent MiaoYan syntax, attachments, PPT patterns, and CLI workflows
 
@@ -96,9 +82,9 @@ Install the official skill with `npx skills add tw93/MiaoYan/skills/miaoyan -g`.
 
 ## Support
 
-- The most direct way to support me is getting [Mole for Mac](https://mole.fit), my paid Mac cleanup app.
-- If MiaoYan helped you, give it a star, [share it](https://twitter.com/intent/tweet?url=https://github.com/tw93/MiaoYan&text=MiaoYan%20-%20A%20fast%2C%20elegant%20Markdown%20editor%20for%20Mac.), or open an issue or PR.
-- I have two cats, TangYuan and Coke. If you think MiaoYan delights your life, you can feed them <a href="https://cats.tw93.fun?name=MiaoYan" target="_blank">canned food 🥩</a>.
+- The most direct way to support me is getting [Mole for Mac](https://mole.fit), my paid Mac cleanup app
+- If MiaoYan helped you, give it a star, [share it](https://twitter.com/intent/tweet?url=https://github.com/tw93/MiaoYan&text=MiaoYan%20-%20A%20native%20Mac%20app%20for%20local%20Markdown%20notes), or open an issue or PR
+- I have two cats, TangYuan and Coke. If MiaoYan brings you joy, you can feed them <a href="https://cats.tw93.fun?name=MiaoYan" target="_blank">canned food 🥩</a>
 
 <details>
 <summary>These lovely people already did 🐱</summary>
@@ -113,7 +99,8 @@ Install the official skill with `npx skills add tw93/MiaoYan/skills/miaoyan -g`.
 - [simonbs/Prettier](https://github.com/simonbs/Prettier) - Markdown formatting utilities
 - [raspu/Highlightr](https://github.com/raspu/Highlightr) - Syntax highlighting
 - [hakimel/reveal.js](https://github.com/hakimel/reveal.js) - PPT presentation framework
+
 ## License
 
-MIT License - Feel free to use and contribute.
+MIT License
 
