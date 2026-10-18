@@ -1,8 +1,8 @@
 ---
 project: MiaoYan
-stars: 8669
+stars: 8672
 description: |-
-    ⛷ A quiet, distraction-free writing app to help you write great sentences.
+    ⛷ A quiet, local-first Markdown writing app for Mac, to help you write great sentences.
 url: https://github.com/tw93/MiaoYan
 ---
 
@@ -10,6 +10,7 @@ url: https://github.com/tw93/MiaoYan
   <a href="https://miaoyan.app/" target="_blank"><img src="https://raw.githubusercontent.com/tw93/MiaoYan/main/Resources/app.icon/Assets/43.png" width="138" /></a>
   <h1>MiaoYan</h1>
   <p><b>A native Mac app for local Markdown notes</b></p>
+  <p>MiaoYan is 妙言 in Chinese, words beyond words.</p>
   <p>English · <a href="README_CN.md">中文</a> · <a href="README_TW.md">繁體</a> · <a href="README_JA.md">日本語</a> · <a href="README_KR.md">한국어</a> · <a href="README_DE.md">Deutsch</a> · <a href="README_FR.md">Français</a></p>
   <a href="https://twitter.com/HiTw93" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/badge/follow-Tw93-red?style=flat-square&logo=Twitter"></a>
   <a href="https://t.me/+9f9gf4ZrFSQ2OWVl" target="_blank"><img alt="Telegram" src="https://img.shields.io/badge/chat-Telegram-blueviolet?style=flat-square&logo=Telegram"></a>
@@ -30,7 +31,7 @@ url: https://github.com/tw93/MiaoYan
 
 ## Installation
 
-1. **Mac App Store** (paid, automatic updates, includes the iPhone and iPad app):
+1. **App Store** (recommended, one purchase for iPhone, iPad and Mac, automatic updates):
 
    <a href="https://apps.apple.com/app/miaoyan/id6759252269"><img src="https://cdn.tw93.fun/uPic/C3Renh.png" width="160" alt="Download on the Mac App Store" /></a>
 
@@ -41,7 +42,7 @@ url: https://github.com/tw93/MiaoYan
 
 3. **GitHub Releases**: download the latest DMG from [GitHub Releases](https://github.com/tw93/MiaoYan/releases/latest) (macOS 12.0+)
 
-Homebrew and GitHub Releases install this open-source app, which now receives fixes only. The App Store edition is developed separately and is where new features land.
+Homebrew and GitHub Releases install the same free, open-source Mac app, which keeps being developed. The App Store version is recommended: one purchase gets you MiaoYan on iPhone, iPad and Mac, all opening the same iCloud Drive folder, with automatic updates.
 
 ## Sync with Nutstore or Other Cloud Drives
 
@@ -67,7 +68,7 @@ miao update               # Update CLI
 
 ## Split Editor & Preview Mode
 
-Edit and preview sit side by side. Press `⌘\` to toggle split mode, or open Preferences, go to General, and set Editor Mode to Split Mode. Why not WYSIWYG like Typora? Pure Markdown editing is the whole point. Native WYSIWYG in Swift is heavy and fragile; split mode keeps writing focused while giving you instant, synchronized visual feedback.
+Edit and preview sit side by side. Press `⌘\` to toggle split mode, or open Preferences, go to Editor, and set Default Mode to Split. Why not WYSIWYG like Typora? Pure Markdown editing is the whole point. Native WYSIWYG in Swift is heavy and fragile; split mode keeps writing focused while giving you instant, synchronized visual feedback.
 
 <img src="https://raw.githubusercontent.com/tw93/MiaoYan/main/assets/split-preview.png" width="100%" alt="Split Editor & Preview Mode" />
 

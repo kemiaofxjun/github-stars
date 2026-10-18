@@ -1,6 +1,6 @@
 ---
 project: api-clawer
-stars: 25
+stars: 26
 description: |-
     基于MITM制作的简易网易云音乐客户端抓包工具, 适用于贡献 NeteaseCloudMusicApi 项目
 url: https://github.com/NeteaseCloudMusicApiEnhanced/api-clawer

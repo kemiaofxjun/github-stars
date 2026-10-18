@@ -1,6 +1,6 @@
 ---
 project: Mizuki
-stars: 1903
+stars: 1900
 description: |-
     Next-Gen Material Design 3 Blog Theme (Astro Powered)
 url: https://github.com/LyraVoid/Mizuki
