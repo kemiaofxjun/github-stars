@@ -1,6 +1,6 @@
 ---
 project: Meting
-stars: 2204
+stars: 2206
 description: |-
     :cake: Wow, such a powerful music API framework
 url: https://github.com/metowolf/Meting
