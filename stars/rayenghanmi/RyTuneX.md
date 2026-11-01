@@ -1,6 +1,6 @@
 ---
 project: RyTuneX
-stars: 5582
+stars: 5602
 description: |-
     RyTuneX is an advanced system tuning engine built with WinUI 3 and .NET, designed to debloat, optimize, and maximize performance on Windows 10 and 11.
 url: https://github.com/rayenghanmi/RyTuneX

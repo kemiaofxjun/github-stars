@@ -1,6 +1,6 @@
 ---
 project: MiaoYan
-stars: 8682
+stars: 8719
 description: |-
     ⛷ A quiet, local-first Markdown writing app for Mac, to help you write great sentences.
 url: https://github.com/tw93/MiaoYan

@@ -1,6 +1,6 @@
 ---
 project: Netease_url
-stars: 2947
+stars: 2981
 description: |-
     网易云无损解析
 url: https://github.com/Suxiaoqinx/Netease_url
@@ -67,7 +67,7 @@ url: https://github.com/Suxiaoqinx/Netease_url
 ## 🚀 快速开始
 
 ### 环境要求
-- Python 3.7+
+- Python 3.10+（推荐 Python 3.12，与 Docker 镜像一致）
 - 网易云音乐黑胶会员账号
 
 ### 安装步骤

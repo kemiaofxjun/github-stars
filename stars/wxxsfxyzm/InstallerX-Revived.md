@@ -1,6 +1,6 @@
 ---
 project: InstallerX-Revived
-stars: 7151
+stars: 7254
 description: |-
     More Expressive InstallerX !
 url: https://github.com/wxxsfxyzm/InstallerX-Revived

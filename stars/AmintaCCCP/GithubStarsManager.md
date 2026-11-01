@@ -1,6 +1,6 @@
 ---
 project: GithubStarsManager
-stars: 3739
+stars: 3783
 description: |-
     AI-powered GitHub stars manager with semantic search, auto-categorization, and release tracking
 url: https://github.com/AmintaCCCP/GithubStarsManager
@@ -34,7 +34,7 @@ GitHub Stars Manager automatically syncs your starred repos, uses AI to summariz
   <img src="./assets/readme/sections/see-it.svg" width="100%" alt="See it — product screenshots of Stars, search, releases, and repository Q&amp;A.">
 </p>
 
-<https://github.com/user-attachments/assets/2f7e44c9-7a7e-40dc-9601-269b27c1ec6e>
+https://github.com/user-attachments/assets/ad3493a0-948a-4de5-8de1-4e9afc46ec4d
 
 <table>
   <tr>
